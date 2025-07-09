@@ -20,13 +20,26 @@
 
 tw-link {
   color: #FF0000;
+  font-size: 100%;
+  transition-duration:1.5s;
+  transition-property: color, font-size;
 }
 
 tw-link:hover {
   color:   	#660000;
+  font-size: 150%;
+  transition-duration: 2s;
+  transition-property: color, font-size;
 /*    #ff7f7f; */
-/* #470a0a; */
-    
+/* #470a0a; */   
+}
+
+.enchantment-link {
+ color: #900C3F ;
+}
+
+.enchantment-link:hover {
+  color: #FF5733  ;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="1225,400" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
 You are in a bedroom. 
@@ -68,18 +81,18 @@ and a [[bathtub]]
 
 [[back|the bathroom]]</tw-passagedata><tw-passagedata pid="10" name="bathtub" tags="" position="2150,275" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
-[[back|the bathroom]]</tw-passagedata><tw-passagedata pid="11" name="outside" tags="" position="1525,800" size="100,100">&lt;img src=&quot;pic1.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
+[[back|the bathroom]]</tw-passagedata><tw-passagedata pid="11" name="outside" tags="" position="1525,800" size="100,100">&lt;img src=&quot;img/house2.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
 
 [[Front yard]]
 Ivy outlines the perimeter.
 A walnut tree stands over the [[driveway]]
-[[Palm tree]]</tw-passagedata><tw-passagedata pid="12" name="living room" tags="" position="800,725" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+[[Palm tree]]</tw-passagedata><tw-passagedata pid="12" name="living room" tags="" position="950,575" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 A grand [[piano]] sits on the eastern side of the room, in front of the wall to the [[dining room]].
 
-A doorway opens up into the [[den]]. The back yard is visible through a sliding glass door on the other side. 
+Beyond the [[western side|living room 2]] of the living room holds a doorway with three small carpeted stairs.  The back yard is visible through a sliding glass door on the other side. 
 
-[[living room 2]]</tw-passagedata><tw-passagedata pid="13" name="piano" tags="" position="725,425" size="100,100">&lt;img src = &quot;img/07-piano.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="13" name="piano" tags="" position="725,425" size="100,100">&lt;img src = &quot;img/07-piano.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 &#39;&#39;Play&#39;&#39; the piano?
 
@@ -101,7 +114,7 @@ A [[TV]]
 A [[fireplace]]
 An [[alcove]]
 
-[[back|living room]]</tw-passagedata><tw-passagedata pid="16" name="kitchen" tags="" position="1125,1125" size="100,100">&lt;img src = &quot;img/05-kitchen.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+[[back|living room 2]]</tw-passagedata><tw-passagedata pid="16" name="kitchen" tags="" position="1125,1125" size="100,100">&lt;img src = &quot;img/05-kitchen.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 Horrific memories cloud this place. 
 A doorway opens up to the [[den]] 
@@ -160,15 +173,24 @@ Its not safe for a kid to be out here!
 [[back|curb]]</tw-passagedata><tw-passagedata pid="28" name="behind the garage" tags="" position="200,1275" size="100,100">&lt;img src = &quot;img/11-backyard-garage.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 
-[[back|backyard]]</tw-passagedata><tw-passagedata pid="29" name="TV" tags="" position="450,700" size="100,100">&lt;img src=&quot;pic1.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
+[[back|backyard]]</tw-passagedata><tw-passagedata pid="29" name="TV" tags="" position="75,625" size="100,100">&lt;img src=&quot;img/tv1.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
 
+Something [[doesn&#39;t feel right.|TV2]]
 [[fireplace]] 
-[[alcove]] </tw-passagedata><tw-passagedata pid="30" name="fireplace" tags="" position="575,575" size="100,100">&lt;img src = &quot;img/07-piano.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;</tw-passagedata><tw-passagedata pid="31" name="alcove" tags="" position="250,950" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;</tw-passagedata><tw-passagedata pid="32" name="bed" tags="" position="1450,225" size="100,100">&lt;img src=&quot;img/Bed2.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+[[alcove]] </tw-passagedata><tw-passagedata pid="30" name="fireplace" tags="" position="400,475" size="100,100">&lt;img src = &quot;img/07-piano.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+
+The fireplace leads back to the living room
+to the left is the[[kitchen]]
+to the right is the eastern side of the [[living room]]  room.</tw-passagedata><tw-passagedata pid="31" name="alcove" tags="" position="350,900" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;</tw-passagedata><tw-passagedata pid="32" name="bed" tags="" position="1450,225" size="100,100">&lt;img src=&quot;img/Bed2.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
 [[Go to sleep]]</tw-passagedata><tw-passagedata pid="33" name="Go to sleep" tags="" position="1375,350" size="100,100">&lt;img src=&quot;img/Bed3.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
 
-You wake up in a [[bedroom|Bedroom]] </tw-passagedata><tw-passagedata pid="34" name="Title" tags="" position="2525,400" size="100,100">&lt;img src = &quot;img/title.png&quot;  align = &quot;center&quot; / height=&quot;600&quot; witdth=&quot;600&quot;&gt;
-&lt;h1&gt;[[Start! |intro-child]]&lt;/h1&gt;</tw-passagedata><tw-passagedata pid="35" name="living room 2" tags="" position="775,1025" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;</tw-passagedata><tw-passagedata pid="36" name="driveway2" tags="" position="1650,1275" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+You wake up in a [[bedroom|Bedroom]] </tw-passagedata><tw-passagedata pid="34" name="Title" tags="" position="2525,400" size="100,100">&lt;img src = &quot;img/title.png&quot;  align = &quot;center&quot; / height=&quot;300&quot; witdth=&quot;300&quot;&gt;
+&lt;h1&gt;[[Start! |intro-child]]&lt;/h1&gt;</tw-passagedata><tw-passagedata pid="35" name="living room 2" tags="" position="850,725" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+
+[[eastern side of the living room|living room]]
+[[go to the den towards the back of the house|den]]
+back to the [[front door area|inside the front door]] </tw-passagedata><tw-passagedata pid="36" name="driveway2" tags="" position="1650,1275" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 </tw-passagedata><tw-passagedata pid="37" name="intro-child" tags="" position="2500,575" size="100,100">&lt;img src = &quot;img/the-child.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 [[ I am a child. |child-vanishing]]
@@ -185,34 +207,39 @@ He directed horror B movies.
 
 Something is wrong.
 I don&#39;t understand exactly what.
-[[But I have this feeling in my bones. |Bedroom]]
-[[Do you want to know the dream? |intro-house-3]] </tw-passagedata><tw-passagedata pid="41" name="child-sunset" tags="" position="2475,875" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+But I have this feeling in my bones. |
+[[Do you want to know the dream? |intro-house-3]] 
+
+Or is it time to [[wake up.|Bedroom]]</tw-passagedata><tw-passagedata pid="41" name="child-sunset" tags="" position="2475,875" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 But
 // Every// night I have the same dream
 [[It&#39;s a nightmare. |intro-house]]
 Its been a few years now. 
-</tw-passagedata><tw-passagedata pid="42" name="intro-house-3" tags="" position="2475,1350" size="100,100">I am running for my life, chased by the vampire, fangs out and inches from my neck. I can&#39;t outrun him, just before they pierce my flesh and suck my blood I am shook awake in a violent spasm. 
+</tw-passagedata><tw-passagedata pid="42" name="intro-house-3" tags="" position="2475,1350" size="100,100">I am [running]&lt;1| for my life, chased by the vampire, fangs out and inches from my neck. I can&#39;t outrun him, just before they pierce my flesh and suck my blood I am shook awake in a violent spasm. 
 
-I am in this house. 
+(click: ?1)[I am in this house. 
 But it is not this house. 
-There&#39;s a trap door in the den. 
-It didn&#39;t use to be there. 
+There&#39;s a [trap door]&lt;2| in the den. 
+It didn&#39;t use to be there. ]
 
-Inside is a series of stairs
+(click: ?2)[Inside is a series of [stairs]&lt;3|
 a hall of mirrors
-and a labyrinthe
+and a labyrinthe]
 
-sometimes there&#39;s a factory.
+(click:?3)[sometimes there&#39;s a factory.
+sometimes I can [fly]&lt;4|.
+Sometimes I can move things with my mind.]
 
-sometimes I can fly.
+(click:?4)[But it always ends the same way. With [fangs about to sink into the back of my neck]&lt;5|, I startle and wake up in a cold sweat, heart pounding. Most nights like that if I can find enough peace to fall back asleep I wind up right back inside the labyrinthe, or worse I realize I never really woke up, and am in fact still dreaming. ]
 
-Sometimes I can move things with my mind.
+(click:?5)[...[[But I have this feeling in my bones. |Bedroom]]]
+</tw-passagedata><tw-passagedata pid="43" name="TV2" tags="" position="0,750" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
 
-But it always ends the same way. With fangs about to sink into the back of my neck, I startle and wake up in a cold sweat, heart pounding. Most nights like that if I can find enough peace to fall back asleep I wind up right back inside the labyrinthe, or worse I realize I never really woke up, and am in fact still dreaming. 
+What&#39;s that [[coming out of the TV?.|TV3]]
+</tw-passagedata><tw-passagedata pid="44" name="TV3" tags="" position="50,900" size="100,100">&lt;img src=&quot;img/tv3.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
 
-[[But I have this feeling in my bones. |Bedroom]]
-</tw-passagedata></tw-storydata>
+It looks like a vampire! [[Wake up!|Bedroom]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

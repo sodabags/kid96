@@ -9,47 +9,50 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Kid96.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Kid96" startnode="33" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="Kid96" startnode="33" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-passage {
+  
   font: 100% Arial,sans-serif;
-    font-size: 100%;
-    line-height: normal;
-  font-size: 1.5em;
+  font-size: 100%;
   line-height: 1.5em;
+  /*
+  line-height: normal;
+  */
+  /*
+  font-size: 1.5em;
+  */
   color: #fff;
 }
 
-tw-link {
+tw-link, .enchantment-link {
   color: #FF0000;
   font-size: 100%;
   transition-duration:1.5s;
   transition-property: color, font-size;
 }
 
-tw-link:hover {
-  color:   	#660000;
+tw-link:hover,.enchantment-link:hover {
+  color:   	#B20000;
   font-size: 150%;
   transition-duration: 2s;
   transition-property: color, font-size;
-/*    #ff7f7f; */
-/* #470a0a; */   
+/* #470a0a; ff7f7f*/   
 }
 
-.enchantment-link {
- color: #900C3F ;
+  .visited {
+     /* color: #FF6289; */
+    color: #b20000;
 }
 
+  .visited:hover {
+      color: #B20000
+}
+
+/*
 .enchantment-link:hover {
-  color: #FF5733  ;
+  color: #33ff57  ;
 }
+*/
 
-.visited {
-	color: 900C3F;
-  	text-decoration: underline;
-}
-
-.visited hover {
-	color: FF5733
-}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="3550,1050" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
 I am in my bedroom. 
@@ -60,7 +63,7 @@ A [[closet]] by a [[ desk]]
 
 An [[aquarium]] near a [[window]]
 
-A door to a [[hallway |Hallway]]</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3150,1025" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+A door to a [[hallway |Hallway]]</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3075,1025" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. 
 
@@ -70,7 +73,7 @@ A [[door to the bathroom]] is closed. That&#39;s where I was when the earthquake
 
 A path to [[inside the front door]] area.
 
-</tw-passagedata><tw-passagedata pid="3" name="door at the end of the hallway" tags="" position="3075,1350" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="3" name="door at the end of the hallway" tags="" position="2950,1275" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 The door is &#39;&#39;locked&#39;&#39;.
 
@@ -240,11 +243,10 @@ Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="b
 ZzzZzzzZzzz</tw-passagedata><tw-passagedata pid="32" name="wake up" tags="" position="3000,1950" size="100,100">(set: $bloody to &quot;false&quot;)
 &lt;img src=&quot;img/Bed9.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
 
-[[I wake up |Bedroom]] </tw-passagedata><tw-passagedata pid="33" name="Title" tags="" position="4050,150" size="100,100">&lt;img src = &quot;img/title.png&quot;  align = &quot;center&quot; / height=&quot;300&quot; witdth=&quot;300&quot; /&gt;
-
-&lt;h1&gt;[[Start! |intro-child]]&lt;/h1&gt;&lt;/div&gt;&lt;img src = &quot;img/eyeball.png&quot;  align = &quot;right&quot;  /&gt;
-
-
+[[I wake up |Bedroom]] </tw-passagedata><tw-passagedata pid="33" name="Title" tags="" position="4050,150" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/title.png&quot; height=&quot;300&quot; witdth=&quot;300&quot; /&gt;
+&lt;h1&gt;[[Start! |intro-child]]&lt;/h1&gt;&lt;/div&gt;
+&lt;img src = &quot;img/eyeball.png&quot; /&gt;
 
 
 (set: $MasterBedroomUnlocked to &quot;false&quot;, $bloody to &quot;false&quot;, $dreaming to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="living room 2" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
@@ -258,6 +260,7 @@ I can go to the [[stairs to the den|alcove]]
 Go to the [[front door area|inside the front door]] </tw-passagedata><tw-passagedata pid="35" name="intro-child" tags="" position="4050,325" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; vspace = &quot;50&quot; /&gt;
 
 [[ I am a child. |child-vanishing]]
+=&gt;&lt;=
 About 10 years old. 
 
 </tw-passagedata><tw-passagedata pid="36" name="child-vanishing" tags="" position="4075,450" size="100,100">
@@ -311,10 +314,10 @@ I can&#39;t tell if its the same vampire every time. Or if they are all minions 
 
 &lt;img src = &quot;img/vampireKing.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;]
 
-</tw-passagedata><tw-passagedata pid="41" name="TV2" tags="" position="2475,1475" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
+</tw-passagedata><tw-passagedata pid="41" name="TV2" tags="" position="2675,1550" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
 
 What&#39;s that [[coming out of the TV?.|TV3]]
-</tw-passagedata><tw-passagedata pid="42" name="TV3" tags="" position="2700,1425" size="100,100">&lt;img src=&quot;img/tv3.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
+</tw-passagedata><tw-passagedata pid="42" name="TV3" tags="" position="3000,1500" size="100,100">&lt;img src=&quot;img/tv3.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
 
 It looks like a vampire! [[Wake up!|Bedroom]]</tw-passagedata><tw-passagedata pid="43" name="Climb the fence" tags="" position="50,1600" size="100,100">I made it over the black iron gate but just at the top my shoelace got caught on the tip of the metal. I could feel my feet passing over but then suddenly the laces are pulled taught I come to a standstill in the air. 
 
@@ -426,25 +429,34 @@ The [[Vampire King]]</tw-passagedata><tw-passagedata pid="71" name="Vampire King
 I can&#39;t [[outrun him]]. 
 </tw-passagedata><tw-passagedata pid="72" name="outrun him" tags="" position="2500,2050" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
-[[wake up]] </tw-passagedata><tw-passagedata pid="73" name="play-piano" tags="" position="1525,1025" size="100,100">I don&#39;t remember how to play. Mom tried to teach me, but I didn&#39;t have a great experience. She was constantly telling me to practice. That was 6 years ago. I am 10.
+[[wake up]] 
 
-[[back to the |living room]]</tw-passagedata><tw-passagedata pid="74" name="bookcase" tags="" position="3875,1300" size="100,100">&lt;img src=&quot;img/bedroom-bookcase.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+(set: $MasterBedroomUnlocked to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="73" name="play-piano" tags="" position="1525,1025" size="100,100">I don&#39;t remember how to play. Mom tried to teach me, but I didn&#39;t have a great experience. She was constantly telling me to practice. That was 6 years ago. I am 10.
+
+[[back to the |living room]]</tw-passagedata><tw-passagedata pid="74" name="bookcase" tags="" position="3800,1575" size="100,100">&lt;img src=&quot;img/bedroom-bookcase.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
 
-A bookcase full of books. Alphebatized. I spent a lot of time doing that. </tw-passagedata><tw-passagedata pid="75" name="window" tags="" position="4000,1225" size="100,100">&lt;img src=&quot;img/bedroom-window.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+A bookcase full of books. Alphebatized. I spent a lot of time doing that. 
 
-[[open the window]]</tw-passagedata><tw-passagedata pid="76" name="open the window" tags="" position="4000,1075" size="100,100">&lt;img src=&quot;img/bedroom-window-open.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="75" name="window" tags="" position="4000,1225" size="100,100">&lt;img src=&quot;img/bedroom-window.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+
+[[Open the window]]</tw-passagedata><tw-passagedata pid="76" name="Open the window" tags="" position="4000,1075" size="100,100">&lt;img src=&quot;img/bedroom-window-open.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
 I can see the palm tree and the street from here. Also the grass and the hedge. Sometimes I walk the dog down that street. Sometimes I go roller blading in the area. I know a couple of the kids in the neighborhood. They have no idea what goes on here. 
 
 [[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="77" name="closet" tags="" position="3650,1450" size="100,100">&lt;img src=&quot;img/bedroom-closet-closed.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
-[[Open the closet]]</tw-passagedata><tw-passagedata pid="78" name=" desk" tags="" position="3875,1425" size="100,100">&lt;img src=&quot;img/bedroom-desk.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+[[Open the closet]]
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="78" name=" desk" tags="" position="3875,1425" size="100,100">&lt;img src=&quot;img/bedroom-desk.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
 
-On the desk is a terrarium with a leopard gecko. He smiles at you. </tw-passagedata><tw-passagedata pid="79" name="aquarium" tags="" position="4000,1425" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+On the desk is a terrarium with a leopard gecko. He smiles at you. 
 
-A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish I can&#39;t remember. </tw-passagedata><tw-passagedata pid="80" name="Open the closet" tags="" position="3525,1375" size="100,100">&lt;img src=&quot;img/bedroom-closet-open.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="79" name="aquarium" tags="" position="4000,1425" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+
+A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish I can&#39;t remember. 
+
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="80" name="Open the closet" tags="" position="3525,1375" size="100,100">&lt;img src=&quot;img/bedroom-closet-open.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
 
 Ninja Turtles action figures
 Slime - green and gooey to the touch
@@ -455,7 +467,7 @@ Dinosaur Fact book
 Animal Fact book
 Etch-A-Sketch
 [[SEGA Game Gear]]
-Buildling Blocks</tw-passagedata><tw-passagedata pid="81" name="SEGA Game Gear" tags="" position="3650,1325" size="100,100">Echo the Dolphin
+Buildling Blocks</tw-passagedata><tw-passagedata pid="81" name="SEGA Game Gear" tags="" position="3550,1225" size="100,100">Echo the Dolphin
 Looney Tunes Road Runner game
 Sonic Chaos
 

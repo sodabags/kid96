@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Kid96.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Kid96" startnode="40" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
+<tw-storydata name="Kid96" startnode="33" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
@@ -82,17 +82,36 @@ tw-link:hover,.enchantment-link:hover {
 }
 */
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="3550,1050" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+.smallImg {
+	margin-top: 3em;
+  	margin-bottom: 3em;
+  	margin-left: 10%;
+	margin-right: 10%;
+  	position: relative;
+	
+}
+
+.top {
+	float: top;
+}
+
+.bottom {
+  	float: bottom;
+}
+.left {
+  	float: left;
+}
+.right {
+  float: right;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="3550,1050" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&gt;
 
 I am in my bedroom. 
 
 I see a [[bed]] and a [[bookcase]].
 
-A [[closet]] by a [[ desk]]
+A [[closet]] by a [[ desk]] and an [[aquarium]] near a [[window]]
 
-An [[aquarium]] near a [[window]]
-
-A door to a [[hallway |Hallway]]</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3075,1025" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+Open the door to the hallway [[hallway |Hallway]]</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3075,1025" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. 
 
@@ -267,18 +286,26 @@ to the left is the [[kitchen]] </tw-passagedata><tw-passagedata pid="30" name="a
 
 This alcove is build into the house, an adult might be able to pull up a chair and use it as a desk. For a child like me its just at the right height for me to hit my head above the eye. [[Remember]]
 
-Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="bed" tags="" position="4250,950" size="100,100">&lt;img src=&quot;img/Bed2.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&gt;
+Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="bed" tags="" position="4250,950" size="100,100">&lt;img src=&quot;img/Bed2.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&gt;
 
 [[Go to Sleep]]
 ZzzZzzzZzzz</tw-passagedata><tw-passagedata pid="32" name="Wake up." tags="" position="3000,1950" size="100,100">(set: $bloody to &quot;false&quot;)
 &lt;img src=&quot;img/Bed9.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
 [[(either:&quot;I Wake up&quot;,&quot;Wake Up&quot;, &quot;I think I woke up&quot;, &quot;I woke, up right?&quot;,&quot;Get up&quot;, &quot;Time to get out of bed&quot;, &quot;Arise&quot;, &quot;I think it&#39;s morning&quot;, &quot;I wake up to the sound of distant shouting&quot;) |Bedroom]] 
 </tw-passagedata><tw-passagedata pid="33" name="Title" tags="" position="4050,150" size="100,100">=&gt;&lt;=
-&lt;img src = &quot;img/eyeball.png&quot; /&gt;&lt;img src = &quot;img/eyeball.png&quot; /&gt;
-#&lt;span class = &quot;shadows-into-light-regular&quot; &gt;(b4r:&quot;outset&quot;,&quot;ridge&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),red,grey)[Kid 96]&lt;/span&gt;
-####&lt;div class=&quot;rubik-family&quot;&gt;[[Start! |intro-child]]&lt;/div&gt;
-&lt;img src = &quot;img/eyeball.png&quot; /&gt;&lt;img src = &quot;img/eyeball.png&quot; /&gt;
+&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 
+
+=&gt;&lt;=
+#&lt;span class = &quot;shadows-into-light-regular&quot; &gt;(b4r:&quot;outset&quot;,&quot;ridge&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),red,grey)[Kid 96]&lt;/span&gt;
+
+=&gt;&lt;=
+&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
+
+=&gt;&lt;=
+####&lt;div class=&quot;rubik-family&quot; &gt;[[Start! |intro-child]]&lt;/div&gt;
+
+&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 
 (set: $MasterBedroomUnlocked to &quot;false&quot;, $bloody to &quot;false&quot;, $dreaming to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="living room 2" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
@@ -289,7 +316,7 @@ The whole [[eastern side of the living room |living room]] is open.
 I can go to the [[stairs to the den|alcove]]
 
 Go to the [[front door area|inside the front door]] </tw-passagedata><tw-passagedata pid="35" name="intro-child" tags="" position="4075,300" size="100,100">&lt;!--
-&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; vspace = &quot;50&quot; /&gt;
+&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; vspace = &quot;50&quot;/&gt;
 --&gt;
 &lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
 
@@ -297,16 +324,16 @@ Go to the [[front door area|inside the front door]] </tw-passagedata><tw-passage
 =&gt;&lt;=
 About 10 years old. 
 
-</tw-passagedata><tw-passagedata pid="36" name="intro-child-2" tags="" position="4075,450" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; vspace = &quot;50&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="36" name="intro-child-2" tags="" position="4075,450" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 
 
 Childhood is supposed to be innocent
 There&#39;s a lot of families around here. 
-Everyone is living the [[American Dream. |intro-child-3]]</tw-passagedata><tw-passagedata pid="37" name="intro-house" tags="" position="4175,550" size="100,100">&lt;img src = &quot;img/house-crane-view-lines.png&quot; width = &quot;400&quot; vspace = &quot;50&quot; /&gt;
+Everyone is living the [[American Dream. |intro-child-3]]</tw-passagedata><tw-passagedata pid="37" name="intro-house" tags="" position="4175,550" size="100,100">&lt;img src = &quot;img/house-crane-view-lines.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
 
 They said a Hollywood director used to live here. 
 He directed horror B movies.
-[[ But that&#39;s not what&#39;s wrong with this house. |intro-house-2]]</tw-passagedata><tw-passagedata pid="38" name="intro-house-2" tags="" position="4175,650" size="100,100">&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; vspace = &quot;50&quot; /&gt;
+[[ But that&#39;s not what&#39;s wrong with this house. |intro-house-2]]</tw-passagedata><tw-passagedata pid="38" name="intro-house-2" tags="" position="4175,650" size="100,100">&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
 
 Something is wrong.
 I don&#39;t understand exactly what.
@@ -316,14 +343,12 @@ And bring it to an end.
 
 [[Do you want to know the dream? |the-dream-explained]] 
 
-Or is it time to [[wake up?.|Bedroom]]</tw-passagedata><tw-passagedata pid="39" name="intro-child-3" tags="" position="4175,450" size="100,100">&lt;!--
-&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
---&gt;
-&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; vspace = &quot;50&quot; /&gt;
+Or is it time to [[wake up?.|Bedroom]]</tw-passagedata><tw-passagedata pid="39" name="intro-child-3" tags="" position="4175,450" size="100,100">&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 But
 // Every// night I dream, I have the same dream
 &lt;div class = &quot;rubik-family&quot; &gt;[[It&#39;s a nightmare. |intro-house]]&lt;/ div&gt;
-Its been a few years now. 
+
+&lt;div class = &quot;shadows-into-light-regular&quot; &gt;Its been a few years now. &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="40" name="the-dream-explained" tags="" position="4175,750" size="100,100">(click:?house-interior)[&lt;img src = &quot;img/house-interior-crane-view.png&quot; width = &quot;200&quot; /&gt;]&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;200&quot; /&gt;
 (click: ?1)[I am in this [house]&lt;house-interior| But it is not this house. 
 There&#39;s a [trap door]&lt;2| in the den. 
@@ -342,7 +367,7 @@ Or use other powers]
 
 I am [running]&lt;1| for my life, chased by the vampire, fangs out and inches from my neck. I can&#39;t outrun him, just before they pierce my flesh and suck my blood I am shook awake in a violent spasm. 
 
-</tw-passagedata><tw-passagedata pid="41" name="TV2" tags="" position="2675,1550" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
+&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;100&quot; width=&quot;100&quot; /&gt;</tw-passagedata><tw-passagedata pid="41" name="TV2" tags="" position="2675,1550" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
 
 What&#39;s that [[coming out of the TV?.|TV3]]
 </tw-passagedata><tw-passagedata pid="42" name="TV3" tags="" position="3000,1500" size="100,100">&lt;img src=&quot;img/tv3.png&quot; width = &quot;300&quot; align = &quot;left&quot; hspace = &quot;50&quot;&gt;
@@ -380,32 +405,32 @@ Back to [[kitchen]] </tw-passagedata><tw-passagedata pid="49" name="Go to Mom" t
 
 [[Nothing|trapdoor-appear]] to see here
 
-[[Look up]]</tw-passagedata><tw-passagedata pid="52" name="Go to Sleep" tags="" position="4275,1125" size="100,100">&lt;img src=&quot;img/Bed3.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
+[[Look up]]</tw-passagedata><tw-passagedata pid="52" name="Go to Sleep" tags="" position="4275,1125" size="100,100">&lt;img src=&quot;img/Bed3.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[Sleep|sleep2]]
 
-</tw-passagedata><tw-passagedata pid="53" name="sleep2" tags="" position="4425,1125" size="100,100">&lt;img src=&quot;img/Bed4.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="53" name="sleep2" tags="" position="4425,1125" size="100,100">&lt;img src=&quot;img/Bed4.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[Sleep|sleep3]]
 
-</tw-passagedata><tw-passagedata pid="54" name="sleep3" tags="" position="4300,1250" size="100,100">&lt;img src=&quot;img/Bed5.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="54" name="sleep3" tags="" position="4300,1250" size="100,100">&lt;img src=&quot;img/Bed5.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[  (either: &quot;Sleep&quot;, &quot;Am I awake?&quot;, &quot;Am I still dreaming?&quot;, &quot;Is this a dream within a dream?&quot; )  |sleep4]]
 
-</tw-passagedata><tw-passagedata pid="55" name="sleep4" tags="" position="4425,1250" size="100,100">&lt;img src=&quot;img/Bed6.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="55" name="sleep4" tags="" position="4425,1250" size="100,100">&lt;img src=&quot;img/Bed6.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&quot;&gt;
 
 &lt;!--( either: &quot;[[Open my eyes.|sleep5]]&quot;, &quot;[[Open my eyes|real-wake-up]]&quot; )--&gt;
 (either:[[&quot;Open my eyes&quot;-&gt;sleep5]], [[Open my eyes|real-wake-up]])
 
-</tw-passagedata><tw-passagedata pid="56" name="sleep5" tags="" position="4425,1375" size="100,100">&lt;img src=&quot;img/Bed7.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="56" name="sleep5" tags="" position="4425,1375" size="100,100">&lt;img src=&quot;img/Bed7.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[ (either: &quot;Sleep&quot;, &quot;Am I awake?&quot;, &quot;Am I still dreaming?&quot;, &quot;Is this a dream within a dream?&quot; )|open-eyes]]
 
-</tw-passagedata><tw-passagedata pid="57" name="open-eyes" tags="" position="4300,1375" size="100,100">&lt;img src=&quot;img/Bed8.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="57" name="open-eyes" tags="" position="4300,1375" size="100,100">&lt;img src=&quot;img/Bed8.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[(either: &quot;Sleep&quot;, &quot;Am I awake?&quot;, &quot;Am I still dreaming?&quot;, &quot;Is this a dream within a dream?&quot;, &quot;Am I still asleep?&quot;, &quot;This is real life, right?&quot;, &quot;Sometimes I can&#39;t tell the nightmare from reality&quot; )|sleep7]]
 
-</tw-passagedata><tw-passagedata pid="58" name="sleep7" tags="" position="4400,1550" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; width = &quot;300&quot; vspace = &quot;50&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="58" name="sleep7" tags="" position="4400,1550" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; width = &quot;300&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[I can&#39;t tell|Wake up.]]
 

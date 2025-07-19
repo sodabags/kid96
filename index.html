@@ -102,7 +102,11 @@ tw-link:hover,.enchantment-link:hover {
 }
 .right {
   float: right;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="3550,1050" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+}
+.border {
+	border: thick double #32a1ce; 
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="3700,900" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 I am in my bedroom. 
 
@@ -110,7 +114,7 @@ I see a [[bed]] and a [[bookcase]].
 
 A [[closet]] by a [[ desk]] and an [[aquarium]] near a [[window]]
 
-Open the door to the hallway [[hallway |Hallway]]</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3075,1025" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+Open the door to the hallway [[hallway |Hallway]]</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3225,1000" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. 
 
@@ -120,7 +124,7 @@ A [[door to the bathroom]] is closed. That&#39;s where I was when the earthquake
 
 A path to [[inside the front door]] area.
 
-</tw-passagedata><tw-passagedata pid="3" name="door at the end of the hallway" tags="" position="2900,1350" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+</tw-passagedata><tw-passagedata pid="3" name="door at the end of the hallway" tags="" position="2925,1250" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 The door is &#39;&#39;locked&#39;&#39;.
 
@@ -140,7 +144,7 @@ The Vampire King  lieth behind this door]
 [[Blast the wall with mind power|break down the door]]
 ]
 
-(if$becomeshadow is &quot;true&quot;)[
+(if:$becomeshadow is &quot;true&quot;)[
 [[Turn to shadow]]
 ]
 
@@ -148,34 +152,44 @@ The Vampire King  lieth behind this door]
 [[Break the door with my steel firsts and steel kicks|break down the door]]
 ]
 
-(if: $MasterBedroomUnlocked is &quot;true&quot;)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]</tw-passagedata><tw-passagedata pid="4" name="door to the bathroom" tags="" position="3350,1600" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+(if:$teleport is  &quot;true&quot;)[
+Try to [[teleport through the door]]
+]
+
+
+&lt;!--(if: $MasterBedroomUnlocked is &quot;true&quot;)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="4" name="door to the bathroom" tags="" position="3725,1875" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
 Open the door to go inside [[the bathroom]]
 [[Remember|earthquake-door-braced]]</tw-passagedata><tw-passagedata pid="5" name="inside the front door" tags="" position="2775,900" size="100,100">&lt;img src = &quot;img/03-front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 The front door leads [[outside]]
 A [[golden retriever|dog]] sleeps next to the door.
-The house opens up to the [[living room]]</tw-passagedata><tw-passagedata pid="6" name="the bathroom" tags="" position="3600,1875" size="100,100">&lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+The house opens up to the [[eastern living room]]</tw-passagedata><tw-passagedata pid="6" name="the bathroom" tags="" position="3700,2075" size="100,100">&lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 Inside is a [[sink]]
 a [[shower]]
 a [[toilet]]
 and a [[bathtub]]
 
-[[back to the hallway|Hallway]]</tw-passagedata><tw-passagedata pid="7" name="sink" tags="" position="3825,2050" size="100,100">&lt;img src = &quot;img/bathroom-sink.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[back to the hallway|Hallway]]</tw-passagedata><tw-passagedata pid="7" name="sink" tags="" position="3875,2250" size="100,100">&lt;img src = &quot;img/bathroom-sink.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A sink.
 [[Remember|cut-fingernail]]
 
-[[back|the bathroom]]</tw-passagedata><tw-passagedata pid="8" name="shower" tags="" position="3675,2075" size="100,100">&lt;img src = &quot;img/bathroom-shower.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+[[back|the bathroom]]</tw-passagedata><tw-passagedata pid="8" name="shower" tags="" position="3725,2275" size="100,100">&lt;img src = &quot;img/bathroom-shower.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
 A shower.
 
-[[back|the bathroom]]</tw-passagedata><tw-passagedata pid="9" name="toilet" tags="" position="3825,1775" size="100,100">&lt;img src = &quot;img/bathroom-toilet.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[back|the bathroom]]</tw-passagedata><tw-passagedata pid="9" name="toilet" tags="" position="3875,1975" size="100,100">&lt;img src = &quot;img/bathroom-toilet.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-A toilet. Unremarkable.
+A toilet. [Unremarkable]&lt;begin|.
 
-[[back|the bathroom]]</tw-passagedata><tw-passagedata pid="10" name="bathtub" tags="" position="3800,1900" size="100,100">&lt;img src = &quot;img/bathroom-bathtub.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+(click:?begin)[That&#39;s not true. 
+This is a place of shame. 
+Every time my body corporealizes the stress of walking on eggshells around this house it ends up leaving something behind in here. Sometimes at odd hours of the night. 
+At least I don&#39;t wet the bed anymore]
+
+[[back to the bathroom|the bathroom]]</tw-passagedata><tw-passagedata pid="10" name="bathtub" tags="" position="3850,2100" size="100,100">&lt;img src = &quot;img/bathroom-bathtub.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A bathtub. Mom used to sing &quot;Under the Sea&quot; when it was bath time. One time I woke up in the middle of the night so tired I accidentally started peeing here. Whoops.
 
@@ -184,11 +198,11 @@ A bathtub. Mom used to sing &quot;Under the Sea&quot; when it was bath time. One
 The [[front yard|Front yard]] goes to the curb and a includes a bearded palm tree
 Ivy outlines the perimeter.
 A walnut tree stands over the [[front side of the driveway|driveway-front-side]]
-Or should I go back to the [[front door]]</tw-passagedata><tw-passagedata pid="12" name="living room" tags="" position="1350,950" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+Or should I go back to the [[front door]]</tw-passagedata><tw-passagedata pid="12" name="eastern living room" tags="" position="1350,950" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; class = &quot;border&quot; /&gt;
 
 A grand [[piano]] sits on the eastern side of the room, in front of the wall to the [[dining room]]. Behind the piano is a [[fireplace]]  just big enough for a small kid like me to squeeze through. 
 
-Beyond the [[western side|living room 2]] of the living room holds a doorway with three small carpeted stairs.  The back yard is visible through a sliding glass door on the other side. 
+Beyond the [[western side|western living room]] of the living room holds a doorway with three small carpeted stairs.  The back yard is visible through a sliding glass door on the other side. 
 
 </tw-passagedata><tw-passagedata pid="13" name="piano" tags="" position="1525,1150" size="100,100">&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
@@ -196,23 +210,23 @@ Beyond the [[western side|living room 2]] of the living room holds a doorway wit
 
 Behind the piano is [[fireplace]] 
 
-[[go back to the living room.|living room]]
+[[Go back to the living room.|eastern living room]]
 
 </tw-passagedata><tw-passagedata pid="14" name="dining room" tags="" position="975,1450" size="100,100">&lt;img src=&quot;img/02-dining-room.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 The dining room holds a big &#39;&#39;table&#39;&#39; with several wooden &#39;&#39;chairs&#39;&#39; around it. Papers clutter the surface and half melted Shabbat Candles stick out of their holders.
 
 A counter separates this room from the [[kitchen]]
-A slight wall divides part of the area from the [[living room]]</tw-passagedata><tw-passagedata pid="15" name="den" tags="" position="1575,1475" size="100,100">&lt;img src=&quot;img/01-den.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
+A slight wall divides part of the area from the [[living room|eastern living room]]</tw-passagedata><tw-passagedata pid="15" name="den" tags="" position="1575,1475" size="100,100">&lt;img src=&quot;img/01-den.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
 (if:$bloody is &quot;true&quot;)[I touch my forehead and feel a sharp stinging pain. My finger is wet with blood. My reflection in the sliding glass door is clear, there&#39;s a huge swollen gash on my forehead, red, gushing and leaving the imprint of the asphault.]
 
 I can see:
 
 A sliding glass door opens out to the [[backyard]]
 
-A [[TV]]and a [[fireplace]] to the left of an [[alcove]]and an [[empty space|trapdoor]].
+A [[TV]] and a [[fireplace]] to the left of an [[alcove]]and an [[empty space|trapdoor]].
 
-Go back up the stairs to the [[living room|living room 2]]</tw-passagedata><tw-passagedata pid="16" name="kitchen" tags="" position="1100,1000" size="100,100">&lt;img src = &quot;img/05-kitchen.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+Go back up the stairs to the [[living room|western living room]]</tw-passagedata><tw-passagedata pid="16" name="kitchen" tags="" position="1100,1000" size="100,100">&lt;img src = &quot;img/05-kitchen.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
 The kitchen is spotless, all pots and pans put away, no grease spots anywhere. 
 A doorway opens up to the [[den]] 
@@ -250,7 +264,8 @@ I climbed the tree. I couldn&#39;t get very far and climbed back down.
 
 The squirrels got to most of the guavas already but I can find one that looks good to eat. Maybe I should have washed it off first, but its tasty!
 
-[[back|guava tree]] </tw-passagedata><tw-passagedata pid="22" name="Front yard" tags="" position="1850,375" size="100,100">&lt;img src = &quot;img/house-view-from-front-yard.png&quot;width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/house2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+[[back|guava tree]] </tw-passagedata><tw-passagedata pid="22" name="Front yard" tags="" position="1850,375" size="100,100">(if:$dreaming is &quot;false&quot;)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot;width = &quot;auto&quot; height = &quot;400&quot; /&gt;]
+(else-if:$dreaming is &quot;true&quot;)[&lt;img src = &quot;img/house2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;]
 
 The front yard is a huge stretch of &#39;&#39;grass&#39;&#39;.
 
@@ -261,7 +276,7 @@ the boy scouts.
 
 A small tree and fence separates the area on the west side of the house from the backyard and the neighbor&#39;s yard. [[Sink into depression |small west tree]]
 
-[[back|outside]] 
+[[back to the front of the house|outside]] 
 
 </tw-passagedata><tw-passagedata pid="23" name="Palm tree" tags="" position="2700,650" size="100,100">&lt;img src = &quot;img/palm-tree.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
@@ -289,24 +304,27 @@ I once found a trillobyte fossile back here. A small one, but thats what got me 
 [[Remember|utah-trip]]
 
 [[back to the backyard|backyard]]</tw-passagedata><tw-passagedata pid="28" name="TV" tags="" position="1950,1425" size="100,100">&lt;img src=&quot;img/tv1.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+(set:$TVsp to &quot;true&quot;)
 
-(t8n: &quot;pulse&quot;)[Something]  [[doesn&#39;t feel right.|TV2]]
+(if:$TVsp is &quot;false&quot;)[ (t8n: &quot;pulse&quot;)[Something]  [[doesn&#39;t feel right.|TV2]] ]
 
-In (t8n: &quot;pulse&quot;)[front], a [[fireplace]] 
-to the right, an [[alcove]] </tw-passagedata><tw-passagedata pid="29" name="fireplace" tags="" position="1275,1350" size="100,100">&lt;img src = &quot;img/fireplace.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+(if:$TVsp is &quot;true&quot;)[ I stand facing the   (t8n: &quot;pulse&quot;)[buffet], behind me is the western side of the  [[eastern living room]] 
+to the right, an [[alcove]] 
+Shall I [[give the buffet a closer look?|TV2]]
+]</tw-passagedata><tw-passagedata pid="29" name="fireplace" tags="" position="1275,1350" size="100,100">&lt;img src = &quot;img/fireplace.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-The fireplace connects the [[den]] and the [[living room]]  room. It&#39;s hard to squeeze through.
+The fireplace connects the [[den]] and the [[living room|eastern living room]]  room. It&#39;s hard to squeeze through.
 
 To the left is the [[kitchen]] </tw-passagedata><tw-passagedata pid="30" name="alcove" tags="" position="1875,1200" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 This alcove is build into the house, an adult might be able to pull up a chair and use it as a desk. For a child like me its just at the right height for me to hit my head above the eye. [[Remember]]
 
-Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="bed" tags="" position="4250,950" size="100,100">&lt;img src=&quot;img/Bed2.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&gt;
+Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="bed" tags="" position="4475,950" size="100,100">&lt;img src=&quot;img/Bed2.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&gt;
 
 [[Go to Sleep]]
 
 
-(text-style:&quot;outline&quot;,&quot;expand&quot;,&quot;buoy&quot;)[ZZZzzzzzzzz]</tw-passagedata><tw-passagedata pid="32" name="Wake up." tags="" position="3000,1950" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
+(text-style:&quot;outline&quot;,&quot;expand&quot;,&quot;buoy&quot;)[ZZZzzzzzzzz]</tw-passagedata><tw-passagedata pid="32" name="Wake up." tags="" position="3025,2025" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
 [[(either:&quot;I Wake up&quot;,&quot;Wake Up&quot;, &quot;I think I woke up&quot;, &quot;I woke, up right?&quot;,&quot;Get up&quot;, &quot;Time to get out of bed&quot;, &quot;Arise&quot;, &quot;I think it&#39;s morning&quot;, &quot;I wake up to the sound of distant shouting&quot;) |Bedroom]] 
 
 (set: $bloody to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="33" name="Title" tags="" position="4050,150" size="100,100">=&gt;&lt;=
@@ -334,11 +352,12 @@ Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="b
 (set: $MasterBedroomUnlocked to &quot;false&quot;, $bloody to &quot;false&quot;, $dreaming to &quot;false&quot;, )
 (set:$rage to &quot;false&quot;, $mindblast to &quot;false&quot;)
 (set:$fly to &quot;false&quot;, $teleport to &quot;false&quot;)
-(set:$becomeshadow to &quot;false&quot;, $steelskin to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="living room 2" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+(set:$becomeshadow to &quot;false&quot;, $steelskin to &quot;false&quot;)
+(set:$TVsp to &quot;false&quot;, $trapdoorsp to &quot;false&quot;, $nightmarecomplete to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="western living room" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; class = &quot;border&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
-An [[anitique buffet]] stands on the left side of the room. Wooden and ornate, it gives me the creeps.
+An [[anitique buffet]] stands on the western side of the room. Wooden and ornate, it gives me the creeps.
 
-The whole [[eastern side  |living room]]of the living room is open.
+The whole [[eastern side  |eastern living room]]of the living room is open containing a piano, the fireplace and the entrance to the dining room. 
 
 I can go to the [[stairs to the den|alcove]]
 I can go to the [[front door area|inside the front door]] </tw-passagedata><tw-passagedata pid="35" name="intro-child" tags="" position="4075,300" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
@@ -399,12 +418,13 @@ Or use other powers]
 
 I am [running]&lt;1| for my life, chased by the vampire, fangs out and inches from my neck. I can&#39;t outrun him, just before they pierce my flesh and suck my blood I am shook awake in a violent spasm. 
 
-&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;100&quot; width=&quot;100&quot; /&gt;</tw-passagedata><tw-passagedata pid="41" name="TV2" tags="" position="2675,1550" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;100&quot; width=&quot;100&quot; /&gt;</tw-passagedata><tw-passagedata pid="41" name="TV2" tags="" position="2100,1450" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
 What&#39;s that [[coming out of the TV?.|TV3]]
-</tw-passagedata><tw-passagedata pid="42" name="TV3" tags="" position="3000,1500" size="100,100">&lt;img src=&quot;img/tv3.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+</tw-passagedata><tw-passagedata pid="42" name="TV3" tags="" position="2250,1450" size="100,100">&lt;img src=&quot;img/tv3.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
-It looks like a vampire! [[Wake up!|Bedroom]]</tw-passagedata><tw-passagedata pid="43" name="Climb the fence" tags="" position="50,1600" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+[[My heart is pounding|TV4]]
+[[Remember|TV dracula memory]]</tw-passagedata><tw-passagedata pid="43" name="Climb the fence" tags="" position="50,1600" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 I made it over the black iron gate but just at the top my shoelace got caught on the tip of the metal. I could feel my feet passing over but then suddenly the laces are pulled taught I come to a standstill in the air. 
 
 [[Where am I?]]</tw-passagedata><tw-passagedata pid="44" name="Where am I?" tags="" position="50,1750" size="100,100">(set: $bloody  to &quot;true&quot;, $dreaming to &quot;false&quot;)
@@ -419,11 +439,17 @@ In front is the [[garage]], to my left is the [[backyard]] patio. </tw-passageda
 One time I couldn&#39;t take it anymore and I thought 
 (text-style:&quot;fidget&quot;)[I would throw myself off the roof.]
 I climbed up this tree and got onto [[the roof]]</tw-passagedata><tw-passagedata pid="46" name="the roof" tags="" position="3075,500" size="100,100">&lt;img src=&quot;img/roof.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
-It&#39;s high enough to be scary but not so high to actually cause (text-style:&quot;fade-in-out&quot;)[death]. Plus, once I got up here I realized I didn&#39;t really want to die, I&#39;m just scared and angry. There&#39;s never any peace in this house. Just shouting and angry and him throwing things. Sometimes at me. Sometimes at Mom. Sometimes just at the wall or the window. 
+It&#39;s high enough to be scary but not so high to actually cause (text-style:&quot;fade-in-out&quot;)[death]. Plus, once I got up here I realized I didn&#39;t really want to die, I&#39;m just scared and angry. There&#39;s never any peace in this house. Just shouting and angry and him [throwing]&lt;begin| things. Sometimes at me. Sometimes at Mom. Sometimes just at the wall or the window. 
 
-I don&#39;t know this yet, but in the future Grandma will tell me about how he (text-style:&quot;shudder&quot;)[beat] her. Once he slapped her right in front of Grandma&#39;s face, while standing in the garage. One time a friend saw her get smacked while they were out at a restaurant, and she told grandma. But every other time it happened behind closed doors, in secret, or before I was born. 
+(click:?begin)[
+Sometimes they are little. Sometimes they are big. Staplers. Chairs. Pens. Papers. Dishes. Pans. Whatever is closest at hand when he starts to throw a [tantrum]&lt;middle|. 
+]
 
-I was supposed to [[fix everything.|Bedroom]]</tw-passagedata><tw-passagedata pid="47" name="Horrific memories" tags="" position="825,1125" size="100,100">
+(click:?middle)[I don&#39;t know this yet, but in the future Grandma will tell me about how he (text-style:&quot;shudder&quot;)[beat] her. Once he slapped her right in front of Grandma&#39;s face, while standing in the garage. One time a friend saw her get smacked while they were out at a restaurant, and she told grandma. But every other time it happened behind closed doors, in secret, or [before I was born]&lt;end|. 
+]
+
+(click:?end)[I was supposed to [[fix everything.|Bedroom]] 
+]</tw-passagedata><tw-passagedata pid="47" name="Horrific memories" tags="" position="825,1125" size="100,100">
 
 
 =&gt;&lt;=
@@ -445,35 +471,42 @@ Back to the [[kitchen]] </tw-passagedata><tw-passagedata pid="49" name="Go to Mo
 
 ...
 
-[[Oh ok|Bedroom]].</tw-passagedata><tw-passagedata pid="51" name="trapdoor" tags="" position="1675,1600" size="100,100">&lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[Oh ok|Bedroom]].</tw-passagedata><tw-passagedata pid="51" name="trapdoor" tags="" position="1550,1700" size="100,100">&lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 (if:$dreaming is &quot;false&quot;)[ Nothing to see here]
-(if:$dreaming is &quot;true&quot;)[  [[There&#39;s a trap door in the floor|trapdoor-appear]] ]
-[[Look up]]</tw-passagedata><tw-passagedata pid="52" name="Go to Sleep" tags="" position="4275,1125" size="100,100">&lt;img src=&quot;img/Bed3.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+(if:$dreaming is &quot;true&quot;)
+[  
+	(if:$TVsp is &quot;true&quot;)
+    [
+    [[Inspect more closely]]
+    ]
+]
+[[Look up]]
+Back to the [[den]] </tw-passagedata><tw-passagedata pid="52" name="Go to Sleep" tags="" position="4500,1125" size="100,100">&lt;img src=&quot;img/Bed3.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[Sleep|sleep2]]
 
-</tw-passagedata><tw-passagedata pid="53" name="sleep2" tags="" position="4425,1125" size="100,100">&lt;img src=&quot;img/Bed4.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="53" name="sleep2" tags="" position="4650,1125" size="100,100">&lt;img src=&quot;img/Bed4.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[Sleep|sleep3]]
 
-</tw-passagedata><tw-passagedata pid="54" name="sleep3" tags="" position="4200,1275" size="100,100">&lt;img src=&quot;img/Bed5.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="54" name="sleep3" tags="" position="4425,1275" size="100,100">&lt;img src=&quot;img/Bed5.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[  (either: &quot;Sleep&quot;, &quot;Am I awake?&quot;, &quot;Am I still dreaming?&quot;, &quot;Is this a dream within a dream?&quot; )  |sleep4]]
 
-</tw-passagedata><tw-passagedata pid="55" name="sleep4" tags="" position="4425,1275" size="100,100">&lt;img src=&quot;img/Bed6.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="55" name="sleep4" tags="" position="4650,1275" size="100,100">&lt;img src=&quot;img/Bed6.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 It&#39;s happening [[again]] 
 
-</tw-passagedata><tw-passagedata pid="56" name="sleep5" tags="" position="4550,1450" size="100,100">&lt;img src=&quot;img/Bed7.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="56" name="sleep5" tags="" position="4775,1450" size="100,100">&lt;img src=&quot;img/Bed7.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[ (either: &quot;Sleep&quot;, &quot;Am I awake?&quot;, &quot;Am I still dreaming?&quot;, &quot;Is this a dream within a dream?&quot; )|open-eyes]]
 
-</tw-passagedata><tw-passagedata pid="57" name="open-eyes" tags="" position="4375,1450" size="100,100">&lt;img src=&quot;img/Bed8.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="57" name="open-eyes" tags="" position="4600,1450" size="100,100">&lt;img src=&quot;img/Bed8.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[(either: &quot;Sleep&quot;, &quot;Am I awake?&quot;, &quot;Am I still dreaming?&quot;, &quot;Is this a dream within a dream?&quot;, &quot;Am I still asleep?&quot;, &quot;This is real life, right?&quot;, &quot;Sometimes I can&#39;t tell the nightmare from reality&quot; )|sleep7]]
 
-</tw-passagedata><tw-passagedata pid="58" name="sleep7" tags="" position="4350,1600" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="58" name="sleep7" tags="" position="4575,1600" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[I can&#39;t tell|Wake up.]]
 
@@ -540,34 +573,34 @@ The [[Vampire King]]</tw-passagedata><tw-passagedata pid="71" name="Vampire King
 
 I don&#39;t remember how to play. (text-colour:yellow)[Mom] tried to teach me, but I didn&#39;t have a great experience. She was constantly telling me to practice. That was 6 years ago. I am 10.
 
-back to the [[living room]]</tw-passagedata><tw-passagedata pid="74" name="bookcase" tags="" position="3750,1350" size="100,100">&lt;img src=&quot;img/bedroom-bookcase.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+back to the [[living room|eastern living room]]</tw-passagedata><tw-passagedata pid="74" name="bookcase" tags="" position="3900,1200" size="100,100">&lt;img src=&quot;img/bedroom-bookcase.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 
 
 A bookcase full of books. Alphebatized. I spent a lot of time doing that. 
 
 [[Remember|earthquake-bedroom-bookshelf]]
-[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="75" name="window" tags="" position="4000,1225" size="100,100">&lt;img src=&quot;img/bedroom-window.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="75" name="window" tags="" position="4150,1075" size="100,100">&lt;img src=&quot;img/bedroom-window.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 [[Open the window]]
 Sit back down on the [[bed]] 
-Look around the rest of the [[bedroom|Bedroom]] </tw-passagedata><tw-passagedata pid="76" name="Open the window" tags="" position="4000,1075" size="100,100">&lt;img src=&quot;img/bedroom-window-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+Look around the rest of the [[bedroom|Bedroom]] </tw-passagedata><tw-passagedata pid="76" name="Open the window" tags="" position="4150,925" size="100,100">&lt;img src=&quot;img/bedroom-window-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 I can see the// palm tree// and the //street// from here. Also the //grass// and the //hedge//. Sometimes I walk the dog down that street. Sometimes I go roller blading in the area. I know a couple of the kids in the neighborhood. They have no idea what goes on here. 
 
-[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="77" name="closet" tags="" position="3650,1450" size="100,100">&lt;img src=&quot;img/bedroom-closet-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="77" name="closet" tags="" position="3800,1300" size="100,100">&lt;img src=&quot;img/bedroom-closet-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 [[Open the closet]]
-[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="78" name=" desk" tags="" position="3875,1425" size="100,100">&lt;img src=&quot;img/bedroom-desk.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="78" name=" desk" tags="" position="4025,1275" size="100,100">&lt;img src=&quot;img/bedroom-desk.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 On the desk is a terrarium with a &#39;&#39;leopard gecko&#39;&#39;. His name is Gex. 
 He smiles at you. 
 
-[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="79" name="aquarium" tags="" position="3875,1250" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="79" name="aquarium" tags="" position="4025,1100" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish I can&#39;t remember. 
 
 [[Back to the bedroom|Bedroom]]
-[[Remember|fishtank-memory]]</tw-passagedata><tw-passagedata pid="80" name="Open the closet" tags="" position="3525,1375" size="100,100">&lt;img src=&quot;img/bedroom-closet-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[Remember|fishtank-memory]]</tw-passagedata><tw-passagedata pid="80" name="Open the closet" tags="" position="3675,1225" size="100,100">&lt;img src=&quot;img/bedroom-closet-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 Ninja Turtles action figures
 Slime - green and gooey to the touch
@@ -578,7 +611,7 @@ Dinosaur Fact book
 Animal Fact book
 Etch-A-Sketch
 [[SEGA Game Gear]]
-Buildling Blocks</tw-passagedata><tw-passagedata pid="81" name="SEGA Game Gear" tags="" position="3550,1225" size="100,100">&lt;img src=&quot;img/bedroom-closet-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+Buildling Blocks</tw-passagedata><tw-passagedata pid="81" name="SEGA Game Gear" tags="" position="3700,1075" size="100,100">&lt;img src=&quot;img/bedroom-closet-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 Echo the Dolphin
 Looney Tunes Road Runner game
 Sonic Chaos
@@ -609,7 +642,7 @@ and its not just the damage from the earthquake. </tw-passagedata><tw-passagedat
 [[the bathroom]] 
 [[den]] 
 [[backyard]] 
-[[Front yard]] </tw-passagedata><tw-passagedata pid="92" name="Remember" tags="" position="1725,1175" size="100,100">One time I was running and I hit my head here, right above the eye. (text-style:&quot;fade-in-out&quot;)[Blood was gushing everywhere.] I had to go to the hospital. I get a little twitch every time I pass by this part of the house. </tw-passagedata><tw-passagedata pid="93" name="cut-fingernail" tags="" position="3825,2175" size="100,100">One time Mom was trying to cut my fingernails and instead she cut the tip off my finger. I went to the hospital and fortunately they were able to reattach it. I don&#39;t remember what finger. 
+[[Front yard]] </tw-passagedata><tw-passagedata pid="92" name="Remember" tags="" position="1725,1175" size="100,100">One time I was running and I hit my head here, right above the eye. (text-style:&quot;fade-in-out&quot;)[Blood was gushing everywhere.] I had to go to the hospital. I get a little twitch every time I pass by this part of the house. </tw-passagedata><tw-passagedata pid="93" name="cut-fingernail" tags="" position="3875,2375" size="100,100">One time Mom was trying to cut my fingernails and instead she cut the tip off my finger. I went to the hospital and fortunately they were able to reattach it. I don&#39;t remember what finger. 
 
 Return to [[the bathroom]] </tw-passagedata><tw-passagedata pid="94" name="utah-trip" tags="" position="400,3000" size="100,100">&lt;img src = &quot;eyeball.png&quot; /&gt;
 I have few happy memories with my family. One was when we went to Utah to see diosaurs. There were lots of fossils and some cool excavation sites. 
@@ -648,17 +681,17 @@ She is the Queen of Bones. A bloodless, fleshless husk. Devourced by the Vampire
 [[Fly beyond her reach]]
 ]</tw-passagedata><tw-passagedata pid="100" name="front door" tags="" position="2375,975" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
-Open the [[door|inside the front door]] to go inside.</tw-passagedata><tw-passagedata pid="101" name="real-wake-up" tags="" position="4575,1750" size="100,100">=&gt;&lt;=
+Open the [[door|inside the front door]] to go inside.</tw-passagedata><tw-passagedata pid="101" name="real-wake-up" tags="" position="4800,1750" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/eyeball.png&quot; /&gt;
 [[Wake up.]] 
 (set:$dreaming to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="102" name="Fly over the fence" tags="" position="200,1375" size="100,100">[[MAP UNLOCKED]] 
-[[Explore uncharged locations.]]</tw-passagedata><tw-passagedata pid="103" name="again" tags="" position="4625,1300" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[Explore uncharged locations.]]</tw-passagedata><tw-passagedata pid="103" name="again" tags="" position="4850,1300" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-I am running [[as fast as I can]]</tw-passagedata><tw-passagedata pid="104" name="as fast as I can" tags="" position="4750,1425" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+I am running [[as fast as I can]]</tw-passagedata><tw-passagedata pid="104" name="as fast as I can" tags="" position="4975,1425" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 I can feel the hairs on my neck standing up as the vampire&#39;s fangs inch closer to the skin. 
 
 (either:[[&quot;Open my eyes&quot;-&gt;sleep5]], [[Open my eyes|real-wake-up]])
-</tw-passagedata><tw-passagedata pid="105" name="earthquake-door-braced" tags="" position="3350,1725" size="100,100">I remember during the big earthquake, just a few years ago, this is where I stood. I put my hands against the frame of the open doorway and held my position as the ground shook beneath me. </tw-passagedata><tw-passagedata pid="106" name="earthquake-bedroom-bookshelf" tags="" position="3775,1525" size="100,100">During the big (text-style:&quot;rumble&quot;)[earthquake], just a few years ago, this bookcase fell over on my bed, crushing everything and sending books flying. There&#39;s still a shelf missing from the damage. 
+</tw-passagedata><tw-passagedata pid="105" name="earthquake-door-braced" tags="" position="4050,1925" size="100,100">I remember during the big earthquake, just a few years ago, this is where I stood. I put my hands against the frame of the open doorway and held my position as the ground shook beneath me. </tw-passagedata><tw-passagedata pid="106" name="earthquake-bedroom-bookshelf" tags="" position="3925,1375" size="100,100">During the big (text-style:&quot;rumble&quot;)[earthquake], just a few years ago, this bookcase fell over on my bed, crushing everything and sending books flying. There&#39;s still a shelf missing from the damage. 
 
 I had woken up earlier that night to the warm wet sensation that I had yet again wet the bed. I went to the bathroom to finish and clean myself up. That&#39;s when the (text-style:&quot;rumble&quot;)[earthquake] started. 
 
@@ -696,43 +729,68 @@ By focusing your will at a single object you are able to shoot a blast of force.
 [[Wake up.]] 
 Summon great strength and combat training. Can be infused with toys from the closet to gain different flavors and combat training. 
 
-(set:$rage to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="114" name="Tap the well of rage" tags="" position="3100,1250" size="100,100">A rush of righteous anger rushes over me. 
+(set:$rage to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="114" name="Tap the well of rage" tags="" position="2950,1375" size="100,100">A rush of righteous anger rushes over me. 
 I have so much strength and (text-colour:black)+(bg:magenta)[courage]
-I can [[break down the door]].</tw-passagedata><tw-passagedata pid="115" name="break down the door" tags="" position="3225,1400" size="100,100">The Vampire King flies away. You can either fly after him or teleport to his new location once he lands if you have those abilities. 
+I can [[break down the door]].</tw-passagedata><tw-passagedata pid="115" name="break down the door" tags="" position="3125,1225" size="100,100">The Vampire King flies away. You can either fly after him or teleport to his new location once he lands if you have those abilities. 
 
 
 (if:$fly is &quot;true&quot;)[
 [[Fly in pursuit]]
 ]
 (if:$teleport is &quot;true&quot;)
-[[Teleport in pursuit|Fly in pursuit]]</tw-passagedata><tw-passagedata pid="116" name="Fly in pursuit" tags="" position="3225,1525" size="100,100">Gotcha!
+[[Teleport in pursuit|Fly in pursuit]]
+(if:$fly is &quot;false&quot;, $teleport is &quot;false&quot;)[
+I look around and take a deep breath. It seems like for I&#39;ve chased him away. For now. 
 
-[[And then he looks into my eyes]]</tw-passagedata><tw-passagedata pid="117" name="And then he looks into my eyes" tags="" position="3225,1650" size="100,100">#The Vampire King
+[[Take a deep breath]].
+]</tw-passagedata><tw-passagedata pid="116" name="Fly in pursuit" tags="" position="3200,1550" size="100,100">Gotcha!
+
+[[And then he looks into my eyes]]</tw-passagedata><tw-passagedata pid="117" name="And then he looks into my eyes" tags="" position="3400,1650" size="100,100">#The Vampire King
 makes eye contact and brings back a memory.
 I am sobbing over an accident, and Dad won’t show comfort.
 Just confusion and anger that I won’t stop. He kicks me out of the room. 
 
-#Outcome: 
-I have an anger that won’t quit, a bottomless pit of rage, ready to tap into. Gain temporary power at the expenses of future stamina and mental clarity. Limits imagination but improves spirit. 
+The memory is painful but I am older now and I understand what has happened. He cannot comprehend what is happening when I cry, because he does have the capacity to feel empathy. He seems me as an object, one that was fun to play with until it demonstrated thoughts and opinions of its own. One that wanted to be a person and say No.
+(if:$rage is &quot;true&quot;)[
+[[Activate rage]]
+]
+(if:$rage is &quot;false&quot;[
+[[Process the feelings]]
+]</tw-passagedata><tw-passagedata pid="118" name="End Game" tags="" position="3350,1425" size="100,100">#(text-colour:green)[Congratulations!]
+##The nightmares stopped!
+####Please share your thoughts from this experience!
 
-[[End Game]]
-[[Continue to wake up.|Wake up.]]
+Credits:
+Everything created by Sender Fleming
 
-(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[RageVictory]]]</tw-passagedata><tw-passagedata pid="118" name="End Game" tags="" position="3225,1775" size="100,100">#(text-colour:green)[Congratulations!]
-##You&#39;ve made it to the end of the game so far. 
-####Please share your thoughts from this experience!</tw-passagedata><tw-passagedata pid="119" name="Explore uncharged locations." tags="" position="200,1500" size="100,100">You can fly over the gate to the backyard while dreaming, or fly to the roof, or fly to a neighbor friend, or fly to where the furqels get released, or fly to hebrew school, or fly to the beach, or fly towards the mountain and gain a positive memory. 
-</tw-passagedata><tw-passagedata pid="120" name="Fly beyond her reach" tags="" position="2425,1775" size="100,100">When fighting the Queen of Bones I move too quickly for her to be able to keep up. I can avoid fighting with her and try to find forgiveness. Wrestle with it deeply and be unsure of where to land. She’s buying me a super soaker at Toyz-R-Us. She’s taking me to Chuck-E-Cheese and laser tag. She’s a soccer mom. She’s doing the best she can. 
+A Sodabags Studios Game
+https://www.sodabags.itch.io
+07/19/2025
+
+[[Continue Playing?|Wake up.]]
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Reached Credits]]]</tw-passagedata><tw-passagedata pid="119" name="Explore uncharged locations." tags="" position="200,1500" size="100,100">You can fly over the gate to the backyard while dreaming, or fly to the roof, or fly to a neighbor friend, or fly to where the furqels get released, or fly to hebrew school, or fly to the beach, or fly towards the mountain and gain a positive memory. 
+</tw-passagedata><tw-passagedata pid="120" name="Fly beyond her reach" tags="" position="2700,1650" size="100,100">When fighting the Queen of Bones I move too quickly for her to be able to keep up. I can avoid fighting with her and try to find forgiveness. Wrestle with it deeply and be unsure of where to land. She’s buying me a super soaker at Toyz-R-Us. She’s taking me to Chuck-E-Cheese and laser tag. She’s a soccer mom. She’s doing the best she can. 
 sds
+
+The last memory is in the main bedroom. She has given me a floppy disk for the DOS Computer, (it&#39;s 486!) the game is &#39;&#39;Where in the World is Carmen San Diego?&#39;&#39;
+
+She is helping me type up a school project. She is doing the best she can. 
+(set:$MasterBedroomUnlocked to &quot;true&quot;)
 
 #Outcome
 I become eager to please and forgiving as long as sensitive topics can be kept at an arms reach. However, I can pull myself together when needed and rise above a challenge. 
 ###improves spirit but reduces imagination. 
+
 [[Wake up.]] 
-[[End Game]] </tw-passagedata><tw-passagedata pid="121" name="Turn to shadow" tags="" position="2725,1425" size="100,100">Ooze underneath the door in shadow form. I melt one limb at a time into a thick black oil devoid of light and dart through the photo sized cracks. I [[catch the Vampire King off guard.]]
-</tw-passagedata><tw-passagedata pid="122" name="catch the Vampire King off guard." tags="" position="2850,1625" size="100,100">You catch the vampire king off guard and you get the drop on him. If you have imagination you can become shadow and meld with the Vampire King. He hits you with positive memories that make you doubt why you are so angry. 
 
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Positive Memory]]]
 
-(if: $shadow is &quot;true&quot;)[
+</tw-passagedata><tw-passagedata pid="121" name="Turn to shadow" tags="" position="2725,1450" size="100,100">Ooze underneath the door in shadow form. I melt one limb at a time into a thick black oil devoid of light and dart through the photo sized cracks. I [[catch the Vampire King off guard.]]
+</tw-passagedata><tw-passagedata pid="122" name="catch the Vampire King off guard." tags="" position="3000,1525" size="100,100">I catch the vampire king off guard and I get the drop on him. If I have upgraded my imagination I can become shadow and meld with the Vampire King.
+
+(if: $becomeshadow is &quot;true&quot;)[He tries to confuse you with positive memories that make you doubt why you are so angry. 
+ 
 Remember the camping trip with the bear attack, and how he protected us from the bear, banging pots and pants at it in the middle of the night. Remember leaving a hat on a lightbulb and burning it in a cabin on another trip. Remember puking on the way there. Remember him yelling in the car. Remember him complaining that his wife looked a pack mule because she was carrying his things and telling her to zip up her purse. Remember going fishing with him.
 
 Outcome: 
@@ -741,8 +799,12 @@ Reduces spirit but improves imagination.
 
 [[End Game]] 
 [[Continue to wake up. |Wake up.]]
+]
+(if:$steelskin is &quot;true&quot;)[I turn my skin to steel and try to grab the swirling darkness, but the Vampire King has no true corporeal form. ]
 
-]</tw-passagedata><tw-passagedata pid="123" name="fishtank-memory" tags="" position="4000,1375" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+(if:$becomeshadow is &quot;false&quot;)[I&#39;m scared.. The Vampire King is more than a being, he is a concept, a manifestation of trauma and shame that has come out of my mind, the synthesis of wanting my father to be a parental figure but also acknowledging the fear and damage his abuse has left behind. Instead of triumph, I have only willingly walked into his jaws. [[Wake up.]] 
+]
+</tw-passagedata><tw-passagedata pid="123" name="fishtank-memory" tags="" position="4150,1225" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 There used to be only one fish in this tank. His name was Hank. He was my [first pet]&lt;reveal| ever. 
 
@@ -753,6 +815,96 @@ Hank please forgive me.
 
 [[Back to the bedroom|Bedroom]]
 
+]</tw-passagedata><tw-passagedata pid="124" name="TV4" tags="" position="2550,1475" size="100,100">&lt;img src=&quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+
+It&#39;s a vampire! [[Try to run!|Bedroom]]</tw-passagedata><tw-passagedata pid="125" name="TV dracula memory" tags="" position="2400,1525" size="100,100">&lt;img src=&quot;img/tv1.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+One evening I walked in the room. I was thinking about watching TV when I discovered my father was already watching a movie. 
+
+I saw down. This was many years ago, before we started avoiding each other. Before the nightmares [started]&lt;begin|.
+
+(click:?begin)[The movie was Dracula, with Bela Lugosi. It was only black and white but I felt the terror in my soul. I saw the way my father looked at Dracula looking at those women, who became hyponotized to follow his every command. His eyes were glued to the screen as the [fangs]&lt;end| entered the close up of the woman&#39;s neck. ]
+
+(click:?end)[At least that&#39;s how I [[remember|TV4]] it.]
+
+</tw-passagedata><tw-passagedata pid="126" name="Take a deep breath" tags="" position="3325,1225" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+=&gt;&lt;=
+He&#39;s right (text-style:&quot;smear&quot;)[behind] me. 
+=&gt;&lt;=
+[[Wake up.]] </tw-passagedata><tw-passagedata pid="127" name="Activate rage" tags="" position="3400,1775" size="100,100">I can&#39;t rememer much except that when I came to, out of the bloodthirsty fugue, that that the Vampire King is nowhere to be found. I look around cautiously. It appears that everythign is going to be ok. 
+
+I have an anger that won’t quit, a bottomless pit of rage, ready to tap into. Gain temporary power at the expenses of future stamina and mental clarity. Limits imagination but improves spirit. 
+
+[[End Game]]
+[[Continue to wake up.|Wake up.]]
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[RageVictory]]]
+]
+
+(if:$fly is &quot;true&quot;)
+[
+#Outcome: 
+I become eager to please and forgiving as long as sensitive topics can be kept at an arms reach. However, I can pull myself together when needed and rise above a challenge. 
+improves spirit but reduces imagination. 
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Flight Victory]]]
+]
+
+(if:$teleport is &quot;true&quot;)
+[
+#Outcome: 
+I have internalized the belief that I am what I produce, that every failing is because I didn’t want it hard enough. My inadequacy makes me fear to get to close to anything, anyone and any target. I am quick to flee from any feelings. 
+Reduces spirit but improves imagination. 
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Teleport Victory]]]
+]
+
+(if:$steelskin is &quot;true&quot;)
+[
+#Outcome: 
+I have internalized the belief that I am what I can do creatively. That every failing is because I just don’t have enough talent. My inadequacy makes me fear to get to close to anything, anyone and any target. I am quick to flee from any feelings. 
+Limits courage but improves spirit. 
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Steelskin Victory]]]
+]
+
+</tw-passagedata><tw-passagedata pid="128" name="Process the feelings" tags="" position="3575,1875" size="100,100">It&#39;s time to let go of those feelings. 
+I loose my grip.
+And the image of the nightmare fades. 
+Everything is going to be ok. 
+
+[[End Game]]
+[[Continue to wake up.|Wake up.]]
+(if:$fly is &quot;true&quot;)
+[
+#Outcome: 
+I become eager to please and forgiving as long as sensitive topics can be kept at an arms reach. However, I can pull myself together when needed and rise above a challenge. 
+improves spirit but reduces imagination. 
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Flight Victory]]]
+]
+
+(if:$teleport is &quot;true&quot;)
+[
+#Outcome: 
+I have internalized the belief that I am what I produce, that every failing is because I didn’t want it hard enough. My inadequacy makes me fear to get to close to anything, anyone and any target. I am quick to flee from any feelings. 
+Reduces spirit but improves imagination. 
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Teleport Victory]]]
+]
+
+(if:$steelskin is &quot;true&quot;)
+[
+#Outcome: 
+I have internalized the belief that I am what I can do creatively. That every failing is because I just don’t have enough talent. My inadequacy makes me fear to get to close to anything, anyone and any target. I am quick to flee from any feelings. 
+Limits courage but improves spirit. 
+
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Steelskin Victory]]]
+]
+
+</tw-passagedata><tw-passagedata pid="129" name="Inspect more closely" tags="" position="1700,1625" size="100,100">&lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[There&#39;s a trap door in the floor|trapdoor-appear]]</tw-passagedata><tw-passagedata pid="130" name="teleport through the door" tags="" position="2950,1100" size="100,100">(if: $MasterBedroomUnlocked is &quot;true&quot;)[Becuase of the memories I&#39;ve recovered taking place behind this door, I have a good idea of what the room looks like. I concetrate hard and try to [[catch the Vampire King off guard.]] 
+]
+(if: $MasterBedroomUnlocked is &quot;false&quot;)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain.  [[Wake up.]] 
 ]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!

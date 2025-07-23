@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Kid96.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Kid96" startnode="33" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
+<tw-storydata name="Kid96" startnode="33" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
@@ -69,7 +69,8 @@ tw-link:hover,.enchantment-link:hover {
 
   .visited {
      /* color: #FF6289; */
-    color: #b20000;
+     /* color: #b20000; */
+    color: #7C0000;
 }
 
   .visited:hover {
@@ -108,21 +109,29 @@ tw-link:hover,.enchantment-link:hover {
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="3700,900" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-I am in my bedroom. 
+I am in my bedroom. What should I do?
 
-I see a [[bed]] and a [[bookcase]].
+(b4r:&quot;dotted&quot;)+(b4r-colour:white)[//Go to sleep//]
+Go to the [[bed]] and try to dream. Face my fears.
 
-A [[closet]] by a [[ desk]] and an [[aquarium]] near a [[window]]
+(b4r:&quot;dotted&quot;)+(b4r-colour:white)[//Leave//]
+I can the door to the hallway [[hallway |Hallway]]
 
-Open the door to the hallway [[hallway |Hallway]]</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3225,1000" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+
+(b4r:&quot;dotted&quot;)+(b4r-colour:white)[//Examine//]
+Explore my [[bookcase]] and [[closet]]
+A[[ desk]] and an [[aquarium]] sit near a [[window]]
+
+</tw-passagedata><tw-passagedata pid="2" name="Hallway" tags="" position="3225,1000" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. 
 
-A [[door at the end of the hallway]] is closed. That&#39;s where Mom and Dad sleep.  
+Run:
 
-A [[door to the bathroom]] is closed. That&#39;s where I was when the earthquake happened. 
+Towards the  main  part of house by the [[inside of the front door]] area.
+The[[door to the bathroom]] is closed. That&#39;s where I was when the earthquake happened. 
+The [[door at the end of the hallway]] is closed. That&#39;s where Mom and Dad sleep.  
 
-A path to [[inside the front door]] area.
 
 </tw-passagedata><tw-passagedata pid="3" name="door at the end of the hallway" tags="" position="2925,1250" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
@@ -159,12 +168,17 @@ Try to [[teleport through the door]]
 
 &lt;!--(if: $MasterBedroomUnlocked is &quot;true&quot;)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="4" name="door to the bathroom" tags="" position="3725,1875" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
-Open the door to go inside [[the bathroom]]
-[[Remember|earthquake-door-braced]]</tw-passagedata><tw-passagedata pid="5" name="inside the front door" tags="" position="2775,900" size="100,100">&lt;img src = &quot;img/03-front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+Open the (text-style:&quot;subscript&quot;,&quot;emboss&quot;)[door] to go inside [[the bathroom]]
 
-The front door leads [[outside]]
+(text-style:&quot;blink&quot;) [[Remember|earthquake-door-braced]]
+
+
+</tw-passagedata><tw-passagedata pid="5" name="inside of the front door" tags="" position="2775,900" size="100,100">&lt;img src = &quot;img/03-front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+
 A [[golden retriever|dog]] sleeps next to the door.
-The house opens up to the [[eastern living room]]</tw-passagedata><tw-passagedata pid="6" name="the bathroom" tags="" position="3700,2075" size="100,100">&lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+The house opens up to the [[living room|eastern living room]]
+The front door leads [[outside]].
+</tw-passagedata><tw-passagedata pid="6" name="the bathroom" tags="" position="3700,2075" size="100,100">&lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 Inside is a [[sink]]
 a [[shower]]
@@ -339,12 +353,12 @@ Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="b
 =&gt;&lt;=
 &lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 
-(text-style:&quot;blink&quot;)[&lt;div class=&quot;rubik-family&quot; &gt;[[Start! |intro-child]]&lt;/div&gt;]
+(text-style:&quot;blink&quot;)[&lt;div class=&quot;rubik-family&quot; &gt;[[Start! |content-warning]]&lt;/div&gt;]
 =&gt;&lt;=
 &lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 
 =&gt;&lt;=
-(text-size:.5)[CW: child abuse, domestic abuse, suicidal ideation]
+(text-size:.6)[CW: child abuse, domestic abuse, suicidal ideation]
 
 =&gt;&lt;=
 (text-size:.4)[sodabags studios]
@@ -360,7 +374,7 @@ An [[anitique buffet]] stands on the western side of the room. Wooden and ornate
 The whole [[eastern side  |eastern living room]]of the living room is open containing a piano, the fireplace and the entrance to the dining room. 
 
 I can go to the [[stairs to the den|alcove]]
-I can go to the [[front door area|inside the front door]] </tw-passagedata><tw-passagedata pid="35" name="intro-child" tags="" position="4075,300" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
+I can go to the [[front door area|inside of the front door]] </tw-passagedata><tw-passagedata pid="35" name="intro-child" tags="" position="4075,300" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
 
 [[ I am a child. |intro-child-2]]
 =&gt;&lt;=
@@ -587,13 +601,23 @@ Look around the rest of the [[bedroom|Bedroom]] </tw-passagedata><tw-passagedata
 
 I can see the// palm tree// and the //street// from here. Also the //grass// and the //hedge//. Sometimes I walk the dog down that street. Sometimes I go roller blading in the area. I know a couple of the kids in the neighborhood. They have no idea what goes on here. 
 
-[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="77" name="closet" tags="" position="3800,1300" size="100,100">&lt;img src=&quot;img/bedroom-closet-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[Return to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="77" name="closet" tags="" position="3800,1300" size="100,100">&lt;img src=&quot;img/bedroom-closet-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 [[Open the closet]]
 [[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="78" name=" desk" tags="" position="4025,1275" size="100,100">&lt;img src=&quot;img/bedroom-desk.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-On the desk is a terrarium with a &#39;&#39;leopard gecko&#39;&#39;. His name is Gex. 
+On the desk is a terrarium with a [&#39;&#39;leopard gecko&#39;&#39;]&lt;gex|. His name is Gex. 
 He smiles at you. 
+
+(set:$gexthegecko to &quot;false&quot;)
+(click:?gex)[I&#39;ve had him for a few years. I feed him crickets. I think he&#39;s the coolest lizard in the world and my good buddy. [His]&lt;he| little tail twitches right before he pounces and it always looks like he&#39;s smiling. He&#39;s got yellow and black spots and stripes and if his tail ever gets caught he can just grow a new one. ]
+
+(click:?he)[I actually don&#39;t know d&#39;s gender. The lizard book told me to check the belly for certain markings but Gex doesn&#39;t really like to hold still and when Gex climbs on me its only for a brief moment that my skin feels those sharp claws. I never really cared enough to check, I didn&#39;t think twice about my lizard&#39;s gender. But I definitely used he/him [pronouns]&lt;game| out of convenience.]
+
+(click:?game)[Ok, now I remember. There was a popular game for the Panasonic 3DO about a secret agent lizard. That characeter was very James Bond man coded, and I named Gex after that video game.
+(set:$gexthegecko to &quot;true&quot;)
+(append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Gex the Gecko]]]
+]
 
 [[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="79" name="aquarium" tags="" position="4025,1100" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
@@ -668,7 +692,7 @@ I am standing in front of the garage. Behind to my left is the red brick circle.
 </tw-passagedata><tw-passagedata pid="98" name="dog" tags="" position="2800,1050" size="100,100">&lt;img src=&quot;img/dog.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
 Pet the [[dog]] 
-back to the [[front door|inside the front door]]</tw-passagedata><tw-passagedata pid="99" name="search the area" tags="" position="2300,1650" size="100,100">&lt;img src=&quot;img/queen-of-bones.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
+back to the [[front door|inside of the front door]]</tw-passagedata><tw-passagedata pid="99" name="search the area" tags="" position="2300,1650" size="100,100">&lt;img src=&quot;img/queen-of-bones.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
 
 The skeleton of a woman commands an army of skeletons behind her. She stretches out her finger to point at you. 
 
@@ -681,7 +705,7 @@ She is the Queen of Bones. A bloodless, fleshless husk. Devourced by the Vampire
 [[Fly beyond her reach]]
 ]</tw-passagedata><tw-passagedata pid="100" name="front door" tags="" position="2375,975" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
-Open the [[door|inside the front door]] to go inside.</tw-passagedata><tw-passagedata pid="101" name="real-wake-up" tags="" position="4800,1750" size="100,100">=&gt;&lt;=
+Open the [[door|inside of the front door]] to go inside.</tw-passagedata><tw-passagedata pid="101" name="real-wake-up" tags="" position="4800,1750" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/eyeball.png&quot; /&gt;
 [[Wake up.]] 
 (set:$dreaming to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="102" name="Fly over the fence" tags="" position="200,1375" size="100,100">[[MAP UNLOCKED]] 
@@ -806,14 +830,14 @@ Reduces spirit but improves imagination.
 ]
 </tw-passagedata><tw-passagedata pid="123" name="fishtank-memory" tags="" position="4150,1225" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-There used to be only one fish in this tank. His name was Hank. He was my [first pet]&lt;reveal| ever. 
+There used to be only one fish in this tank. He was my [first pet]&lt;reveal| ever. 
 
 (click:?reveal)[One day I wanted to play with Hank. This was many years ago. I didn&#39;t understand that Hank needed to stay in the water. So I plucked him up with my hands while he wriggled. Soon I understood what (text-style:&quot;blink&quot;)[death]&lt;2ndreveal| meant. ]
 
 (click:?2ndreveal)[I cried and I cried and I cried and I cried and I cried. 
-Hank please forgive me. 
+Please forgive me. 
 
-[[Back to the bedroom|Bedroom]]
+[[Return to the bedroom|Bedroom]]
 
 ]</tw-passagedata><tw-passagedata pid="124" name="TV4" tags="" position="2550,1475" size="100,100">&lt;img src=&quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
@@ -905,7 +929,14 @@ Limits courage but improves spirit.
 [[There&#39;s a trap door in the floor|trapdoor-appear]]</tw-passagedata><tw-passagedata pid="130" name="teleport through the door" tags="" position="2950,1100" size="100,100">(if: $MasterBedroomUnlocked is &quot;true&quot;)[Becuase of the memories I&#39;ve recovered taking place behind this door, I have a good idea of what the room looks like. I concetrate hard and try to [[catch the Vampire King off guard.]] 
 ]
 (if: $MasterBedroomUnlocked is &quot;false&quot;)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain.  [[Wake up.]] 
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="131" name="content-warning" tags="" position="3925,275" size="100,100">
+
+
+
+
+
+=&gt;&lt;=
+[[ CW: child abuse, domestic abuse, suicidal ideation|intro-child]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

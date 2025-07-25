@@ -371,12 +371,34 @@ Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="b
 =&gt;&lt;=
 (text-size:.4)[sodabags studios]
 
+&lt;!--misc variables--&gt;
 (set: $MasterBedroomUnlocked to &quot;false&quot;, $bloody to &quot;false&quot;, $dreaming to &quot;false&quot;, )
+(set:$showHeader to &quot;false&quot;, $showFooter to &quot;false&quot;)
+
+&lt;!--dream powers--&gt;
 (set:$rage to &quot;false&quot;, $mindblast to &quot;false&quot;)
 (set:$fly to &quot;false&quot;, $teleport to &quot;false&quot;)
 (set:$becomeshadow to &quot;false&quot;, $steelskin to &quot;false&quot;)
-(set:$TVsp to &quot;false&quot;, $trapdoorsp to &quot;false&quot;, $nightmarecomplete to &quot;false&quot;)
-(set:$showHeader to &quot;false&quot;, $showFooter to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="western living room" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; class = &quot;border&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+
+&lt;!--story cards--&gt;
+(if:$TVsp to &quot;false&quot;)
+(if:$trapdoorsp to &quot;false&quot;)
+(if:$nightmarecomplete to &quot;false&quot;)
+(if:$gexthegeckosp to &quot;false&quot;)
+(if:$fryingpansp to &quot;false&quot;)
+(if:$bookshelfearthquakesp to &quot;false&quot;)
+(if:$buffetsp to &quot;false&quot;)
+
+(if:$alcovestitchessp to &quot;false&quot;)
+(if:$pianosp to &quot;false&quot;)
+(if:$asphaultsp to &quot;false&quot;)
+(if:$possomsp to &quot;false&quot;)
+(if:$earthquakeoutsidesp to &quot;false&quot;)
+(if:$rollerbladingsp to &quot;false&quot;)
+
+(if:$guavatreeclimbsp to &quot;false&quot;)
+(if:$fossilfoundsp to &quot;false&quot;)
+(if:$ferkultrap to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="western living room" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; class = &quot;border&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
 An [[anitique buffet]] stands on the western side of the room. Wooden and ornate, it gives me the creeps.
 
@@ -965,7 +987,41 @@ Kid &#39;96 ]
 Courage: X Spirit: X Imagination: X 
 Dream Powers: None | Story Cards.
 ]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="135" name="Inventory" tags="" position="4375,325" size="100,100">&lt;!--
+(set: $MasterBedroomUnlocked to &quot;false&quot;, $bloody to &quot;false&quot;, $dreaming to &quot;false&quot;, )
+(set:$rage to &quot;false&quot;, $mindblast to &quot;false&quot;)
+(set:$fly to &quot;false&quot;, $teleport to &quot;false&quot;)
+(set:$becomeshadow to &quot;false&quot;, $steelskin to &quot;false&quot;)
+(set:$TVsp to &quot;false&quot;, $trapdoorsp to &quot;false&quot;, $nightmarecomplete to &quot;false&quot;)
+(set:$showHeader to &quot;false&quot;, $showFooter to &quot;false&quot;)
+--&gt;
+Dream Powers:
+(if:$rage is &quot;true&quot;)[Dream Power: Rage]
+(if:$mindblast is &quot;true&quot;)[Dream Power: Mind Blast]
+(if:$fly is &quot;true&quot;)[Dream Power: Flight]
+(if:$teleport is &quot;true&quot;)[Dream Power: Teleportation]
+(if:$becomeshadow is &quot;true&quot;)[Dream Power: Become Shadow]
+(if:$steelskin is &quot;true&quot;)[Dream Power: Steelskin]
+
+Story Cards:
+(if:$TVsp is &quot;true&quot;)[TV Attack]
+(if:$trapdoorsp is &quot;true&quot;)[Revealed Trapdoor]
+(if:$nightmarecomplete is &quot;true&quot;)[Full Nightmare]
+(if:$gexthegeckosp is &quot;true&quot;)[Gex the Gecko]
+(if:$fryingpansp is &quot;true&quot;)[Dodged the Frying Pan]
+(if:$bookshelfearthquakesp is &quot;true&quot;)[Earthquake Damaged Earthquake]
+(if:$buffetsp is &quot;true&quot;)[Buffet Attack]
+
+(if:$alcovestitchessp is &quot;true&quot;)[Alcove Stitches]
+(if:$pianosp is &quot;true&quot;)[Piano Memory]
+(if:$asphaultsp is &quot;true&quot;)[Ate Pavement]
+(if:$possomsp is &quot;true&quot;)[Saw Possum]
+(if:$earthquakeoutsidesp is &quot;true&quot;)[Ground Surfer]
+(if:$rollerbladingsp is &quot;true&quot;)[Roller Blader]
+
+(if:$guavatreeclimbsp is &quot;true&quot;)[Guava Eater]
+(if:$fossilfoundsp is &quot;true&quot;)[Paleontologist]
+(if:$ferkultrap is &quot;true&quot;)[Ferkul Trapper]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

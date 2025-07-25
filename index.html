@@ -107,18 +107,28 @@ tw-link:hover,.enchantment-link:hover {
 .border {
 	border: thick double #32a1ce; 
 }
+
+tw-sidebar{
+  	display: none;
+}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bedroom" tags="" position="3700,900" size="100,100">&lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-I am in my bedroom. What should I do?
+(text-style:&quot;underline&quot;)[I am in my bedroom. What should I do?]
 
-(b4r:&quot;dotted&quot;)+(b4r-colour:white)[//Go to sleep//]
+
+(b4r:&quot;dotted&quot;)+(b4r-colour:white)+(border-size:5)+(corner-radius:4)[-   //Go to sleep//   -]
+
 Go to the [[bed]] and try to dream. Face my fears.
 
-(b4r:&quot;dotted&quot;)+(b4r-colour:white)[//Leave//]
+
+(b4r:&quot;dotted&quot;)+(b4r-colour:white)+(border-size:5)+(corner-radius:4)[-   //Leave//   -]
+
 I can the door to the hallway [[hallway |Hallway]]
 
 
-(b4r:&quot;dotted&quot;)+(b4r-colour:white)[//Examine//]
+
+(b4r:&quot;dotted&quot;)+(b4r-colour:white)+(border-size:5)+(corner-radius:4)[ -  //Examine//  -]
+
 Explore my [[bookcase]] and [[closet]]
 A[[ desk]] and an [[aquarium]] sit near a [[window]]
 
@@ -126,10 +136,10 @@ A[[ desk]] and an [[aquarium]] sit near a [[window]]
 
 A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. 
 
-Run:
+(b4r:&quot;dotted&quot;)+(b4r-colour:white)+(border-size:4)+(corner-radius:4)[-   Run:   -]
 
 Towards the  main  part of house by the [[inside of the front door]] area.
-The[[door to the bathroom]] is closed. That&#39;s where I was when the earthquake happened. 
+The [[door to the bathroom]] is closed. That&#39;s where I was when the earthquake happened. 
 The [[door at the end of the hallway]] is closed. That&#39;s where Mom and Dad sleep.  
 
 
@@ -180,10 +190,8 @@ The house opens up to the [[living room|eastern living room]]
 The front door leads [[outside]].
 </tw-passagedata><tw-passagedata pid="6" name="the bathroom" tags="" position="3700,2075" size="100,100">&lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-Inside is a [[sink]]
-a [[shower]]
-a [[toilet]]
-and a [[bathtub]]
+Inside is a [[sink]]a [[shower]]
+a [[toilet]], a [[bathtub]] and a [[mirror]]
 
 [[back to the hallway|Hallway]]</tw-passagedata><tw-passagedata pid="7" name="sink" tags="" position="3875,2250" size="100,100">&lt;img src = &quot;img/bathroom-sink.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
@@ -367,7 +375,8 @@ Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="31" name="b
 (set:$rage to &quot;false&quot;, $mindblast to &quot;false&quot;)
 (set:$fly to &quot;false&quot;, $teleport to &quot;false&quot;)
 (set:$becomeshadow to &quot;false&quot;, $steelskin to &quot;false&quot;)
-(set:$TVsp to &quot;false&quot;, $trapdoorsp to &quot;false&quot;, $nightmarecomplete to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="western living room" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; class = &quot;border&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+(set:$TVsp to &quot;false&quot;, $trapdoorsp to &quot;false&quot;, $nightmarecomplete to &quot;false&quot;)
+(set:$showHeader to &quot;false&quot;, $showFooter to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="34" name="western living room" tags="" position="2075,900" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; class = &quot;border&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
 An [[anitique buffet]] stands on the western side of the room. Wooden and ornate, it gives me the creeps.
 
@@ -395,7 +404,8 @@ Everyone is living the [[American Dream. |intro-child-3]] ]</tw-passagedata><tw-
 
 They said a Hollywood director used to live here. 
 He directed horror B movies.
-[[ But that&#39;s not what&#39;s wrong with this house. |intro-house-2]] </tw-passagedata><tw-passagedata pid="38" name="intro-house-2" tags="" position="4175,650" size="100,100">&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
+[[ But that&#39;s not what&#39;s wrong with this house. |intro-house-2]] </tw-passagedata><tw-passagedata pid="38" name="intro-house-2" tags="" position="4175,650" size="100,100">(set: $showHeader to &quot;true&quot;, $showFooter to &quot;true&quot;)
+&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
 
 (text-rotate-z:338)[Something] is wrong.
 I don&#39;t understand exactly what.
@@ -408,7 +418,9 @@ And bring it to an (text-style:&quot;shadow&quot;,&quot;fidget&quot;)[(text-rota
 
 [[Do you want to know the dream? |the-dream-explained]] 
 
-Or is it time to [[wake up?.|Bedroom]]</tw-passagedata><tw-passagedata pid="39" name="intro-child-3" tags="" position="4175,450" size="100,100">&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
+Or is it time to [[wake up?.|Bedroom]]
+
+</tw-passagedata><tw-passagedata pid="39" name="intro-child-3" tags="" position="4175,450" size="100,100">&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 But
 (text-style:&quot;buoy&quot;)[// Every//] night I dream, I have the same dream
 &lt;div class = &quot;rubik-family&quot; &gt;[[It&#39;s a nightmare. |intro-house]]&lt;/ div&gt;
@@ -642,7 +654,9 @@ Sonic Chaos
 
 [[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="82" name="anitique buffet" tags="" position="2100,1125" size="100,100">&lt;img src = &quot;img/buffet1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
+(if:$dreaming is &quot;true&quot;)[
 [[There&#39;s something off...|buffet 2]]
+]
 and its not just the damage from the earthquake. </tw-passagedata><tw-passagedata pid="83" name="buffet 2" tags="" position="2100,1275" size="100,100">&lt;img src = &quot;img/buffet2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 [[Of course, I should have known |buffet 3]]</tw-passagedata><tw-passagedata pid="84" name="buffet 3" tags="" position="2275,1275" size="100,100">&lt;img src = &quot;img/buffet3.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
@@ -936,7 +950,22 @@ Limits courage but improves spirit.
 
 
 =&gt;&lt;=
-[[ CW: child abuse, domestic abuse, suicidal ideation|intro-child]]</tw-passagedata></tw-storydata>
+[[ CW: child abuse, domestic abuse, suicidal ideation|intro-child]]</tw-passagedata><tw-passagedata pid="132" name="mirror" tags="" position="3575,2200" size="100,100">(if:$dreaming is &quot;true&quot;)[Something is wrong with the mirror. My reflection doesn&#39;t match what I am doing. 
+
+I must be dreaming.]
+
+(if:$dreaming is &quot;false&quot;)[I see a scared child looking back at me.]
+
+[[back to the bathroom|the bathroom]]</tw-passagedata><tw-passagedata pid="133" name="header" tags="header" position="4200,150" size="100,100">=&gt;&lt;=
+(if: $showHeader is &quot;true&quot;)[
+(text-size:.5)[
+Kid &#39;96 ]
+]</tw-passagedata><tw-passagedata pid="134" name="footer" tags="footer" position="4350,175" size="100,100">(if: $showFooter is &quot;true&quot;)[
+(text-size:.5)[
+Courage: X Spirit: X Imagination: X 
+Dream Powers: None | Story Cards.
+]
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

@@ -1110,7 +1110,7 @@ A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish
 [[Back to the bedroom|Bedroom]]
 
 =|
-(if:$PfishKiller is false)[
+(if:$SPfishKiller is false)[
 (text-colour:yellow)[Story Card]
 [[Remember|fishtank-memory]]
 ]</tw-passagedata><tw-passagedata pid="79" name="Open the closet" tags="" position="5125,1075" size="100,100">=&gt;&lt;=
@@ -1620,6 +1620,7 @@ Story Points: $storyPoints .
 (if:$steelskin is true)[Dream Power: Steelskin]
 =|=
 (if:$SPgexTheGecko is true)[Gex the Gecko]
+(if:$SPfishKiller is true)[Fish Killer]
 (if:$SPfryingPan is true)[Dodged the Frying Pan]
 (if:$SPbookshelfEQ is true)[Broken Bookshelf]
 (if:$SPeqBrace is true)[Doorframe Bracer]
@@ -1679,8 +1680,9 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 Sodabags Studios
 &lt;==
 ---
-(after:1s )[(go-to:&quot;Title&quot;)]</tw-passagedata><tw-passagedata pid="143" name="Bedroom" tags="" position="4975,775" size="100,100">=&gt;&lt;=
+(after:1s )[(go-to:&quot;Title&quot;)]</tw-passagedata><tw-passagedata pid="143" name="Bedroom" tags="" position="4975,775" size="100,100">==&gt;&lt;==
 &lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+
 (text-style:&quot;underline&quot;)[I am in my bedroom. What should I do?]
 &lt;=
 ---

@@ -114,7 +114,7 @@ tw-sidebar{
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
 audio.src = 'audio/start-screen.mp3';
 audio.loop = true;
-audio.play();</script><tw-passagedata pid="1" name="Hallway" tags="" position="3825,700" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+audio.play();</script><tw-passagedata pid="1" name="Hallway" tags="" position="3850,950" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. 
 
@@ -141,7 +141,7 @@ The [[door to the bathroom]] is closed. That&#39;s where I was when the earthqua
 
 &lt;=
 The [[door at the end of the hallway]] is closed. That&#39;s where Mom and Dad sleep. 
-]</tw-passagedata><tw-passagedata pid="2" name="door at the end of the hallway" tags="" position="3350,1325" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+]</tw-passagedata><tw-passagedata pid="2" name="door at the end of the hallway" tags="" position="3675,1300" size="100,100">&lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 The door is &#39;&#39;locked&#39;&#39;.
 
@@ -174,7 +174,7 @@ Try to [[teleport through the door]]
 ]
 
 
-&lt;!--(if: $MasterBedroomUnlocked is &quot;true&quot;)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="3" name="door to the bathroom" tags="" position="3875,1000" size="100,100">=&gt;&lt;=
+&lt;!--(if: $MasterBedroomUnlocked is &quot;true&quot;)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="3" name="door to the bathroom" tags="" position="4050,1400" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 &lt;=
 ---
@@ -194,8 +194,13 @@ Try to [[teleport through the door]]
 =&gt;&lt;=
 &#39;&#39;Travel&#39;&#39;
 &lt;=
-* Return to the [[hallway-&gt;Hallway]] </tw-passagedata><tw-passagedata pid="4" name="front-door-inside" tags="" position="3425,800" size="100,100">&lt;img src = &quot;img/03-front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+* Return to the [[hallway-&gt;Hallway]] </tw-passagedata><tw-passagedata pid="4" name="front-door-inside" tags="" position="3500,875" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/03-front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+&lt;=
+---
+
 I am standing by the front door, just inside the threshhold, next to a large fluffy golden retreiver. She is always here at the door but she doesn&#39;t bark. She&#39;s never barked much at all. 
+
 ---
 |=
 =&gt;&lt;=
@@ -289,15 +294,29 @@ Behind the piano is [[fireplace]]
 
 [[Go back to the living room.|eastern living room]]
 
-</tw-passagedata><tw-passagedata pid="13" name="dining room" tags="" position="1600,1000" size="100,100">&lt;img src=&quot;img/02-dining-room.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="13" name="dining room" tags="" position="1600,1000" size="100,100">=&gt;&lt;=
+&lt;img src=&quot;img/02-dining-room.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+&lt;=
+---
 
 The dining room holds a big &#39;&#39;table&#39;&#39; with several wooden &#39;&#39;chairs&#39;&#39; around it. Papers clutter the surface and half melted Shabbat Candles stick out of their holders.
+|=
+=&gt;&lt;=
 
-A counter separates this room from the [[kitchen]]
-A slight wall divides part of the area from the [[living room|eastern living room]]
+&#39;&#39;Travel&#39;&#39;
+&lt;=
+* A counter separates this room from the [[kitchen]]
+* A slight wall divides part of the area from the [[living room|eastern living room]] 
+=|
+=&gt;&lt;=
 
-[[Remember-&gt;shabbatNoShow]]
-[[Remember-&gt;diningRoomBD]]</tw-passagedata><tw-passagedata pid="14" name="den" tags="" position="1825,1625" size="100,100">&lt;img src=&quot;img/01-den.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
+(text-colour:yellow)[Confront the Past]
+&lt;=
+(if: $SPshabbatNoShow is false)[
+* [[Remember: Parent-&gt;shabbatNoShow]] ]
+(if: $SPdiningRoomB is false)[
+* [[Remember: Peer-&gt;diningRoomBD]] ]
+</tw-passagedata><tw-passagedata pid="14" name="den" tags="" position="1825,1625" size="100,100">&lt;img src=&quot;img/01-den.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
 (if:$bloody is &quot;true&quot;)[I touch my forehead and feel a sharp stinging pain. My finger is wet with blood. My reflection in the sliding glass door is clear, there&#39;s a huge swollen gash on my forehead, red, gushing and leaving the imprint of the asphault.]
 
 |=
@@ -309,44 +328,74 @@ A [[TV]] and a [[fireplace]] to the left of an [[alcove]] and an [[empty space|t
 ###Travel
 ---
 * A sliding glass door opens out to the [[backyard]]
-* Go back up the stairs to the [[living room|western living room]]</tw-passagedata><tw-passagedata pid="15" name="kitchen" tags="" position="1500,1400" size="100,100">&lt;img src = &quot;img/05-kitchen.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+* Go back up the stairs to the [[living room|western living room]]</tw-passagedata><tw-passagedata pid="15" name="kitchen" tags="" position="1500,1375" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/05-kitchen.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+&lt;=
+---
 
 The kitchen is spotless, all pots and pans put away, no grease spots anywhere. 
 
 |=
+(if:$SPfryingPan is false)[
 ###Examine
 * [[Horrific memories]] cloud this place. 
+]
 
 =|
 ###Travel
 * Head back to the [[dining room]]
-* A doorway opens up to the [[den]] </tw-passagedata><tw-passagedata pid="16" name="backyard" tags="" position="1850,2600" size="100,100">&lt;img src = &quot;img/10-backyard-center-plants.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+* A doorway opens up to the [[den]] </tw-passagedata><tw-passagedata pid="16" name="backyard" tags="" position="1850,2600" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/10-backyard-center-plants.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+&lt;=
 
 A back porch. Lounge chairs. A boom box. 
+
+###&#39;&#39;Travel&#39;&#39;
 
 A [[red brick circle]] with succullents in the center. 
 A [[guava tree]] to the west. 
 A [[garage]] and an area [[behind the garage]]
 
-Go [[back inside to the den|den]] </tw-passagedata><tw-passagedata pid="17" name="guava tree" tags="" position="1525,2775" size="100,100">&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+Go [[back inside to the den|den]] </tw-passagedata><tw-passagedata pid="17" name="guava tree" tags="" position="1525,2775" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
+&lt;=
+---
 
 Half eaten guavas litter the ground. Damn squirrels. 
 
+|=
+###Interact
 [[Climb the tree]]
 [[Eat a guava]]
-[[back|backyard]] </tw-passagedata><tw-passagedata pid="18" name="red brick circle" tags="" position="1200,2750" size="100,100">&lt;img src = &quot;img/14-backyard-view-of-house.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 
+=|
+###Travel
+[[back|backyard]] </tw-passagedata><tw-passagedata pid="18" name="red brick circle" tags="" position="1200,2750" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/14-backyard-view-of-house.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+&lt;=
 Don&#39;t fall over!
-Behind me is an open area of grass and the area [[behind the garage]] 
+
+|=
+###(text-colour:yellow)[Interact]
+
 To my right is the [[guava tree]] 
+
+=|
+###&#39;&#39;Travel&#39;&#39;
+
+Behind me is an open area of grass and the area [[behind the garage]] 
 To my left is the [[garage]]
+Back to the [[backyard]] </tw-passagedata><tw-passagedata pid="19" name="Climb the tree" tags="" position="1525,2925" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-[[back|backyard]] </tw-passagedata><tw-passagedata pid="19" name="Climb the tree" tags="" position="1525,2925" size="100,100">&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
-
+&lt;=
 I climbed the tree. I couldn&#39;t get very far and climbed back down. 
 
-[[back|guava tree]] </tw-passagedata><tw-passagedata pid="20" name="Eat a guava" tags="" position="1675,2850" size="100,100">&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+[[back|guava tree]] </tw-passagedata><tw-passagedata pid="20" name="Eat a guava" tags="" position="1675,2850" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+&lt;=
+---
 
 The squirrels got to most of the guavas already but I can find one that looks good to eat. Maybe I should have washed it off first, but its tasty!
 
@@ -375,11 +424,17 @@ Examine
 (text-size:.7)[
 * (link: &quot;Look west&quot;)[A small tree and fence separates the area on the west side of the house from the backyard and the neighbor&#39;s yard. ]
 * [[Sink into depression |small west tree]] 
-]</tw-passagedata><tw-passagedata pid="22" name="Palm tree" tags="" position="3450,275" size="100,100">&lt;img src = &quot;img/palm-tree.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+]</tw-passagedata><tw-passagedata pid="22" name="Palm tree" tags="" position="3450,275" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/palm-tree.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A huge bearded palm tree. 
-If I could fly, I could get to the top of it.
-[[Back to the front yard|Front yard]] </tw-passagedata><tw-passagedata pid="23" name="driveway-front-side" tags="" position="550,1275" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+(text-size:.7)[//If I could fly, I could get to the top of it.//]
+
+[[Back to the front yard|Front yard]] </tw-passagedata><tw-passagedata pid="23" name="driveway-front-side" tags="" position="550,1275" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+&lt;=
+---
+
 //I am standing on a rough black asphault driveway, that connects the curb and the garage.//
 (text-size:.7)[
 |=
@@ -397,9 +452,10 @@ If I could fly, I could get to the top of it.
 
 * Beyond the tree, a thick hedge blocks the neighbors yard, though sometimes I can hear the dog barking. 
 ]
-
+(if:$SPateAsphault is false)[
 [[Remember-&gt;RollerBlading]]
 (text-style:&quot;blink&quot;)+(text-rotate-z:341)+(text-colour:yellow)[Confront the Past.]
+]
 
 (if:$dreaming is &quot;false&quot;)[ [[Climb the fence]]]
 (if:$dreaming is &quot;true &quot;and $bloody is &quot;true&quot;)[ [[Fly over the fence]]]
@@ -437,7 +493,9 @@ to the yard|Front yard]]
 
 [[Remember-&gt;DogWalk]] 
 
-]</tw-passagedata><tw-passagedata pid="26" name="behind the garage" tags="" position="900,2975" size="100,100">&lt;img src = &quot;img/11-backyard-garage.png&quot;height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+]</tw-passagedata><tw-passagedata pid="26" name="behind the garage" tags="" position="900,2975" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/11-backyard-garage.png&quot;height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+&lt;=
 
 I once found a trillobyte fossile back here. A small one, but thats what got me interested in paleontology. 
 
@@ -455,15 +513,22 @@ I stand facing the   (t8n: &quot;pulse&quot;)[TV]
 * I am in the middle of the [[den]] .
 * To the west, an [[alcove]] and [[patch of floor-&gt;trapdoor]] 
 * Shall I [[give the TV a closer look?|TV2]]
-]</tw-passagedata><tw-passagedata pid="28" name="fireplace" tags="" position="1875,1375" size="100,100">&lt;img src = &quot;img/fireplace.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+]</tw-passagedata><tw-passagedata pid="28" name="fireplace" tags="" position="1875,1375" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/fireplace.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-###Travel
+###(text-colour:yellow)[Travel]
+&lt;=
 ---
 * To the left is the [[kitchen]] 
-* The fireplace connects the [[den]] and the [[living room|eastern living room]]  room. It&#39;s hard to squeeze through.
-</tw-passagedata><tw-passagedata pid="29" name="alcove" tags="" position="2275,1375" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+* The fireplace connects the [[den]] and the [[living room|eastern living room]]  room. 
+(text-size:.7)[It&#39;s hard to squeeze through.]
+</tw-passagedata><tw-passagedata pid="29" name="alcove" tags="" position="2275,1375" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+&lt;=
 ---
+
 This alcove is build into the house, an adult might be able to pull up a chair and use it as a desk. For a child like me its just at the right height for me to hit my head above the eye. 
+
 ---
 |=
 =&gt;&lt;=
@@ -475,16 +540,17 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 =&gt;&lt;=
 (text-style:&quot;underline&quot;)[Travel]
 
-Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="30" name="bed" tags="" position="4825,900" size="100,100">=&gt;&lt;=
+Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="30" name="bed" tags="" position="4725,825" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/Bed2.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&gt;
 
 [[Go to Sleep]]
 
 
-(text-style:&quot;outline&quot;,&quot;expand&quot;,&quot;buoy&quot;)[ZZZzzzzzzzz]</tw-passagedata><tw-passagedata pid="31" name="Wake up." tags="" position="2925,1850" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
+(text-style:&quot;outline&quot;,&quot;expand&quot;,&quot;buoy&quot;)[ZZZzzzzzzzz]</tw-passagedata><tw-passagedata pid="31" name="Wake up." tags="" position="2925,1850" size="100,100">=&gt;&lt;=
+&lt;img src=&quot;img/Bed9.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
 [[(either:&quot;I Wake up&quot;,&quot;Wake Up&quot;, &quot;I think I woke up&quot;, &quot;I woke, up right?&quot;,&quot;Get up&quot;, &quot;Time to get out of bed&quot;, &quot;Arise&quot;, &quot;I think it&#39;s morning&quot;, &quot;I wake up to the sound of distant shouting&quot;) |Bedroom]] 
 
-(set: $bloody to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="32" name="Title" tags="" position="3875,325" size="100,100">=&gt;&lt;=
+(set: $bloody to &quot;false&quot;, $dreaming to true)</tw-passagedata><tw-passagedata pid="32" name="Title" tags="" position="3875,325" size="100,100">=&gt;&lt;=
 &lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 
 
@@ -647,24 +713,39 @@ What&#39;s that [[coming out of the TV?.|TV3]]
 (set:$SPvTV to true)</tw-passagedata><tw-passagedata pid="41" name="TV3" tags="" position="1975,1975" size="100,100">&lt;img src=&quot;img/tv3.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
 [[My heart is pounding|TV4]]
-[[Remember|TV dracula memory]]</tw-passagedata><tw-passagedata pid="42" name="Climb the fence" tags="" position="500,1625" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+[[Remember|TV dracula memory]]</tw-passagedata><tw-passagedata pid="42" name="Climb the fence" tags="" position="500,1625" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+&lt;=
+---
+
 I made it over the black iron gate but just at the top my shoelace got caught on the tip of the metal. I could feel my feet passing over but then suddenly the laces are pulled taught I come to a standstill in the air. 
 
-[[Where am I?]]</tw-passagedata><tw-passagedata pid="43" name="Where am I?" tags="" position="500,1775" size="100,100">(set: $bloody  to &quot;true&quot;, $dreaming to &quot;false&quot;)
-&lt;img src = &quot;img/12-backyard-garage-east.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 
+[[Where am I?]]</tw-passagedata><tw-passagedata pid="43" name="Where am I?" tags="" position="500,1775" size="100,100">(set: $bloody  to true, $dreaming to false, $SPateAsphault to false)
+=&gt;&lt;=
+&lt;img src = &quot;img/12-backyard-garage-east.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+&lt;=
+---
+=&gt;&lt;=
 I&#39;m not sure how much time is passed, but it looks like I got over the gate. My head feels funny, and it is tender to the touch. My finger is covered in blood after poking at it, and a sharp pain resonates througout my entire skull as they make contact. 
 
 I must have face planted the pavement. My whole forehead is swollen and dripping with blood. 
 
-In front is the [[garage]], to my left is the [[backyard]] patio. </tw-passagedata><tw-passagedata pid="44" name="small west tree" tags="" position="3450,475" size="100,100">&lt;img src=&quot;img/ front-yard-west-side-free.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+&#39;&#39;Travel&#39;&#39;
+In front is the [[garage]]
+To my left is the [[backyard]] patio. </tw-passagedata><tw-passagedata pid="44" name="small west tree" tags="" position="3450,475" size="100,100">=&gt;&lt;=
+&lt;img src=&quot;img/ front-yard-west-side-free.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 ---
 I am standing by my neighbors to the west. 
 ---
-(after:2s)[One time I couldn&#39;t take it anymore and I thought 
-(text-style:&quot;fidget&quot;)[I would t(text-style:&quot;blur&quot;)[hrow myself] off the roof.]
+(text-size:.6)+(after:1.5s)[One time I couldn&#39;t take it anymore and I thought 
+(text-style:&quot;fidget&quot;)+(text-size:.7)[I would (text-style:&quot;blur&quot;)[throw myself] off the roof.]
 I climbed up this tree and got onto [[the roof]]]
----</tw-passagedata><tw-passagedata pid="45" name="the roof" tags="" position="3450,575" size="100,100">&lt;img src=&quot;img/roof.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+&lt;=
+---</tw-passagedata><tw-passagedata pid="45" name="the roof" tags="" position="3450,575" size="100,100">=&gt;&lt;=
+&lt;img src=&quot;img/roof.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+&lt;=
+---
 It&#39;s high enough to be scary but not so high to actually cause (text-style:&quot;fade-in-out&quot;)[death]. Plus, once I got up here I realized I didn&#39;t really want to die, I&#39;m just scared and angry. There&#39;s never any peace in this house. Just shouting and angry and him [throwing]&lt;begin| things. Sometimes at me. Sometimes at Mom. Sometimes just at the wall or the window. 
 
 (click:?begin)[
@@ -698,18 +779,23 @@ I can still see it in my (text-style:&quot;blur&quot;)[memory] like it was yeste
 ...
 
 [[Oh ok-&gt;Wake up.]] 
-(set: $SPfryingPan to true)</tw-passagedata><tw-passagedata pid="50" name="trapdoor" tags="" position="1500,1650" size="100,100">&lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+(set: $SPfryingPan to true)</tw-passagedata><tw-passagedata pid="50" name="trapdoor" tags="" position="1500,1650" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 (if:$dreaming is &quot;false&quot;)[ Nothing to see here]
 (if:$dreaming is &quot;true&quot;)
 [  
-	(if:$TVsp is &quot;true&quot;)
+	(if:$SPvTV is &quot;true&quot;)
     [
     [[Inspect more closely]]
     ]
 ]
+
 [[Look up]]
-Back to the [[den]] </tw-passagedata><tw-passagedata pid="51" name="Go to Sleep" tags="" position="5025,1400" size="100,100">=&gt;&lt;=
+
+(if:$dreaming is false)[
+Back to the [[den]] 
+]</tw-passagedata><tw-passagedata pid="51" name="Go to Sleep" tags="" position="5025,1400" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/Bed3.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
 [[Sleep|sleep2]]
@@ -744,13 +830,14 @@ It&#39;s happening [[again]]
 
 [[I can&#39;t tell|Wake up.]]
 
-(set:$dreaming to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="58" name="trapdoor-appear" tags="" position="1500,1900" size="100,100">&lt;img src = &quot;img/stairs-appear.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+(set:$dreaming to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="58" name="trapdoor-appear" tags="" position="1500,1900" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/stairs-appear.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-This shouldn&#39;t appear until you&#39;ve hit all the story points
+&lt;!--This shouldn&#39;t appear until you&#39;ve hit all the story points--&gt;
 This isn&#39;t supposed to be here. I must be dreaming. Going down this trap door brings me deeper into the nightmare, into the second level.
 
 Go [[down the stairs]]
-(set: $SPtrapDoorAppear to true)</tw-passagedata><tw-passagedata pid="59" name="down the stairs" tags="" position="1375,2025" size="100,100">&lt;img src = &quot;img/down-the-stairs.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+(set: $SPtrapDoorAppear to true, $storyPoints to it + 1)</tw-passagedata><tw-passagedata pid="59" name="down the stairs" tags="" position="1375,2025" size="100,100">&lt;img src = &quot;img/down-the-stairs.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 
 
 At first its just stairs. 
@@ -813,7 +900,7 @@ I don&#39;t Remember how to play. (text-colour:yellow)[Mom] tried to teach me, b
 I switched to violin at some point.
 
 back to the [[living room|eastern living room]]
-(set:$SPpiano to true)</tw-passagedata><tw-passagedata pid="73" name="bookcase" tags="" position="4450,1175" size="100,100">=&gt;&lt;=
+(set:$SPpiano to true)</tw-passagedata><tw-passagedata pid="73" name="bookcase" tags="" position="4425,1100" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/bedroom-bookcase.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 
 
@@ -822,9 +909,12 @@ A bookcase full of books. Alphebatized. I spent a lot of time doing that.
 
 |=
 (if:$SPbookshelfEQ is false)[
+
 [[Remember|earthquake-bedroom-bookshelf]] ]
+
 =|
-[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="74" name="window" tags="" position="4725,1150" size="100,100">=&gt;&lt;=
+
+[[Back to the bedroom|Bedroom]]</tw-passagedata><tw-passagedata pid="74" name="window" tags="" position="4700,1075" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/bedroom-window.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 I am standing in my bedroom, look at the closed window.
 &lt;=
@@ -842,7 +932,7 @@ Get Ready for Bed
 &lt;=
 * Sit back down on the [[bed]] 
 * Get ready to [[leave the bedroom-&gt;Bedroom]] 
-</tw-passagedata><tw-passagedata pid="75" name="Open the window" tags="" position="4725,1000" size="100,100">=&gt;&lt;=
+</tw-passagedata><tw-passagedata pid="75" name="Open the window" tags="" position="4625,925" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/bedroom-window-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 &lt;=
 ---
@@ -886,24 +976,25 @@ His name is Gex. He smiles at you.
 (click:?he)[I actually don&#39;t know Gex&#39;s gender. The lizard book told me to check the belly for certain markings but Gex doesn&#39;t really like to hold still and when Gex climbs on me its only for a brief moment that my skin feels those sharp claws. I never really cared enough to check, I didn&#39;t think twice about my lizard&#39;s gender. But I definitely used he/him [pronouns]&lt;game| out of convenience.]
 
 (click:?game)[Ok, now I remember. There was a popular game for the Panasonic 3DO about a secret agent lizard. That characeter was very James Bond man coded, and I named Gex after that video game.
-(set:$SPgexTheGecko to true)]
+(set:$SPgexTheGecko to true, $storyPoints to it + 1)]
 
 =&gt;&lt;=
 (after:2s)+(text-size:.8)[[[Back to the bedroom|Bedroom]]]
 &lt;=
 ---
-</tw-passagedata><tw-passagedata pid="78" name="aquarium" tags="" position="4600,1125" size="100,100">=&gt;&lt;=
+</tw-passagedata><tw-passagedata pid="78" name="aquarium" tags="" position="4575,1050" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish I can&#39;t remember. 
 
 |=
-(text-style:&quot;underline&quot;)[Travel]
-* [[Back to the bedroom|Bedroom]]
+
+[[Back to the bedroom|Bedroom]]
+
 =|
 (if:$PfishKiller is false)[
 (text-colour:yellow)[Story Card]
-* [[Remember|fishtank-memory]]
+[[Remember|fishtank-memory]]
 ]</tw-passagedata><tw-passagedata pid="79" name="Open the closet" tags="" position="4250,1100" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/bedroom-closet-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 (text-style:&quot;blink&quot;)+(text-colour:yellow)[Examine]
@@ -941,26 +1032,37 @@ A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish
 (text-size:.8)[Back to the [[Bedroom]] ]
 ---
 
-&lt;!--In a future version of this game these toys will be able to provide inspiration for dream powers--&gt;</tw-passagedata><tw-passagedata pid="80" name="anitique buffet" tags="" position="2575,975" size="100,100">&lt;img src = &quot;img/buffet1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+&lt;!--In a future version of this game these toys will be able to provide inspiration for dream powers--&gt;</tw-passagedata><tw-passagedata pid="80" name="anitique buffet" tags="" position="2575,975" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+&lt;=
+---
 
 An ornate antique &#39;&#39;buffet&#39;&#39; stands before you. It contains many //cabinets// and holds handfuls of //photographs// in plastic frames on its middle shelf. 
 
 (if:$dreaming is &quot;true&quot;)[
 [[There&#39;s something off...|buffet 2]]
 ](else:)[This thing gives me the creeps,]
-and its not just the damage from the earthquake. </tw-passagedata><tw-passagedata pid="81" name="buffet 2" tags="" position="2625,1175" size="100,100">&lt;img src = &quot;img/buffet2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+and its not just the damage from the earthquake. 
+</tw-passagedata><tw-passagedata pid="81" name="buffet 2" tags="" position="2625,1175" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-[[Of course, I should have known |buffet 3]]</tw-passagedata><tw-passagedata pid="82" name="buffet 3" tags="" position="2650,1325" size="100,100">&lt;img src = &quot;img/buffet3.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[Of course, I should have known |buffet 3]]</tw-passagedata><tw-passagedata pid="82" name="buffet 3" tags="" position="2650,1325" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet3.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-[[Of course Vampires live in the buffet |buffet 4]]</tw-passagedata><tw-passagedata pid="83" name="buffet 4" tags="" position="2775,1325" size="100,100">&lt;img src = &quot;img/buffet4.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+[[Of course Vampires live in the buffet |buffet 4]]</tw-passagedata><tw-passagedata pid="83" name="buffet 4" tags="" position="2775,1325" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet4.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
-[[Its the only logical place |buffet 5]]</tw-passagedata><tw-passagedata pid="84" name="buffet 5" tags="" position="2750,1175" size="100,100">&lt;img src = &quot;img/buffet5.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[Its the only logical place |buffet 5]]</tw-passagedata><tw-passagedata pid="84" name="buffet 5" tags="" position="2750,1175" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet5.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-[[Try to scream |buffet 6]]</tw-passagedata><tw-passagedata pid="85" name="buffet 6" tags="" position="2875,1175" size="100,100">&lt;img src = &quot;img/buffet6.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[Try to scream |buffet 6]]</tw-passagedata><tw-passagedata pid="85" name="buffet 6" tags="" position="2875,1175" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet6.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-[[I can&#39;t scream |buffet 7]]</tw-passagedata><tw-passagedata pid="86" name="buffet 7" tags="" position="2900,1325" size="100,100">&lt;img src = &quot;img/buffet7.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[I can&#39;t scream |buffet 7]]</tw-passagedata><tw-passagedata pid="86" name="buffet 7" tags="" position="2900,1325" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet7.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
-[[Help! |buffet 8]]</tw-passagedata><tw-passagedata pid="87" name="buffet 8" tags="" position="2900,1425" size="100,100">&lt;img src = &quot;img/buffet8.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[Help! |buffet 8]]</tw-passagedata><tw-passagedata pid="87" name="buffet 8" tags="" position="2900,1425" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/buffet8.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 [[Help! |buffet 9]]</tw-passagedata><tw-passagedata pid="88" name="buffet 9" tags="" position="3025,1400" size="100,100">
 =&gt;&lt;=
@@ -977,19 +1079,35 @@ and its not just the damage from the earthquake. </tw-passagedata><tw-passagedat
 
 [[Back to the alcove in the den.-&gt;alcove]]</tw-passagedata><tw-passagedata pid="91" name="cut-fingernail" tags="" position="4450,2100" size="100,100">One time Mom was trying to cut my fingernails and instead she cut the tip off my finger. I went to the hospital and fortunately they were able to reattach it. I don&#39;t remember what finger. 
 
-Return to [[the bathroom]] </tw-passagedata><tw-passagedata pid="92" name="utah-trip" tags="" position="725,3000" size="100,100">&lt;img src = &quot;eyeball.png&quot; /&gt;
+Return to [[the bathroom]] </tw-passagedata><tw-passagedata pid="92" name="utah-trip" tags="" position="725,3000" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;eyeball.png&quot; /&gt;
+&lt;=
 I have few happy memories with my family. One was when we went to Utah to see diosaurs. There were lots of fossils and some cool excavation sites. 
 
 We drove back to Los Angeles and Dad yelled at Mom the whole way. She had a yellow piece of paper on her lap and he said that was distracting. He was loud. 
 
-I was crying in the backseat, trying not to let them hear me, or he&#39;d yell at me. </tw-passagedata><tw-passagedata pid="93" name="Look up" tags="" position="1500,1525" size="100,100">There&#39;s a strange rectacular blog in the ceiling. This house doesn&#39;t have an attic so it&#39;s very curious. Mom said the rumor was that the director who used to live in this house before us has his coffin in that very spot. </tw-passagedata><tw-passagedata pid="94" name="garage" tags="" position="925,2725" size="100,100">&lt;img src = &quot;img/garage-front-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+I was crying in the backseat, trying not to let them hear me, or he&#39;d yell at me. 
+
+[[Back-&gt;behind the garage]] 
+</tw-passagedata><tw-passagedata pid="93" name="Look up" tags="" position="1500,1525" size="100,100">There&#39;s a strange rectacular blog in the ceiling. This house doesn&#39;t have an attic so it&#39;s very curious. Mom said the rumor was that the director who used to live in this house before us has his coffin in that very spot. </tw-passagedata><tw-passagedata pid="94" name="garage" tags="" position="925,2725" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/garage-front-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+&lt;=
 
 I am standing in front of the garage. Behind to my left is the red brick circle. Just behidn the garage is a small patch of empty dirt.
 
+|=
+Interact
+
 [[Open the garage door]]
+
+=|
+Travel
+
 [[Go |behind the garage]] 
 [[back to the |red brick circle]]
-</tw-passagedata><tw-passagedata pid="95" name="Open the garage door" tags="" position="1100,2975" size="100,100">&lt;img src = &quot;img/garage-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="95" name="Open the garage door" tags="" position="1100,2975" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/garage-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+&lt;=
 
 Inside two white Hondas accords are parked. Mom and Dad&#39;s cars. There&#39;s some tool. One time Dad helped me build a birdhouse. That&#39;s one of the only positive memories I have of him.
 
@@ -998,9 +1116,19 @@ I am standing in front of the garage. Behind to my left is the red brick circle.
 [[Close the garage door|garage]]
 [[Go |behind the garage]] 
 [[back to the |red brick circle]]
-</tw-passagedata><tw-passagedata pid="96" name="dog" tags="" position="3050,850" size="100,100">&lt;img src=&quot;img/dog.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
-
+</tw-passagedata><tw-passagedata pid="96" name="dog" tags="" position="3050,850" size="100,100">=&gt;&lt;=
+&lt;img src=&quot;img/dog.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+&lt;=
+---
+|=
+=&gt;&lt;=
+(text-colour:yellow)[Interact]
+&lt;=
 * Pet the [[dog]] 
+=|
+=&gt;&lt;=
+&#39;&#39;Travel&#39;&#39;
+&lt;=
 * The house opens up to the [[living room|eastern living room]]
 * Go [[outside]] </tw-passagedata><tw-passagedata pid="97" name="search the area" tags="" position="1675,2100" size="100,100">&lt;img src=&quot;img/queen-of-bones.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
 
@@ -1013,7 +1141,7 @@ She is the Queen of Bones. A bloodless, fleshless husk. Devourced by the Vampire
 [[Wake up.]] 
 (if:$fly is &quot;true&quot;)[
 [[Fly beyond her reach]]
-]</tw-passagedata><tw-passagedata pid="98" name="front door outside" tags="" position="3150,625" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+]</tw-passagedata><tw-passagedata pid="98" name="front door outside" tags="" position="3225,675" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 ---
 I am standing outside the front door, just outside the threshhold. A path leads towards the [[front yard-&gt;outside]] 
 ---
@@ -1261,7 +1389,8 @@ Limits courage but improves spirit.
 (append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Steelskin Victory]]]
 ]
 
-</tw-passagedata><tw-passagedata pid="127" name="Inspect more closely" tags="" position="1500,1775" size="100,100">&lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="127" name="Inspect more closely" tags="" position="1500,1775" size="100,100">=&gt;&lt;=
+&lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 [[There&#39;s a trap door in the floor|trapdoor-appear]]</tw-passagedata><tw-passagedata pid="128" name="teleport through the door" tags="" position="3400,1500" size="100,100">(if: $MasterBedroomUnlocked is &quot;true&quot;)[Becuase of the memories I&#39;ve recovered taking place behind this door, I have a good idea of what the room looks like. I concetrate hard and try to [[catch the Vampire King off guard.]] 
 ]
 (if: $MasterBedroomUnlocked is &quot;false&quot;)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain.  [[Wake up.]] 
@@ -1353,24 +1482,24 @@ As the dog got older she became more stubborn. I can&#39;t remember a time when 
 [[Snap Out of It-&gt;street]] 
 (set:$SPdogWalk to &quot;true&quot;, $storyPoints to it + 1)
 ]</tw-passagedata><tw-passagedata pid="135" name="RollerBlading" tags="" position="450,1425" size="100,100">I am roller blading over the rough asphault and it sends vibrations throughout my body. Sometimes I go into the street when there are no cars. I am supposed to be supervised, but honestly I don&#39;t remember anyone watching me. This is a pretty sleepy area, there aren&#39;t too many cars, so I can cover a lot of ground and go really fast!
-(set:$SProllerBlade to &quot;true&quot;)
+(set:$SProllerBlade to true, $storyPoints to it + 1)
 I have plenty of protection on. Knee pads. Wrist pads. Helmet. Safety first, even if I am alone.
 
 [[Back-&gt;driveway-front-side]] </tw-passagedata><tw-passagedata pid="136" name="North" tags="" position="2450,50" size="100,100"></tw-passagedata><tw-passagedata pid="137" name="East" tags="" position="50,1475" size="100,100"></tw-passagedata><tw-passagedata pid="138" name="West" tags="" position="5700,1025" size="100,100"></tw-passagedata><tw-passagedata pid="139" name="South" tags="" position="2075,3550" size="100,100"></tw-passagedata><tw-passagedata pid="140" name="shabbatNoShow" tags="" position="1425,925" size="100,100">Dad wouldn’t come to Shabbat dinner if the dining room was too messy. He’d shout and…you guessed it…throw things. He wanted to be left alone.
 
 [[Back-&gt;dining room]] 
-(set:$SPshabbatNoShow to true)</tw-passagedata><tw-passagedata pid="141" name="diningRoomBD" tags="" position="1425,1075" size="100,100">Two years ago I had a birthday party. I planned everything meticulously. There would be lots of games, all sorts of activities. But no one wanted to follow the strucutre. 
+(set:$SPshabbatNoShow to true, $storyPoints to it + 1)</tw-passagedata><tw-passagedata pid="141" name="diningRoomBD" tags="" position="1425,1075" size="100,100">Two years ago I had a birthday party. I planned everything meticulously. There would be lots of games, all sorts of activities. But no one wanted to follow the strucutre. 
 
 One friend did agree to play Risk with me. We set up the board on this dining room. However, after a few hours of play, it became clear that I was going to win. Harrison tried one desperate play, and when the dice didn&#39;t land in his favor, he started crying and ran out into the street.
 
 [[Back-&gt;dining room]] 
-(set:$SPdiningRoomBD to true)</tw-passagedata><tw-passagedata pid="142" name="Splash Page" tags="" position="3975,125" size="100,100">---
+(set:$SPdiningRoomBD to true, $storyPoints to it + 1)</tw-passagedata><tw-passagedata pid="142" name="Splash Page" tags="" position="3975,125" size="100,100">---
 ==&gt;&lt;==
 &lt;img src = &quot;img/sodabags_logo.png&quot; width = &quot;374&quot; height = &quot;375&quot;&gt;
 Sodabags Studios
 &lt;==
 ---
-(after:1s )[(go-to:&quot;Title&quot;)]</tw-passagedata><tw-passagedata pid="143" name="Bedroom" tags="" position="4225,700" size="100,100">=&gt;&lt;=
+(after:1s )[(go-to:&quot;Title&quot;)]</tw-passagedata><tw-passagedata pid="143" name="Bedroom" tags="" position="4225,850" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 (text-style:&quot;underline&quot;)[I am in my bedroom. What should I do?]
 &lt;=
@@ -1384,9 +1513,11 @@ Sodabags Studios
 
 =|=
 =&gt;&lt;=
+(if:$storyPoints &gt; 1)[
 &#39;&#39;(text-style:&quot;underline&quot;)[Travel]&#39;&#39;
 &lt;=
-* I can go to the door to the hallway [[hallway |Hallway]]
+* I can go to the door to the hallway [[hallway |Hallway]] 
+]
 
 =|
 =&gt;&lt;=

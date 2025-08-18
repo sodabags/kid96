@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Kid96.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Kid96" startnode="141" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
+<tw-storydata name="Kid96" startnode="141" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
@@ -150,32 +150,32 @@ The door is &#39;&#39;locked&#39;&#39;.
 
 [[back to the hallway |Hallway]]
 
-(if: $dreaming is &quot;true&quot;)[
+(if: $dreaming is true)[
 &lt;img src = &quot;img/vampireKing.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 
 The Vampire King  lieth behind this door]
 
-(if:$rage is &quot;true&quot;)[ 
+(if:$rage is true)[ 
 [[Tap the well of rage]]
 ]
-(if:$mindblast is &quot;true&quot;)[ 
+(if:$mindblast is true)[ 
 [[Blast the wall with mind power|break down the door]]
 ]
 
-(if:$becomeshadow is &quot;true&quot;)[
+(if:$becomeshadow is true)[
 [[Turn to shadow]]
 ]
 
-(if:$steelskin is  &quot;true&quot;)[
+(if:$steelskin is  true)[
 [[Break the door with my steel firsts and steel kicks|break down the door]]
 ]
 
-(if:$teleport is  &quot;true&quot;)[
+(if:$teleport is  true)[
 Try to [[teleport through the door]]
 ]
 
 
-&lt;!--(if: $MasterBedroomUnlocked is &quot;true&quot;)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="3" name="door to the bathroom" tags="" position="4900,1400" size="100,100">=&gt;&lt;=
+&lt;!--(if: $MasterBedroomUnlocked is true)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="3" name="door to the bathroom" tags="" position="4900,1400" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 &lt;=
 ---
@@ -383,7 +383,7 @@ The dining room holds a big &#39;&#39;table&#39;&#39; with several wooden &#39;&
 * [[Remember: Parent-&gt;shabbatNoShow]] ]
 (if: $SPdiningRoomB is false)[
 * [[Remember: Peer-&gt;diningRoomBD]] ]
-</tw-passagedata><tw-passagedata pid="14" name="den" tags="" position="3000,1300" size="100,100">=&gt;&lt;=
+</tw-passagedata><tw-passagedata pid="14" name="den" tags="" position="2875,1500" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/01-den.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
 (if:$bloody is true)[I touch my forehead and feel a sharp stinging pain. My finger is wet with blood. My reflection in the sliding glass door is clear, there&#39;s a huge swollen gash on my forehead, red, gushing and leaving the imprint of the asphault.]
 &lt;=
@@ -483,8 +483,8 @@ Dad used to set up traps here. He&#39;d leave bait in the trap and the ferkuls w
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.
 ]
 
-[[Back|guava tree]] </tw-passagedata><tw-passagedata pid="21" name="Front yard" tags="" position="3750,325" size="100,100">(if:$dreaming is &quot;false&quot;)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot;width = &quot;auto&quot; height = &quot;400&quot; /&gt;]
-(else-if:$dreaming is &quot;true&quot;)[&lt;img src = &quot;img/house2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;]
+[[Back|guava tree]] </tw-passagedata><tw-passagedata pid="21" name="Front yard" tags="" position="3750,325" size="100,100">(if:$dreaming is false)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot;width = &quot;auto&quot; height = &quot;400&quot; /&gt;]
+(else-if:$dreaming is true)[&lt;img src = &quot;img/house2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;]
 ---
 I am standing in the center of the front yard.
 The front yard is a huge stretch of &#39;&#39;grass&#39;&#39;. At the far eddge of the yard is a palm tree and beyond that a hedge meets the curb.
@@ -552,9 +552,9 @@ I once saw a possum in this front yard. I was standing far away from it, I was s
 (text-style:&quot;blink&quot;)+(text-rotate-z:341)+(text-colour:yellow)[Confront the Past.]
 ]
 
-(if:$dreaming is &quot;false&quot;)[ [[Climb the fence]]]
-(if:$dreaming is &quot;true &quot;and $bloody is &quot;true&quot;)[ [[Fly over the fence]]]
-(if:$dreaming is &quot;true&quot; and $bloody is &quot;false&quot;)[There&#39;s no way past here. I. ouldn&#39;t even imagine it. Some sort of (text-rotate-x:6)+(text-rotate-y:323)[psychic boundary]]
+(if:$dreaming is false)[ [[Climb the fence]]]
+(if:$dreaming is true and $bloody is true)[ [[Fly over the fence]]]
+(if:$dreaming is true and $bloody is false)[There&#39;s no way past here. I. ouldn&#39;t even imagine it. Some sort of (text-rotate-x:6)+(text-rotate-y:323)[psychic boundary]]
 
 </tw-passagedata><tw-passagedata pid="24" name="curb" tags="" position="3250,200" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/house-view-from-front-yard.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
@@ -621,7 +621,7 @@ I once found a trillobyte fossile back here. A small one, but thats what got me 
 
 =|
 &#39;&#39;Travel&#39;&#39;
-[[Back to the backyard|backyard]]</tw-passagedata><tw-passagedata pid="27" name="TV" tags="" position="2525,1675" size="100,100">=&gt;&lt;=
+[[Back to the backyard|backyard]]</tw-passagedata><tw-passagedata pid="27" name="TV" tags="" position="2575,1675" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/tv1.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
 
@@ -642,7 +642,7 @@ I stand facing the   (t8n: &quot;pulse&quot;)[TV]
 * To the left is the [[kitchen]] 
 * The fireplace connects the [[den]] and the [[living room|eastern living room]]  room. 
 (text-size:.7)[It&#39;s hard to squeeze through.]
-</tw-passagedata><tw-passagedata pid="29" name="alcove" tags="" position="3200,1200" size="100,100">=&gt;&lt;=
+</tw-passagedata><tw-passagedata pid="29" name="alcove" tags="" position="3175,1275" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 &lt;=
 ---
@@ -920,7 +920,7 @@ I can still see it in my (text-style:&quot;blur&quot;)[memory] like it was yeste
 
 [[Oh ok-&gt;Wake up.]] 
 (set: $SPfryingPan to true, $storyPoints to it + 1)
-(text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.</tw-passagedata><tw-passagedata pid="50" name="trapdoor" tags="" position="2925,1800" size="100,100">=&gt;&lt;=
+(text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.</tw-passagedata><tw-passagedata pid="50" name="trapdoor" tags="" position="3050,1725" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 (if:$dreaming is false)[ Nothing to see here]
@@ -1284,7 +1284,7 @@ I have few happy memories with my family. One was when we went to Utah to see di
 =&gt;&lt;=
 [[Close Memory-&gt;behind the garage]] 
 
-</tw-passagedata><tw-passagedata pid="92" name="Look up" tags="" position="2775,1925" size="100,100">=&gt;&lt;=
+</tw-passagedata><tw-passagedata pid="92" name="Look up" tags="" position="3100,1625" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 &lt;=
@@ -1360,7 +1360,7 @@ She is the Queen of Bones. A bloodless, fleshless husk. Devourced by the Vampire
 
 (text-style:&quot;blink&quot;)[
 [[Wake up.]] ]
-(if:$fly is &quot;true&quot;)[
+(if:$fly is true)[
 [[Fly beyond her reach]]
 ]</tw-passagedata><tw-passagedata pid="97" name="front door outside" tags="" position="4150,650" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
@@ -1474,12 +1474,12 @@ I have so much strength and (text-colour:black)+(bg:magenta)[courage]
 I can [[break down the door]].</tw-passagedata><tw-passagedata pid="112" name="break down the door" tags="" position="4525,1675" size="100,100">The Vampire King flies away. You can either fly after him or teleport to his new location once he lands if you have those abilities. 
 
 
-(if:$fly is &quot;true&quot;)[
+(if:$fly is true)[
 [[Fly in pursuit]]
 ]
-(if:$teleport is &quot;true&quot;)
+(if:$teleport is true)
 [[Teleport in pursuit|Fly in pursuit]]
-(if:$fly is &quot;false&quot;, $teleport is &quot;false&quot;)[
+(if:$fly is false and $teleport is false)[
 I look around and take a deep breath. It seems like for I&#39;ve chased him away. For now. 
 
 [[Take a deep breath]].
@@ -1491,10 +1491,10 @@ I am sobbing over an accident, and Dad won’t show comfort.
 Just confusion and anger that I won’t stop. He kicks me out of the room. 
 
 The memory is painful but I am older now and I understand what has happened. He cannot comprehend what is happening when I cry, because he does have the capacity to feel empathy. He seems me as an object, one that was fun to play with until it demonstrated thoughts and opinions of its own. One that wanted to be a person and say No.
-(if:$rage is &quot;true&quot;)[
+(if:$rage is true)[
 [[Activate rage]]
 ]
-(if:$rage is &quot;false&quot;[
+(if:$rage is false[
 [[Process the feelings]]
 ]</tw-passagedata><tw-passagedata pid="115" name="End Game" tags="" position="4475,2325" size="100,100">#(text-colour:green)[Congratulations!]
 ##The nightmares stopped!
@@ -1511,13 +1511,15 @@ https://www.sodabags.itch.io
 
 (append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Reached Credits]]]</tw-passagedata><tw-passagedata pid="116" name="Explore uncharged locations." tags="" position="1150,1600" size="100,100">You can fly over the gate to the backyard while dreaming, or fly to the roof, or fly to a neighbor friend, or fly to where the furqels get released, or fly to hebrew school, or fly to the beach, or fly towards the mountain and gain a positive memory. 
 
+//Coming soon!//
+
 [[Back to the driveway-&gt;driveway-front-side]] </tw-passagedata><tw-passagedata pid="117" name="Fly beyond her reach" tags="" position="3525,2725" size="100,100">When fighting the Queen of Bones I move too quickly for her to be able to keep up. I can avoid fighting with her and try to find forgiveness. Wrestle with it deeply and be unsure of where to land. She’s buying me a super soaker at Toyz-R-Us. She’s taking me to Chuck-E-Cheese and laser tag. She’s a soccer mom. She’s doing the best she can. 
 sds
 
 The last memory is in the main bedroom. She has given me a floppy disk for the DOS Computer, (it&#39;s 486!) the game is &#39;&#39;Where in the World is Carmen San Diego?&#39;&#39;
 
 She is helping me type up a school project. She is doing the best she can. 
-(set:$MasterBedroomUnlocked to &quot;true&quot;)
+(set:$MasterBedroomUnlocked to true)
 
 #Outcome
 I become eager to please and forgiving as long as sensitive topics can be kept at an arms reach. However, I can pull myself together when needed and rise above a challenge. 
@@ -1530,7 +1532,7 @@ I become eager to please and forgiving as long as sensitive topics can be kept a
 </tw-passagedata><tw-passagedata pid="118" name="Turn to shadow" tags="" position="4350,1675" size="100,100">Ooze underneath the door in shadow form. I melt one limb at a time into a thick black oil devoid of light and dart through the photo sized cracks. I [[catch the Vampire King off guard.]]
 </tw-passagedata><tw-passagedata pid="119" name="catch the Vampire King off guard." tags="" position="4325,1825" size="100,100">I catch the vampire king off guard and I get the drop on him. If I have upgraded my imagination I can become shadow and meld with the Vampire King.
 
-(if: $becomeshadow is &quot;true&quot;)[He tries to confuse you with positive memories that make you doubt why you are so angry. 
+(if: $becomeshadow is true)[He tries to confuse you with positive memories that make you doubt why you are so angry. 
  
 Remember the camping trip with the bear attack, and how he protected us from the bear, banging pots and pants at it in the middle of the night. Remember leaving a hat on a lightbulb and burning it in a cabin on another trip. Remember puking on the way there. Remember him yelling in the car. Remember him complaining that his wife looked a pack mule because she was carrying his things and telling her to zip up her purse. Remember going fishing with him.
 
@@ -1541,9 +1543,9 @@ Reduces spirit but improves imagination.
 [[End Game]] 
 [[Continue to wake up. |Wake up.]]
 ]
-(if:$steelskin is &quot;true&quot;)[I turn my skin to steel and try to grab the swirling darkness, but the Vampire King has no true corporeal form. ]
+(if:$steelskin is true)[I turn my skin to steel and try to grab the swirling darkness, but the Vampire King has no true corporeal form. ]
 
-(if:$becomeshadow is &quot;false&quot;)[I&#39;m scared.. The Vampire King is more than a being, he is a concept, a manifestation of trauma and shame that has come out of my mind, the synthesis of wanting my father to be a parental figure but also acknowledging the fear and damage his abuse has left behind. Instead of triumph, I have only willingly walked into his jaws. [[Wake up.]] 
+(if:$becomeshadow is false)[I&#39;m scared.. The Vampire King is more than a being, he is a concept, a manifestation of trauma and shame that has come out of my mind, the synthesis of wanting my father to be a parental figure but also acknowledging the fear and damage his abuse has left behind. Instead of triumph, I have only willingly walked into his jaws. [[Wake up.]] 
 ]
 </tw-passagedata><tw-passagedata pid="120" name="fishtank-memory" tags="" position="5600,1275" size="100,100">=&gt;&lt;=
 &lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
@@ -1594,7 +1596,7 @@ I have an anger that won’t quit, a bottomless pit of rage, ready to tap into. 
 (append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[RageVictory]]]
 ]
 
-(if:$fly is &quot;true&quot;)
+(if:$fly is true)
 [
 #Outcome: 
 I become eager to please and forgiving as long as sensitive topics can be kept at an arms reach. However, I can pull myself together when needed and rise above a challenge. 
@@ -1603,7 +1605,7 @@ improves spirit but reduces imagination.
 (append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Flight Victory]]]
 ]
 
-(if:$teleport is &quot;true&quot;)
+(if:$teleport is true)
 [
 #Outcome: 
 I have internalized the belief that I am what I produce, that every failing is because I didn’t want it hard enough. My inadequacy makes me fear to get to close to anything, anyone and any target. I am quick to flee from any feelings. 
@@ -1612,7 +1614,7 @@ Reduces spirit but improves imagination.
 (append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Teleport Victory]]]
 ]
 
-(if:$steelskin is &quot;true&quot;)
+(if:$steelskin is true)
 [
 #Outcome: 
 I have internalized the belief that I am what I can do creatively. That every failing is because I just don’t have enough talent. My inadequacy makes me fear to get to close to anything, anyone and any target. I am quick to flee from any feelings. 
@@ -1628,7 +1630,7 @@ Everything is going to be ok.
 
 [[End Game]]
 [[Continue to wake up.|Wake up.]]
-(if:$fly is &quot;true&quot;)
+(if:$fly is true)
 [
 #Outcome: 
 I become eager to please and forgiving as long as sensitive topics can be kept at an arms reach. However, I can pull myself together when needed and rise above a challenge. 
@@ -1637,7 +1639,7 @@ improves spirit but reduces imagination.
 (append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Flight Victory]]]
 ]
 
-(if:$teleport is &quot;true&quot;)
+(if:$teleport is true)
 [
 #Outcome: 
 I have internalized the belief that I am what I produce, that every failing is because I didn’t want it hard enough. My inadequacy makes me fear to get to close to anything, anyone and any target. I am quick to flee from any feelings. 
@@ -1655,11 +1657,11 @@ Limits courage but improves spirit.
 (append:?sidebar)[(bg:(gradient: 353, 0,#ffffff,0.5,#e619e5,0.5,#888888,1,#000000))[(b4r:&quot;solid&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),white,grey)[Steelskin Victory]]]
 ]
 
-</tw-passagedata><tw-passagedata pid="126" name="Inspect more closely" tags="" position="2950,2050" size="100,100">=&gt;&lt;=
+</tw-passagedata><tw-passagedata pid="126" name="Inspect more closely" tags="" position="3050,1875" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/stairs-empty.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
-[[There&#39;s a trap door in the floor|trapdoor-appear]]</tw-passagedata><tw-passagedata pid="127" name="teleport through the door" tags="" position="4200,1675" size="100,100">(if: $MasterBedroomUnlocked is &quot;true&quot;)[Becuase of the memories I&#39;ve recovered taking place behind this door, I have a good idea of what the room looks like. I concetrate hard and try to [[catch the Vampire King off guard.]] 
+[[There&#39;s a trap door in the floor|trapdoor-appear]]</tw-passagedata><tw-passagedata pid="127" name="teleport through the door" tags="" position="4200,1675" size="100,100">(if: $MasterBedroomUnlocked is true)[Becuase of the memories I&#39;ve recovered taking place behind this door, I have a good idea of what the room looks like. I concetrate hard and try to [[catch the Vampire King off guard.]] 
 ]
-(if: $MasterBedroomUnlocked is &quot;false&quot;)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain.  [[Wake up.]] 
+(if: $MasterBedroomUnlocked is false)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain.  [[Wake up.]] 
 ]</tw-passagedata><tw-passagedata pid="128" name="content-warning" tags="" position="5300,400" size="100,100">
 
 =&gt;&lt;=
@@ -1689,7 +1691,7 @@ I must be dreaming.]
 (if:$dreaming is false)[I see a scared child looking back at me.]
 
 [[Back to the bathroom|the bathroom]]</tw-passagedata><tw-passagedata pid="130" name="header" tags="header" position="5325,175" size="100,100">=&gt;&lt;=
-(if: $showHeader is true)[(text-size:.5)+(bg:(gradient: 114, 0.0152,#e619e5,0.221,#7f19e6,0.5384,#7f19e6,0.9829,#e619e5))[[Kid &#39;96. (if: $dreaming is &quot;true&quot;)[  I am dreaming.  ](if: $bloody is &quot;true&quot;)[. I am bloody. .] ] ]
+(if: $showHeader is true)[(text-size:.5)+(bg:(gradient: 114, 0.0152,#e619e5,0.221,#7f19e6,0.5384,#7f19e6,0.9829,#e619e5))[[Kid &#39;96. (if: $dreaming is true)[  I am dreaming.  ](if: $bloody is true)[. I am bloody. .] ] ]
 ]</tw-passagedata><tw-passagedata pid="131" name="footer" tags="footer" position="5325,275" size="100,100">(if: $showFooter is true)[(bg:(gradient: 114, 0.0152,#e619e5,0.221,#7f19e6,0.5384,#7f19e6,0.9829,#e619e5))[ ] ]
 --- 
 (if: $showFooter is true)[(text-size:.5)[Courage: $courage Spirit: $spirit Imagination: $imagination 
@@ -1752,7 +1754,7 @@ As the dog got older she became more stubborn. I can&#39;t remember a time when 
 (click:?autoWalk)[(text-colour:yellow)[Where&#39;s the dog?] We&#39;ll look all around the house to no avail but then get a phone call from a neighbor that  she&#39;s sitting on their front porch, and that we should go get her. I guess she just wanted to get away from all the Monsters...
 
 [[Snap Out of It-&gt;street]] 
-(set:$SPdogWalk to &quot;true&quot;, $storyPoints to it + 1)
+(set:$SPdogWalk to true, $storyPoints to it + 1)
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.
 ]</tw-passagedata><tw-passagedata pid="134" name="RollerBlading" tags="" position="1050,1150" size="100,100">=&gt;&lt;=
 &lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;

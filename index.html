@@ -730,8 +730,7 @@ Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="30" name="b
 * South of me is the [[front door|front-door-inside]]  and a small area for people to take their shoes off.
 =|
 * The whole [[western side  |western living room]]of the living room is open containing a piano, the fireplace and the entrance to the dining room.
-]</tw-passagedata><tw-passagedata pid="34" name="intro-child" tags="" position="4850,50" size="100,100">&lt;=
-&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
+]</tw-passagedata><tw-passagedata pid="34" name="intro-child" tags="" position="4850,50" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
 
 [[ I am a child. |intro-child-2]]
 ==&gt;&lt;=
@@ -739,7 +738,7 @@ Take the stairs to the [[den]] </tw-passagedata><tw-passagedata pid="30" name="b
 
 </tw-passagedata><tw-passagedata pid="35" name="intro-child-2" tags="" position="4950,200" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 
-&lt;=
+
 The year is (text-style:&quot;underline&quot;,&quot;emboss&quot;)[1996]. 
 [The place?]&lt;place|
 (click:?place)[The suburbs of (text-style:&quot;blink&quot;)[Los Angeles]&lt;reveal|.
@@ -750,7 +749,7 @@ Somewhere in the Valley.]
 (click:?reveal)[There&#39;s a lot of families around here. 
 Everyone is living the [[American Dream. |intro-child-3]] ]</tw-passagedata><tw-passagedata pid="36" name="intro-house" tags="" position="5125,200" size="100,100">
 &lt;img src = &quot;img/house-crane-view-lines.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
-&lt;=
+
 ---
 They said a Hollywood director used to live here. 
 =&gt;&lt;==
@@ -789,17 +788,18 @@ Skip to [[Front yard]] --&gt;
 
 </tw-passagedata><tw-passagedata pid="38" name="intro-child-3" tags="" position="5050,50" size="100,100">
 &lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
-&lt;=
+
      (text-size:1.2)[But]
 =&gt;&lt;===
 (text-style:&quot;buoy&quot;)[// Every//] night I dream, I have the same dream
 &lt;div class = &quot;rubik-family&quot; &gt;[[It&#39;s a nightmare. |intro-house]]&lt;/ div&gt;
 ====&gt;&lt;==
 &lt;div class = &quot;shadows-into-light-regular&quot; &gt;Its been a few years now. &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="39" name="the-dream-explained" tags="" position="5125,350" size="100,100">(click:?house-interior)[&lt;img src = &quot;img/house-interior-crane-view.png&quot; width = &quot;200&quot; /&gt;]&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;200&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="39" name="the-dream-explained" tags="" position="5125,350" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;200&quot; /&gt;
 (click: ?1)[I am in this [house]&lt;house-interior| But it is not this house. 
 There&#39;s a [trap door]&lt;2| in the den. 
 It didn&#39;t use to be there. ] 
+(click:?house-interior)[&lt;img src = &quot;img/house-interior-crane-view.png&quot; width = &quot;200&quot; /&gt;]
 (click: ?2)[Inside is a series of [stairs]&lt;3|
 a path full of monsters
 a hall of mirrors
@@ -1605,12 +1605,7 @@ Limits courage but improves spirit.
 [[There&#39;s a trap door in the floor|trapdoor-appear]]</tw-passagedata><tw-passagedata pid="127" name="teleport through the door" tags="" position="5300,2500" size="100,100">(if: $MasterBedroomUnlocked is true)[Becuase of the memories I&#39;ve recovered taking place behind this door, I have a good idea of what the room looks like. I concetrate hard and try to [[catch the Vampire King off guard.]] 
 ]
 (if: $MasterBedroomUnlocked is false)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain.  [[Wake up.]] 
-]</tw-passagedata><tw-passagedata pid="128" name="content-warning" tags="" position="4775,200" size="100,100">
-
-=&gt;&lt;=
-
-.
-
+]</tw-passagedata><tw-passagedata pid="128" name="content-warning" tags="" position="4775,200" size="100,100">=&gt;&lt;=
 .
 
 .
@@ -1644,6 +1639,9 @@ Kid &#39;96. (if: $dreaming is true)[  I am dreaming.  ](if: $bloody is true)[. 
 ] 
 </tw-passagedata><tw-passagedata pid="132" name="Inventory" tags="" position="4525,325" size="100,100">(text-size:.6)+(text-colour:green)+(text-style:&quot;underline&quot;)[Dream Powers,] (text-size:.6)[ ] (text-size:.6)+(text-colour:magenta)+(text-style:&quot;underline&quot;)[Story Cards,] (text-size:.6)[and] (text-size:.6)+(bg:(gradient: 0, 0.0227,#ffffff,0.5,#000000,1,#000000))[Items]
 (text-size:.6)[
+
+&lt;img src = &quot;img/HouseLayoutTotal.png&quot; height = &quot;auto&quot; width = &quot;400&quot;  /&gt;
+
 ##Map Unlocked!
 Skip to [[Bedroom]] 
 Skip to [[Hallway]] 
@@ -1749,39 +1747,42 @@ Sodabags Studios
 (after:1s )[(go-to:&quot;Title&quot;)]</tw-passagedata><tw-passagedata pid="142" name="Bedroom" tags="" position="5775,1050" size="100,100">{
 (set: $showHeader to true)
 (set: $place to &quot;Bedroom&quot;)
+(set:$small to (text-size:.6))
 }
 &lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-=&gt;&lt;=
+
 (text-style:&quot;underline&quot;)[I am in my bedroom. What should I do?]
-&lt;=
+
 ---
 
 |=
 =&gt;&lt;=
 (text-colour:cyan)[Sleep]
 &lt;=
-* Go to the [[bed]] and try to dream. Face my fears.
+* $small[Go to the [[bed]] and try to dream. Face my fears.]
 
 =|=
 =&gt;&lt;=
 (text-colour:yellow)[Examine]
 &lt;=
+$small[ 
 * [[Bookcase-&gt;bookcase]]
 * [[Closet-&gt;closet]]
 * [[Aquarium-&gt;aquarium]]
-* [[Window-&gt;window]]
-* (if:$SPgexTheGecko is false)[ [[ Desk-&gt;desk]] ]
-
+* [[Window-&gt;window]] (if:$SPgexTheGecko is false)[
+*  [[ Desk-&gt;desk]] ] ]
 
 =|
 =&gt;&lt;=
 &#39;&#39;(text-style:&quot;underline&quot;)[Travel]&#39;&#39;
 
 &lt;=
+$small[
 (if:$storyPoints &gt; 0)[
 * I can go to the door to the hallway [[hallway |Hallway]] 
-](else:)[I need more (text-colour:(hsl:60,0.8039,0.5,0.9))[Story Points] to leave this room]</tw-passagedata><tw-passagedata pid="143" name="StoryPointExplanation" tags="" position="5125,500" size="100,100">Each time I confront my past and recover a memory I earn a Story Card. Collect story cards to earn Story Points and unlock parts of the house. You can usually find them in your inventory at the bottom of the page. 
+](else:)[I need more (text-colour:(hsl:60,0.8039,0.5,0.9))[Story Points] to leave this room]
+]</tw-passagedata><tw-passagedata pid="143" name="StoryPointExplanation" tags="" position="5125,500" size="100,100">Each time I confront my past and recover a memory I earn a Story Card. Collect story cards to earn Story Points and unlock parts of the house. You can usually find them in your inventory at the bottom of the page. 
 
 (text-style:&quot;underline&quot;)+(after:2s)[
 
@@ -1791,7 +1792,7 @@ Sodabags Studios
 
 -----
 
-//The Dream Explained
+[[ Review the Dream-&gt;the-dream-explained]]
 
 ----</tw-passagedata><tw-passagedata pid="144" name="door at the far end of the hallway" tags="" position="5000,1425" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";

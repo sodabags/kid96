@@ -693,7 +693,7 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 (set: $storyPoints to 0, $courage to 1, $spirit to 1, $imagination to 1)
 
 (set: $where to (text-rotate-z:345))
-(set: $place to &quot;Kid &#39;96&quot;)
+(set: $mapUnlocked to false)
 }</tw-passagedata><tw-passagedata pid="33" name="eastern living room" tags="" position="2975,1100" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; class = &quot;border&quot;/&gt;
 //Beige carpet and beige walls//
 ---
@@ -1174,6 +1174,7 @@ and its not just the damage from the earthquake.
 [[Help! |buffet 9]]</tw-passagedata><tw-passagedata pid="88" name="buffet 9" tags="" position="3850,1425" size="100,100">[[Wake up.]] 
 (set:$SPbuffet to true, $storyPoints to it + 1)
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.</tw-passagedata><tw-passagedata pid="89" name="MAP UNLOCKED" tags="" position="4125,2350" size="100,100">&lt;img src = &quot;img/HouseLayoutTotal.png&quot; height = &quot;auto&quot; width = &quot;400&quot;  /&gt;
+###The Map
 ---
 Fast Travel to:
 |=
@@ -1183,7 +1184,8 @@ Fast Travel to:
 =|
 [[The Den|den]] 
 [[The Backyard|backyard]] 
-[[The Front Yard|Front yard]] </tw-passagedata><tw-passagedata pid="90" name="alcove-stitches" tags="" position="3275,1625" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[The Front Yard|Front yard]] 
+(set:$mapUnlocked to true)</tw-passagedata><tw-passagedata pid="90" name="alcove-stitches" tags="" position="3275,1625" size="100,100">&lt;img src = &quot;img/08-living-room1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 &lt;=
 One time I was running and I hit my head here, right above the eye. (text-style:&quot;fade-in-out&quot;)[Blood was gushing everywhere.] I had to go to the hospital. I get a little twitch every time I pass by this part of the house. 
 (set:$SPalcoveStitches to true, $storyPoints to it + 1)
@@ -1578,9 +1580,10 @@ Kid &#39;96. (if: $dreaming is true)[  I am dreaming.  ](if: $bloody is true)[. 
 (display: &quot;Stats&quot;)
 (display: &quot;Inventory&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="131" name="Inventory" tags="" position="4525,325" size="100,100">(text-size:.6)+(text-colour:green)+(text-style:&quot;underline&quot;)[Dream Powers,] (text-size:.6)[ ] (text-size:.6)+(text-colour:yellow)+(text-style:&quot;underline&quot;)[Story Cards,] (text-size:.6)[and] (text-size:.6)+(bg:(gradient: 0, 0.0227,#ffffff,0.5,#000000,1,#000000))[Items]
+</tw-passagedata><tw-passagedata pid="131" name="Inventory" tags="" position="4525,325" size="100,100">(text-size:.6)+(text-style:&quot;expand&quot;,&quot;tall&quot;,&quot;fidget&quot;)[Story Points: $storyPoints .]
+(text-size:.6)+(text-colour:green)+(text-style:&quot;underline&quot;)[Dream Powers,] (text-size:.6)[ ] (text-size:.6)+(text-colour:yellow)+(text-style:&quot;underline&quot;)[Story Cards,] (text-size:.6)[and] (text-size:.6)+(bg:(gradient: 0, 0.0227,#ffffff,0.5,#000000,1,#000000))[Items]
 (text-size:.6)[
-
+(if:$mapUnlocked is true) [
 &lt;img src = &quot;img/HouseLayoutTotal.png&quot; height = &quot;auto&quot; width = &quot;400&quot;  /&gt;
 
 ##Map Unlocked!
@@ -1592,8 +1595,7 @@ Skip to [[dining room]]
 Skip to [[den]] 
 SKip to [[backyard]] 
 Skip to [[Front yard]] 
-Story Points: $storyPoints .
-
+]
 |=
 (if:$rage is true)[ Dream Power: Rage]
 (if:$mindblast is true)[Dream Power: Mind Blast]

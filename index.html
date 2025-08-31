@@ -119,7 +119,7 @@ audio.play();</script><tw-passagedata pid="1" name="Hallway" tags="" position="5
 (replace: ?place)[Main Hallway]
 &lt;img src = &quot;img/04-hallway.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
-A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. 
+(transition:&quot;slide-left&quot;)[A long thin hallway covered in carpet. No matter what direction I go, I&#39;ll need to &#39;&#39;run&#39;&#39; so no vampires catch me. ]
 
 ==&gt;&lt;==
 (b4r:&quot;dotted&quot;)+(b4r-colour:white)+(border-size:4)+(corner-radius:4)+(text-color:yellow)+(text-rotate-z:322)+(text-style:&quot;blink&quot;)[-   Run:   -]
@@ -175,8 +175,6 @@ Try to [[teleport through the door]]
 
 &lt;!--(if: $MasterBedroomUnlocked is true)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="3" name="door to the bathroom" tags="" position="5300,1750" size="100,100">(set: $SPeqBrace to false)
 &lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  alt = &quot;A doorframe into the bathroom&quot;/&gt;
-
-&lt;=
 ---
 (if:$SPeqBrace is false)[
 ###(text-colour:yellow)[Recovery Memory]
@@ -603,9 +601,9 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 [[Go to Sleep]]
 
 
-(text-style:&quot;outline&quot;,&quot;expand&quot;,&quot;buoy&quot;)[ZZZzzzzzzzz]</tw-passagedata><tw-passagedata pid="31" name="Wake up." tags="" position="4100,1875" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; height = &quot;400&quot; width = &quot;auto&quot; &gt;
+(text-style:&quot;outline&quot;,&quot;expand&quot;,&quot;buoy&quot;)[ZZZzzzzzzzz]</tw-passagedata><tw-passagedata pid="31" name="Wake up." tags="" position="4375,1725" size="100,100">&lt;img src=&quot;img/Bed9.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;A drawing of a bed.&quot;&gt;
 ---
-[[(either:&quot;I Wake up&quot;,&quot;Wake Up&quot;, &quot;I think I woke up&quot;, &quot;I woke, up right?&quot;,&quot;Get up&quot;, &quot;Time to get out of bed&quot;, &quot;Arise&quot;, &quot;I think it&#39;s morning&quot;, &quot;I wake up to the sound of distant shouting&quot;) |Bedroom]] 
+(text-style:&quot;buoy&quot;)[[[(either:&quot;I Wake up&quot;,&quot;Wake Up&quot;, &quot;I think I woke up&quot;, &quot;I woke, up right?&quot;,&quot;Get up&quot;, &quot;Time to get out of bed&quot;, &quot;Arise&quot;, &quot;I think it&#39;s morning&quot;, &quot;I wake up to the sound of distant shouting&quot;) |Bedroom]] ]
 
 (set: $dreaming to false, $bloody to false)</tw-passagedata><tw-passagedata pid="32" name="Title" tags="" position="4600,200" size="100,100">=&gt;&lt;=
 &lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
@@ -803,7 +801,7 @@ I must have face planted the pavement. My whole forehead is swollen and dripping
 
 ###&#39;&#39;Travel&#39;&#39;
 * In front is the [[garage]]
-* To my left is the [[backyard]] patio. </tw-passagedata><tw-passagedata pid="44" name="small east tree" tags="" position="4100,750" size="100,100">&lt;img src=&quot;img/ front-yard-west-side-free.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+* To my left is the [[backyard]] patio. </tw-passagedata><tw-passagedata pid="44" name="small east tree" tags="" position="4100,750" size="100,100">&lt;img src=&quot;img/ front-yard-west-side-free.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;A tree and a hedge&quot;&gt;
 
 ---
 
@@ -1128,34 +1126,46 @@ I only got this Game Gear because of fate. My parents didn&#39;t want me to have
 (text-size:.8)[Back to the [[Bedroom]] ]
 ---
 
-&lt;!--In a future version of this game these toys will be able to provide inspiration for dream powers--&gt;</tw-passagedata><tw-passagedata pid="80" name="anitique buffet" tags="" position="3575,1150" size="100,100">=&gt;&lt;=
-&lt;img src = &quot;img/buffet1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
-&lt;=
+&lt;!--In a future version of this game these toys will be able to provide inspiration for dream powers--&gt;</tw-passagedata><tw-passagedata pid="80" name="anitique buffet" tags="" position="3575,1150" size="100,100">&lt;img src = &quot;img/buffet1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 ---
-
-An ornate antique &#39;&#39;buffet&#39;&#39; stands before you. It contains many //cabinets// and holds handfuls of //photographs// in plastic frames on its middle shelf. 
-
+###Buffet
+(transition:&quot;slide-left&quot;)[An ornate antique &#39;&#39;buffet&#39;&#39; stands before you. It contains many //cabinets// and holds handfuls of //photographs// in plastic frames on its middle shelf. //It survived the earthquake and needed very few repairs//
+---
+###(text-colour:yellow)[Interact]
+{
 (if:$dreaming is true)[
-[[There&#39;s something off...|buffet 2]]
-](else:)[This thing gives me the creeps,]
+* [[There&#39;s something off...|buffet 2]]
+](else:)[
+* This thing gives me the creeps,]
 and its not just the damage from the earthquake. 
+}
+
+{
+###&#39;&#39;Travel&#39;&#39;
 (if:$dreaming is false)[
-[[Back to the Living Room-&gt;western living room]] ]
-(replace: ?place)[Living Room]</tw-passagedata><tw-passagedata pid="81" name="buffet 2" tags="" position="3575,1525" size="100,100">&lt;img src = &quot;img/buffet2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+[[Back to the Living Room-&gt;western living room]] ](else:)[
+* I stand transfixed.
+](replace: ?place)[Living Room]
+}
+]</tw-passagedata><tw-passagedata pid="81" name="buffet 2" tags="" position="3575,1400" size="100,100">&lt;img src = &quot;img/buffet2.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 ---
-[[Of course, I should have known |buffet 3]]</tw-passagedata><tw-passagedata pid="82" name="buffet 3" tags="" position="3625,1400" size="100,100">&lt;img src = &quot;img/buffet3.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+###(text-style:&quot;fidget&quot;)[[[Of course, I should have known |buffet 3]] ]
+
+###&#39;&#39;Travel&#39;&#39;
+* Impossible.
+* Trapped.</tw-passagedata><tw-passagedata pid="82" name="buffet 3" tags="" position="3575,1525" size="100,100">&lt;img src = &quot;img/buffet3.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 ---
-[[Of course Vampires live in the buffet |buffet 4]]</tw-passagedata><tw-passagedata pid="83" name="buffet 4" tags="" position="3700,1525" size="100,100">&lt;img src = &quot;img/buffet4.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
+###(text-style:&quot;fidget&quot;)[[[Of course Vampires live in the buffet |buffet 4]] ]</tw-passagedata><tw-passagedata pid="83" name="buffet 4" tags="" position="3700,1525" size="100,100">&lt;img src = &quot;img/buffet4.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;
 ---
-[[Its the only logical place |buffet 5]]</tw-passagedata><tw-passagedata pid="84" name="buffet 5" tags="" position="3775,1400" size="100,100">&lt;img src = &quot;img/buffet5.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+###(text-style:&quot;fidget&quot;)[[[Its the only logical place |buffet 5]] ]</tw-passagedata><tw-passagedata pid="84" name="buffet 5" tags="" position="3775,1400" size="100,100">&lt;img src = &quot;img/buffet5.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 ---
-[[Try to scream |buffet 6]]</tw-passagedata><tw-passagedata pid="85" name="buffet 6" tags="" position="3825,1525" size="100,100">&lt;img src = &quot;img/buffet6.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+###(text-style:&quot;shudder&quot;)[[[Try to scream |buffet 6]] ]</tw-passagedata><tw-passagedata pid="85" name="buffet 6" tags="" position="3825,1525" size="100,100">&lt;img src = &quot;img/buffet6.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 ---
-[[I can&#39;t scream |buffet 7]]</tw-passagedata><tw-passagedata pid="86" name="buffet 7" tags="" position="3925,1425" size="100,100">&lt;img src = &quot;img/buffet7.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+###(text-style:&quot;fidget&quot;)[[[I can&#39;t scream |buffet 7]] ]</tw-passagedata><tw-passagedata pid="86" name="buffet 7" tags="" position="3925,1425" size="100,100">&lt;img src = &quot;img/buffet7.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 ---
-[[Help! |buffet 8]]</tw-passagedata><tw-passagedata pid="87" name="buffet 8" tags="" position="3950,1550" size="100,100">&lt;img src = &quot;img/buffet8.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+#(text-style:&quot;shudder&quot;)[[[Help! |buffet 8]] ]</tw-passagedata><tw-passagedata pid="87" name="buffet 8" tags="" position="3950,1550" size="100,100">&lt;img src = &quot;img/buffet8.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 ---
-[[Help! |buffet 9]]</tw-passagedata><tw-passagedata pid="88" name="buffet 9" tags="" position="3950,1675" size="100,100">[[Wake up.]] 
+(text-style:&quot;blurrier&quot;)[[[Help! |buffet 9]] ]</tw-passagedata><tw-passagedata pid="88" name="buffet 9" tags="" position="3950,1675" size="100,100">(text-style:&quot;sway&quot;)[[[It&#39;s all just a dream.-&gt;Wake up.]]  ]
 (set:$SPbuffet to true, $storyPoints to it + 1)
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.</tw-passagedata><tw-passagedata pid="89" name="MAP UNLOCKED" tags="" position="4125,2350" size="100,100">&lt;img src = &quot;img/HouseLayoutTotal.png&quot; height = &quot;auto&quot; width = &quot;400&quot;  /&gt;
 ###The Map
@@ -1240,7 +1250,7 @@ She is the Queen of Bones. A bloodless, fleshless husk. Devourced by the Vampire
 (if:$fly is true)[
 [[Fly beyond her reach]]
 ]
-(set:$SPqueenOfBones to true)</tw-passagedata><tw-passagedata pid="96" name="front door outside" tags="" position="3975,925" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;Front Door&quot; &gt;
+(set:$SPqueenOfBones to true)</tw-passagedata><tw-passagedata pid="96" name="front door outside" tags="" position="3975,925" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;Front Door&quot; /&gt;
 ---
 I am standing outside the front door, just outside the threshhold. A path leads towards the [[front yard-&gt;outside]] 
 ---
@@ -1271,7 +1281,6 @@ I can feel the hairs on my neck standing up as the &#39;&#39;vampire&#39;&#39;&#
 &lt;!--(either:[[&quot;Open my eyes&quot;-&gt;sleep5]],[[Open my eyes|real-wake-up]])--&gt;
 </tw-passagedata><tw-passagedata pid="101" name="earthquake-door-braced" tags="" position="5900,1925" size="100,100">&lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  alt = &quot;A doorframe into the bathroom&quot; /&gt;
 
-&lt;=
 ###The Bathroom Door Frame
 
 I remember during the big earthquake, just a few years ago, this is where I stood. I put my hands against the frame of the open doorway and held my position as the ground shook beneath me. 
@@ -1279,7 +1288,7 @@ I remember during the big earthquake, just a few years ago, this is where I stoo
 (set:$SPeqBrace to true, $storyPoints to it + 1)
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.
 ---
-
+(text-size:.7)[
 =&gt;&lt;=
 ###&#39;&#39;Travel&#39;&#39;
 &lt;=
@@ -1288,7 +1297,8 @@ I remember during the big earthquake, just a few years ago, this is where I stoo
 towards the Hallway-&gt;door to the bathroom]] 
 =|
 * [[Forward 
-into the Bathroom-&gt;the bathroom]] </tw-passagedata><tw-passagedata pid="102" name="earthquake-bedroom-bookshelf" tags="" position="6025,1425" size="100,100">During the big (text-style:&quot;rumble&quot;)[earthquake], just a few years ago, this [bookcase]&lt;section2| fell over on my bed, crushing everything and sending books flying. There&#39;s still a shelf missing from the damage. 
+into the Bathroom-&gt;the bathroom]] 
+]</tw-passagedata><tw-passagedata pid="102" name="earthquake-bedroom-bookshelf" tags="" position="6025,1425" size="100,100">During the big (text-style:&quot;rumble&quot;)[earthquake], just a few years ago, this [bookcase]&lt;section2| fell over on my bed, crushing everything and sending books flying. There&#39;s still a shelf missing from the damage. 
 
 (click:?section2)[I had woken up earlier that night to the warm wet sensation that I had yet again wet the bed. I went to the [bathroom]&lt;section3| to finish and clean myself up. That&#39;s when the (text-style:&quot;rumble&quot;)[earthquake] started. ]
 
@@ -1679,16 +1689,15 @@ Sodabags Studios
 ---
 (after:1s )[(go-to:&quot;Title&quot;)]</tw-passagedata><tw-passagedata pid="141" name="Bedroom" tags="" position="5775,1050" size="100,100">{
 (set: $showHeader to true)
-`
 (set:$small to (text-size:.6))
 }
 &lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
-(text-style:&quot;underline&quot;)[I am in my bedroom. What should I do?]
+(transition:&quot;fade&quot;)+(text-style:&quot;underline&quot;)[I am in my bedroom. What should I do?]
 
 ---
-
-###(text-colour:cyan)[Sleep]
+(text-style:&quot;buoy&quot;)[
+###(text-colour:cyan)[Sleep] ]
 * $small[Go to the [[bed]] and try to dream. Face my fears. The only way to enter the dream state]
 
 ###(text-colour:yellow)[Examine] $small[ 
@@ -1696,7 +1705,7 @@ Sodabags Studios
 * [[Closet-&gt;closet]]
 * [[Aquarium-&gt;aquarium]]
 * [[Window-&gt;window]]  
-* (if:$SPgexTheGecko is false)[ [[ Desk-&gt;desk]] ] ]
+* (if:$SPgexTheGecko is false)[ [[ Desk-&gt;desk]] ] ](else:)[Desk]
 
 ###&#39;&#39;(text-style:&quot;underline&quot;)[Travel]&#39;&#39; $small[
 (if:$storyPoints &gt; 0)[

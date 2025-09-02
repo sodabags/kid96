@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Kid96.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Kid96" startnode="140" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
+<tw-storydata name="Kid96" startnode="140" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
@@ -608,32 +608,35 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 ---
 (text-style:&quot;buoy&quot;)[[[(either:&quot;I Wake up&quot;,&quot;Wake Up&quot;, &quot;I think I woke up&quot;, &quot;I woke, up right?&quot;,&quot;Get up&quot;, &quot;Time to get out of bed&quot;, &quot;Arise&quot;, &quot;I think it&#39;s morning&quot;, &quot;I wake up to the sound of distant shouting&quot;) |Bedroom]] ]
 
-(set: $dreaming to false, $bloody to false)</tw-passagedata><tw-passagedata pid="32" name="Title" tags="" position="4125,175" size="100,100">=&gt;&lt;=
-&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
+(set: $dreaming to false, $bloody to false)</tw-passagedata><tw-passagedata pid="32" name="Title" tags="" position="400,275" size="100,100">{
+(set:$p to (transition:&quot;pulse&quot;))
+}
+=&gt;&lt;=
+$p[&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;]$p[&lt;/span&gt;&lt;span class = &quot;smallImg top&quot; &gt;&lt;img src = &quot;img/eyeball.png&quot; height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;]
 
 
 =&gt;&lt;=
 #&lt;span class = &quot;shadows-into-light-regular&quot; &gt;(b4r:&quot;outset&quot;,&quot;ridge&quot;)+(b4r-size:1.3)+(b4r-colour:(hsl:0,0,1,0.35),(hsl:0,0,0.5333,0.3),red,grey)[Kid &#39;96]&lt;/span&gt;
 =&gt;&lt;=
-(text-size:.6)[Interactive Nightmare Simulator]
+$p+(text-size:.6)[Interactive Nightmare Simulator]
 
 =&gt;&lt;=
 &lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 
-(text-style:&quot;blink&quot;)[&lt;div class=&quot;rubik-family&quot; &gt;[[Start! |content-warning]]&lt;/div&gt;]
+(transition:&quot;slide-right&quot;)+(text-style:&quot;blink&quot;)[&lt;div class=&quot;rubik-family&quot; &gt;[[Start! |content-warning]]&lt;/div&gt;]
 =&gt;&lt;=
 &lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 &lt;==
 ---
 =&gt;&lt;=
-(text-size:.6)[CW: child abuse, domestic abuse, suicidal ideation]
+(transition:&quot;slide-right&quot;)+(text-size:.6)[CW: child abuse, domestic abuse, suicidal ideation]
 &lt;==
 ---
 =&gt;&lt;=
-(text-size:.4)[c 2025 sodabags studios]
+$p+(text-size:.4)[c 2025 sodabags studios]
 &lt;!--
 
-
+{
 
 [[Skip Intro-&gt;end-introduction]] --&gt;
 {
@@ -679,7 +682,7 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 
 (set: $where to (text-rotate-z:345))
 (set: $mapUnlocked to false)
-}</tw-passagedata><tw-passagedata pid="33" name="eastern living room" tags="" position="3325,1125" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;200&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;200&quot; class = &quot;border&quot;/&gt;
+}}</tw-passagedata><tw-passagedata pid="33" name="eastern living room" tags="" position="3325,1125" size="100,100">&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;200&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;200&quot; class = &quot;border&quot;/&gt;
 (text-size:.6) [ //Beige carpet and beige walls// ]
 ---
 ###(text-colour:yellow)[Examine](text-size:.6) [
@@ -690,48 +693,48 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 * The whole [[western side  |western living room]]of the living room is open containing a piano, the fireplace and the entrance to the dining room.
 * North of me is the [[front door|front-door-inside]]  and a small area for people to take their shoes off.
 ]
-(replace: ?place)[Living Room]</tw-passagedata><tw-passagedata pid="34" name="intro-child" tags="" position="4375,25" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
+(replace: ?place)[Living Room]</tw-passagedata><tw-passagedata pid="34" name="intro-child" tags="" position="650,125" size="100,100">&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; vspace = &quot;50&quot; /&gt;
 
-[[ I am a child. |intro-child-2]]
+$p[[[ I am a child. |intro-child-2]] ]
 ==&gt;&lt;=
-(text-style:&quot;fidget&quot;)[About 10 years old.] 
+$p+(text-style:&quot;fidget&quot;)[About 10 years old.] 
 
-</tw-passagedata><tw-passagedata pid="35" name="intro-child-2" tags="" position="4475,175" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="35" name="intro-child-2" tags="" position="750,275" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 
 
-The year is (text-style:&quot;underline&quot;,&quot;emboss&quot;)[1996]. 
-[The place?]&lt;place|
-(click:?place)[The suburbs of (text-style:&quot;blink&quot;)[Los Angeles]&lt;reveal|.
+$p[The year is (text-style:&quot;underline&quot;,&quot;emboss&quot;)[1996]. ]
+$p[The place?]&lt;place|
+$p+(click:?place)[The suburbs of (text-style:&quot;blink&quot;)[Los Angeles]&lt;reveal|.
 Somewhere in the Valley.]
 
-(text-style:&quot;smear&quot;)[Childhood] is supposed to be (text-style:&quot;outline&quot;)[innocent]
+$p+(text-style:&quot;smear&quot;)[Childhood] is supposed to be (text-style:&quot;outline&quot;)[innocent]
 
-(click:?reveal)[There&#39;s a lot of families around here. 
-Everyone is living the [[American Dream. |intro-child-3]] ]</tw-passagedata><tw-passagedata pid="36" name="intro-house" tags="" position="4650,175" size="100,100">
-&lt;img src = &quot;img/house-crane-view-lines.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
+$p+(click:?reveal)[There&#39;s a lot of families around here. 
+Everyone is living the [[American Dream. |intro-child-3]] ]</tw-passagedata><tw-passagedata pid="36" name="intro-house" tags="" position="925,275" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/house-crane-view-lines.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;]
 
----
-They said a Hollywood director used to live here. 
+(transition:&quot;slide-down&quot;)[They said a Hollywood director used to live here. ]
 =&gt;&lt;==
-He directed horror B movies.
+(transition:&quot;slide-right&quot;)[He directed horror B movies.]
 ===&gt;&lt;==
-[[ But that&#39;s not what&#39;s wrong with this house. |end-introduction]] 
-&lt;=</tw-passagedata><tw-passagedata pid="37" name="end-introduction" tags="" position="4425,625" size="100,100">&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
+(transition:&quot;slide-left&quot;)[[[ But that&#39;s not what&#39;s wrong with this house. |end-introduction]] 
+&lt;=
+]</tw-passagedata><tw-passagedata pid="37" name="end-introduction" tags="" position="925,450" size="100,100">&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
 &lt;=
 ---
-(text-rotate-z:338)[Something] is wrong.
+(transition:&quot;slide-down&quot;)+(text-rotate-z:338)[Something](transition:&quot;slide-down&quot;)+(transition-delay:1s) [ is wrong.
 I don&#39;t understand exactly what.
-But I have this feeling in my bones. 
+But I have this feeling in my bones. ]
 =&gt;&lt;===
+(transition:&quot;slide-down&quot;)+(transition-delay:1.5s)[
 If I explore this house,
-if I can follow the (bg:magenta)[nightmare] to the end, 
+if I can follow the (bg:magenta)[nightmare] to the end, ]
 ==&gt;&lt;===
-(text-style:&quot;blur&quot;)[maybe I can control it.]
-And bring it to an (text-style:&quot;shadow&quot;,&quot;fidget&quot;)[(text-rotate-z:24)[end]]. 
+(transition:&quot;slide-down&quot;)+(transition-delay:2s)+(text-style:&quot;blur&quot;)[maybe I can control it.]
+(transition:&quot;slide-down&quot;)+(transition-delay:2.5s)[And bring it to an (text-style:&quot;shadow&quot;,&quot;fidget&quot;)[(text-rotate-z:24)[end]]. ] 
 ===&gt;&lt;==
-[[Do you want to know the dream? |the-dream-explained]] //You can always climb into bed to go back to the dream world. //
+(transition:&quot;slide-down&quot;)+(transition-delay:3s)[[[Do you want to know the dream? |the-dream-explained]] ](transition:&quot;slide-down&quot;)+(transition-delay:3.5s)[//You can always climb into bed to go back to the dream world. //
 
-Or is it time to [[wake up.|StoryPointExplanation]] and explore the house.
+Or is it time to [[wake up.|StoryPointExplanation]] and explore the house.]
 
 (set: $showFooter to true)
 &lt;!--DevTools--&gt;
@@ -744,35 +747,39 @@ Skip to [[den]]
 SKip to [[backyard]] 
 Skip to [[Front yard]] --&gt;
 
-</tw-passagedata><tw-passagedata pid="38" name="intro-child-3" tags="" position="4575,25" size="100,100">
+</tw-passagedata><tw-passagedata pid="38" name="intro-child-3" tags="" position="850,125" size="100,100">
 &lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 
-     (text-size:1.2)[But]
+     (transition:&quot;zoom&quot;)+(text-size:1.2)[But]
 =&gt;&lt;===
-(text-style:&quot;buoy&quot;)[// Every//] night I dream, I have the same dream
-&lt;div class = &quot;rubik-family&quot; &gt;[[It&#39;s a nightmare. |intro-house]]&lt;/ div&gt;
+(transition:&quot;slide-right&quot;)+(text-style:&quot;buoy&quot;)[// Every//] night I dream, I have the same dream
+&lt;div class = &quot;rubik-family&quot; &gt;(text-style:&quot;rumble&quot;)+(transition:&quot;zoom&quot;)[[[It&#39;s a nightmare. |intro-house]] ]&lt;/ div&gt;
 ====&gt;&lt;==
-&lt;div class = &quot;shadows-into-light-regular&quot; &gt;Its been a few years now. &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="39" name="the-dream-explained" tags="" position="4650,325" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;200&quot; /&gt;
-(click: ?1)[I am in this [house]&lt;house-interior| But it is not this house. 
+&lt;div class = &quot;shadows-into-light-regular&quot; &gt;(transition:&quot;slide-down&quot;)[Its been a few years now.] &lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="39" name="the-dream-explained" tags="" position="1025,600" size="100,100">(transition:&quot;slide-down&quot;)[
+I am [running]&lt;1| for my life, chased by the vampire, fangs out and inches from my neck. I can&#39;t outrun him, just before they pierce my flesh and suck my blood I am shook awake in a violent spasm. 
+==&gt;
+(transition:&quot;slide-right&quot;)[&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;200&quot; /&gt;]
+==&gt;&lt;=
+(transition:&quot;slide-right&quot;)+(click: ?1)[I am in this [house]&lt;house-interior| But it is not this house. 
 There&#39;s a [trap door]&lt;2| in the den. 
-It didn&#39;t use to be there. ] 
-(click:?house-interior)[&lt;img src = &quot;img/house-interior-crane-view.png&quot; width = &quot;200&quot; /&gt;]
-(click: ?2)[Inside is a series of [stairs]&lt;3|
+It didn&#39;t use to be there. ]
+&lt;==
+(transition:&quot;slide-right&quot;)+(click:?house-interior)[&lt;img src = &quot;img/house-interior-crane-view.png&quot; width = &quot;200&quot; /&gt;]
+(transition:&quot;slide-down&quot;)+(click: ?2)[Inside is a series of [stairs]&lt;3|
 a path full of monsters
 a hall of mirrors
 and a labyrinthe]
-(click:?3)[sometimes there&#39;s a factory.
+(transition:&quot;slide-left&quot;)+(click:?3)[sometimes there&#39;s a factory.
 sometimes I can [fly]&lt;4|
 Sometimes I can move things with my mind. 
 Or use other powers]
-(click:?4)[But it always ends the same way. With [fangs about to sink into the back of my neck]&lt;5|, ] (click: ?5)[ I startle and wake up in a cold sweat, heart pounding. Most nights like that if I can find enough peace to fall back asleep I wind up right back inside the labyrinthe, or worse I realize I never really woke up, and am in fact [still dreaming]&lt;6|.]
-(click:?6)[...  [[(either:&quot;But I have this feelilng in my bones.&quot;, &quot;I have to trust myself&quot;, &quot;Here goes nothing&quot;)|StoryPointExplanation]]]
-
-
-I am [running]&lt;1| for my life, chased by the vampire, fangs out and inches from my neck. I can&#39;t outrun him, just before they pierce my flesh and suck my blood I am shook awake in a violent spasm. 
-
-&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;100&quot; width=&quot;100&quot; /&gt;</tw-passagedata><tw-passagedata pid="40" name="TV2" tags="" position="2625,2225" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
+(transition:&quot;slide-down&quot;)+(click:?4)[But it always ends the same way. With [fangs about to sink into the back of my neck]&lt;5|, ] 
+(transition:&quot;slide-right&quot;)+(click: ?5)[ I startle and wake up in a cold sweat, heart pounding. Most nights like that if I can find enough peace to fall back asleep I wind up right back inside the labyrinthe, or worse I realize I never really woke up, and am in fact [still dreaming]&lt;6|.]
+(transition:&quot;slide-up&quot;)+(click:?6)[...  [[(either:&quot;But I have this feelilng in my bones.&quot;, &quot;I have to trust myself&quot;, &quot;Here goes nothing&quot;)|StoryPointExplanation]]] ]
+&lt;==
+(transition:&quot;slide-down&quot;)[
+&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;100&quot; width=&quot;100&quot; /&gt;]</tw-passagedata><tw-passagedata pid="40" name="TV2" tags="" position="2625,2225" size="100,100">&lt;img src=&quot;img/tv2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 
 &lt;=
 ---
@@ -1552,7 +1559,7 @@ Limits courage but improves spirit.
 ](else:)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain. 
 (text-style:&quot;shudder&quot;)[ [[Wake up.]] ]
 ]
-]</tw-passagedata><tw-passagedata pid="127" name="content-warning" tags="" position="4300,175" size="100,100">=&gt;&lt;=
+]</tw-passagedata><tw-passagedata pid="127" name="content-warning" tags="" position="575,275" size="100,100">=&gt;&lt;=
 .
 
 .
@@ -1561,7 +1568,7 @@ Limits courage but improves spirit.
 
 .
 
- [[ CW: child abuse, domestic abuse, suicidal ideation|intro-child]]
+(transition:&quot;zoom&quot;)[ [[ CW: child abuse, domestic abuse, suicidal ideation|intro-child]] ]
 
 .
 
@@ -1577,15 +1584,15 @@ Limits courage but improves spirit.
 I must be dreaming.](else:)[I see a scared child looking back at me.]
 (text-size:.7)[
 * (transition:&quot;pulse&quot;)[[[Back to the bathroom|the bathroom]] ]
-]</tw-passagedata><tw-passagedata pid="129" name="header" tags="header" position="4200,25" size="100,100">==&gt;&lt;==
+]</tw-passagedata><tw-passagedata pid="129" name="header" tags="header" position="475,125" size="100,100">==&gt;&lt;==
 (if: $showHeader is true)[(text-size:.5)+(bg:(gradient: 114, 0.0152,#e619e5,0.221,#7f19e6,0.5384,#7f19e6,0.9829,#e619e5))[ [
 Kid &#39;96. (if: $dreaming is true)[  I am dreaming.  ](if: $bloody is true)[. I am bloody. .] ] $where[Initializing]&lt;place| ]
-]</tw-passagedata><tw-passagedata pid="130" name="footer" tags="footer" position="4175,300" size="100,100">--- 
+]</tw-passagedata><tw-passagedata pid="130" name="footer" tags="footer" position="450,400" size="100,100">--- 
 (if: $showFooter is true)[
 (display: &quot;Stats&quot;)
 (display: &quot;Inventory&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="131" name="Inventory" tags="" position="4050,300" size="100,100">(text-size:.6)+(text-style:&quot;expand&quot;,&quot;tall&quot;,&quot;fidget&quot;)[Story Points: $storyPoints .]
+</tw-passagedata><tw-passagedata pid="131" name="Inventory" tags="" position="325,400" size="100,100">(text-size:.6)+(text-style:&quot;expand&quot;,&quot;tall&quot;,&quot;fidget&quot;)[Story Points: $storyPoints .]
 (text-size:.6)+(text-colour:green)+(text-style:&quot;underline&quot;)[Dream Powers,] (text-size:.6)[ ] (text-size:.6)+(text-colour:yellow)+(text-style:&quot;underline&quot;)[Story Cards,] (text-size:.6)[and] (text-size:.6)+(bg:(gradient: 0, 0.0227,#ffffff,0.5,#000000,1,#000000))[Items]
 (text-size:.6)[
 (if:$mapUnlocked is true) [
@@ -1691,13 +1698,15 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 
 [[Back-&gt;dining room]] 
 (set:$SPdiningRoomBD to true, $storyPoints to it + 1)
-(text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.</tw-passagedata><tw-passagedata pid="140" name="Splash Page" tags="" position="4025,25" size="100,100">---
+(text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.</tw-passagedata><tw-passagedata pid="140" name="Splash Page" tags="" position="300,125" size="100,100">&lt;==
+(transition:&quot;zoom&quot;)[
+---
 ==&gt;&lt;==
-&lt;img src = &quot;img/sodabags_logo.png&quot; width = &quot;374&quot; height = &quot;375&quot;&gt;
-Sodabags Studios
+&lt;img src = &quot;img/sodabags_logo.png&quot; width = &quot;374&quot; height = &quot;375&quot;&gt;&lt;span class = &quot;shadows-into-light-regular&quot; &gt;
+####Sodabags Studios&lt;/span&gt;
 &lt;==
 ---
-(after:1s )[(go-to:&quot;Title&quot;)]</tw-passagedata><tw-passagedata pid="141" name="Bedroom" tags="" position="5500,1000" size="100,100">{
+(after:1s )[(go-to:&quot;Title&quot;)]]</tw-passagedata><tw-passagedata pid="141" name="Bedroom" tags="" position="5500,1000" size="100,100">{
 (set: $showHeader to true)
 (set:$small to (text-size:.6))
 }
@@ -1723,23 +1732,20 @@ Sodabags Studios
 ](else:)[
 * I need more (text-colour:(hsl:60,0.8039,0.5,0.9))[Story Points] to leave this room]
 ]
-</tw-passagedata><tw-passagedata pid="142" name="StoryPointExplanation" tags="" position="4650,475" size="100,100">Each time I confront my past and recover a memory I earn a (text-colour:yellow)[Story Card]. Collect (text-colour:yellow)[Story Cards] to earn (text-colour:yellow)[Story Points] and unlock parts of the house. You can usually find them in your inventory at the bottom of the page. 
+</tw-passagedata><tw-passagedata pid="142" name="StoryPointExplanation" tags="" position="1100,475" size="100,100">(transition:&quot;slide-up&quot;)[Each time I confront my past and recover a memory I earn a (text-colour:yellow)[Story Card]. Collect (text-colour:yellow)[Story Cards] to earn (text-colour:yellow)[Story Points] and unlock parts of the house. You can usually find them in your inventory at the bottom of the page. ]
 
-Find the trap door and complete the reoccuring nightmare to earn (text-colour:green)[Dream Powers]. You cannot defeat the final boss and end the nightmare without them. 
+(transition:&quot;slide-up&quot;)+(after:1s)[Find the trap door and complete the reoccuring nightmare to earn (text-colour:green)[Dream Powers]. You cannot defeat the final boss and end the nightmare without them. ]
 
-(text-style:&quot;underline&quot;)+(after:2s)[
+(text-style:&quot;underline&quot;)+(after:2s)+(transition:&quot;slide-up&quot;)[
 
 =&gt;&lt;=
-[[ Time to wake up|Bedroom]]
+####(text-style:&quot;rumble&quot;)[[[ Time to wake up|Bedroom]] ]
+
+
+####[[ Review the Dream-&gt;the-dream-explained]]
+
 ]
-
------
-
-[[ Review the Dream-&gt;the-dream-explained]]
-
-----
-
-(set: $showFooter to true)</tw-passagedata><tw-passagedata pid="143" name="Stats" tags="" position="3925,300" size="100,100">(text-size:.5)[Courage: $courage Spirit: $spirit Imagination: $imagination ]</tw-passagedata></tw-storydata>
+(set: $showFooter to true)</tw-passagedata><tw-passagedata pid="143" name="Stats" tags="" position="200,400" size="100,100">(text-size:.5)[Courage: $courage Spirit: $spirit Imagination: $imagination ]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

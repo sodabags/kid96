@@ -332,16 +332,16 @@ One of my few happy memories of this place was trying to play fetch with the dog
 ###(text-style:&quot;shadow&quot;)[Secret Passage](text-size:.7)[
 * Behind the piano is a [[fireplace]]  just big enough for a small kid like me to squeeze through.  ]
 (replace: ?place)[Living Room]
-</tw-passagedata><tw-passagedata pid="12" name="piano" tags="" position="1575,975" size="100,100">&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="12" name="piano" tags="" position="1575,975" size="100,100">(transition:&quot;slide-up&quot;)[&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 
 &lt;=
 ---
 
-(if:$SPpiano is false)[
+(if:$SPpiano is not true)[
 ###(text-colour:yellow)[Remember]
 [[&#39;&#39;Play&#39;&#39; the piano?|play-piano]]
 ]
-
+]
 ###&#39;&#39;Travel&#39;&#39;
 * Behind the piano is the [[fireplace]] 
 * [[Go back to the living room.|western living room]]
@@ -416,7 +416,7 @@ The dining room holds a big &#39;&#39;table&#39;&#39; with several wooden &#39;&
 * A [[garage]] to the west
 * An area [[behind the garage]] to the west.
 * Go north [[back inside to the den|den]].
-(replace: ?place)[Backyard]</tw-passagedata><tw-passagedata pid="17" name="guava tree" tags="" position="1650,1975" size="100,100">&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+(replace: ?place)[Backyard]</tw-passagedata><tw-passagedata pid="17" name="guava tree" tags="" position="1650,1975" size="100,100">(transition:&quot;slide-left&quot;)[&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 &lt;=
 ---
@@ -427,10 +427,10 @@ Half eaten guavas litter the ground. Damn squirrels.
 ###(text-colour:yellow)[Interact]
 [[Climb the tree]]
 [[Eat a guava]]
-
+]
 =|
 ###&#39;&#39;Travel&#39;&#39;
-[[back|backyard]] </tw-passagedata><tw-passagedata pid="18" name="red brick circle" tags="" position="1300,2200" size="100,100">&lt;img src = &quot;img/14-backyard-view-of-house.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+[[back|backyard]] </tw-passagedata><tw-passagedata pid="18" name="red brick circle" tags="" position="1300,2200" size="100,100">(transition:&quot;slide-left&quot;)[&lt;img src = &quot;img/14-backyard-view-of-house.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 ---
 //Don&#39;t fall over!//
 ---
@@ -443,7 +443,7 @@ To my east is the [[guava tree]]
 * South of me is an open area of grass and the area [[behind the garage]] 
 * To my west is the [[garage]]
 * Back north to the [[backyard]] 
-
+]
 (replace: ?place)[Backyard]</tw-passagedata><tw-passagedata pid="19" name="Climb the tree" tags="" position="1650,2100" size="100,100">&lt;img src = &quot;img/13-backyard-tree.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
 &lt;=
@@ -510,9 +510,9 @@ I once saw a possum in this front yard. I was standing far away from it, I was s
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.]
 ]
 
-[[Back to the front yard|Front yard]] </tw-passagedata><tw-passagedata pid="23" name="driveway-front-side" tags="" position="350,1150" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+[[Back to the front yard|Front yard]] </tw-passagedata><tw-passagedata pid="23" name="driveway-front-side" tags="" position="350,1150" size="100,100">(transition:&quot;slide-down&quot;)[&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;]
 ---
-//I am standing on a rough black asphault driveway, that connects the curb and the garage.//
+(transition:&quot;slide-left&quot;)[//I am standing on a rough black asphault driveway, that connects the curb and the garage.//
 ---
 ###&#39;&#39;Travel&#39;&#39;(text-size:.7)[
 &#39;&#39;East&#39;&#39;
@@ -535,9 +535,9 @@ I once saw a possum in this front yard. I was standing far away from it, I was s
 (if:$dreaming is false)[ [[Climb the fence]]]
 (if:$dreaming is true and $bloody is true)[ [[Fly over the fence]]]
 (if:$dreaming is true and $bloody is false)[There&#39;s no way past here. I. ouldn&#39;t even imagine it. Some sort of (text-rotate-x:6)+(text-rotate-y:323)[psychic boundary]]
-
-(replace: ?place)[Driveway]</tw-passagedata><tw-passagedata pid="24" name="curb" tags="" position="1425,250" size="100,100">&lt;img src = &quot;img/house-view-from-front-yard.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;View of the Front Yard&quot; /&gt;
-
+]
+(replace: ?place)[Driveway]</tw-passagedata><tw-passagedata pid="24" name="curb" tags="" position="1425,250" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;View of the Front Yard&quot; /&gt;
+]
 ---
 (text-style:&quot;rumble&quot;)[
 ##Watch out! ]
@@ -564,10 +564,10 @@ I once saw a possum in this front yard. I was standing far away from it, I was s
 ###(text-style:&quot;blink&quot;)+(text-colour:yellow)[Recover Memory]
 * [[Remember-&gt;DogWalk]] 
 ]
-(replace: ?place)[Street]</tw-passagedata><tw-passagedata pid="26" name="behind the garage" tags="" position="375,2100" size="100,100">&lt;img src = &quot;img/11-backyard-garage.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;Garage&quot; /&gt;
+(replace: ?place)[Street]</tw-passagedata><tw-passagedata pid="26" name="behind the garage" tags="" position="375,2100" size="100,100">(transition:&quot;slide-left&quot;)[&lt;img src = &quot;img/11-backyard-garage.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;Garage&quot; /&gt;
 ---
-(if:$SPpaleo is false)[
-(text-style:&quot;blink&quot;)+(text-colour:yellow)[Bonus Memory]
+(if:$SPpaleo is not true)[
+###(text-style:&quot;blink&quot;)+(text-colour:yellow)[Bonus Memory]
 I once found a trillobyte fossile back here. A small one, but thats what got me interested in paleontology. 
 (set:$SPpaleo to true, $storyPoints to it + 1)
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.
@@ -583,7 +583,7 @@ I once found a trillobyte fossile back here. A small one, but thats what got me 
 =|
 ###&#39;&#39;Travel&#39;&#39;
 [[Back to the backyard|backyard]]
-
+]
 (replace: ?place)[Backyard]</tw-passagedata><tw-passagedata pid="27" name="TV" tags="" position="1600,1325" size="100,100">&lt;img src=&quot;img/tv1.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 ---
 (if:$SPvTV is false)[ (t8n: &quot;pulse&quot;)[Something]  [[doesn&#39;t feel right.|TV2]] ]
@@ -980,14 +980,16 @@ In one I can clealry see the profile of a [[clown]]
 (replace: ?place)[Funhouse]</tw-passagedata><tw-passagedata pid="63" name="clown" tags="" position="2100,1700" size="100,100">&lt;img src = &quot;img/clown.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 ---
 [[Run!]]
-(set:$SPclown to true)</tw-passagedata><tw-passagedata pid="64" name="Run!" tags="" position="2000,1750" size="100,100">That was close. That clown almost got me. 
+(set:$SPclown to true)</tw-passagedata><tw-passagedata pid="64" name="Run!" tags="" position="2000,1750" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/steel-door.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;]
+
+That was close. That clown almost got me. 
 
 In front is a [[steel door]]
-(replace: ?place)[Funhouse]</tw-passagedata><tw-passagedata pid="65" name="steel door" tags="" position="2000,1850" size="100,100">&lt;img src = &quot;img/factory-assembly-line.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+(replace: ?place)[Funhouse]</tw-passagedata><tw-passagedata pid="65" name="steel door" tags="" position="2000,1850" size="100,100">(transition:&quot;slide-right&quot;)[&lt;img src = &quot;img/factory-assembly-line.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
 ---
 
 I open the door with my mind and inside is a large conveyer belt. It&#39;s Chuck-E-Cheese and I need to get back to work. The animatronics are looking at me with scorn. I don&#39;t want to [[make them mad]]
-
+]
 (replace: ?place)[Factory]</tw-passagedata><tw-passagedata pid="66" name="make them mad" tags="" position="2100,1825" size="100,100">&lt;img src = &quot;img/cathedral-hall.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 ---
 Now I&#39;m in a cathedrawl. I have a magic wand. And I can [[fly]]
@@ -1244,7 +1246,7 @@ I have few happy memories with my family. One was when we went to Utah to see di
 There&#39;s a strange rectacular blob in the ceiling. This house doesn&#39;t have an attic so it&#39;s very curious. Mom said the rumor was that the director who used to live in this house before us has his coffin in that very spot. 
 
 [[Back-&gt;trapdoor]] 
-(replace: ?place)[Den]</tw-passagedata><tw-passagedata pid="93" name="garage" tags="" position="375,1900" size="100,100">&lt;img src = &quot;img/garage-front-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;Garage Door Closed&quot; /&gt;
+(replace: ?place)[Den]</tw-passagedata><tw-passagedata pid="93" name="garage" tags="" position="375,1900" size="100,100">(transition:&quot;slide-left&quot;)[&lt;img src = &quot;img/garage-front-closed.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;Garage Door Closed&quot; /&gt;
 ---
 I am standing in front of the garage. Behind to my left is the red brick circle. Just behidn the garage is a small patch of empty dirt.
 ---
@@ -1256,7 +1258,7 @@ I am standing in front of the garage. Behind to my left is the red brick circle.
 ###&#39;&#39;Travel&#39;&#39;
 * Go [[behind the garage |behind the garage]] 
 * Back to the [[center of the backyard |red brick circle]]
-</tw-passagedata><tw-passagedata pid="94" name="Open the garage door" tags="" position="375,2000" size="100,100">&lt;img src = &quot;img/garage-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;Garage Door Open&quot; /&gt;
+]</tw-passagedata><tw-passagedata pid="94" name="Open the garage door" tags="" position="375,2000" size="100,100">(transition:&quot;shudder&quot;)[&lt;img src = &quot;img/garage-open.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;Garage Door Open&quot; /&gt;]
 ---
 (click:&quot;garage&quot;)[Inside are two white Hondas Accords. Mom and Dad&#39;s cars. There&#39;s some tools as well.
 
@@ -1313,7 +1315,7 @@ I am standing outside the front door, just outside the threshhold. A path leads 
 }
 </tw-passagedata><tw-passagedata pid="97" name="real-wake-up" tags="" position="3800,1200" size="100,100">&lt;img src = &quot;img/eyeball.png&quot; /&gt;
 [[Wake up.]] 
-(set:$dreaming to false, $bloody to false)</tw-passagedata><tw-passagedata pid="98" name="Fly over the fence" tags="" position="500,1425" size="100,100">[[MAP UNLOCKED]] 
+(set:$dreaming to false, $bloody to false)</tw-passagedata><tw-passagedata pid="98" name="Fly over the fence" tags="" position="500,1425" size="100,100">(transition:&quot;slide-up&quot;)[ [[MAP UNLOCKED]]  ]
 &lt;!--[[Explore uncharged locations.]]--&gt;</tw-passagedata><tw-passagedata pid="99" name="again" tags="" position="3900,1100" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 I am running [[as fast as I can]]</tw-passagedata><tw-passagedata pid="100" name="as fast as I can" tags="" position="3900,1200" size="100,100">&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
@@ -1738,17 +1740,16 @@ As the dog got older she became more stubborn. I can&#39;t remember a time when 
 [[Snap Out of It-&gt;street]] 
 (set:$SPdogWalk to true, $storyPoints to it + 1)
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.
-]</tw-passagedata><tw-passagedata pid="133" name="RollerBlading" tags="" position="350,925" size="100,100">&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;
+]</tw-passagedata><tw-passagedata pid="133" name="RollerBlading" tags="" position="350,925" size="100,100">(transition:&quot;slide-left&quot;)[&lt;img src = &quot;img/16-driveway.png&quot; height = &quot;400&quot; width = &quot;auto&quot;  /&gt;]
 &lt;=
 ---
-
-I am roller blading over the rough asphault and it sends vibrations throughout my body. Sometimes I go into the street when there are no cars. I am supposed to be supervised, but honestly I don&#39;t remember anyone watching me. This is a pretty sleepy area, there aren&#39;t too many cars, so I can cover a lot of ground and go really fast!
+(transition:&quot;slide-down&quot;)[I am roller blading over the rough asphault and it sends vibrations throughout my body. Sometimes I go into the street when there are no cars. I am supposed to be supervised, but honestly I don&#39;t remember anyone watching me. This is a pretty sleepy area, there aren&#39;t too many cars, so I can cover a lot of ground and go really fast!
 (set:$SProllerBlade to true, $storyPoints to it + 1)
-I have plenty of protection on. Knee pads. Wrist pads. Helmet. Safety first, even if I am alone.
-
+I have plenty of protection on. Knee pads. Wrist pads. Helmet. Safety first, even if I am alone.]
+(transition:&quot;pulse&quot;)+(transition-delay:.5s)[
 (text-colour:yellow)[+1 Story Card] You have $storyPoints Story Cards.
 
-[[Back-&gt;driveway-front-side]] 
+[[Back-&gt;driveway-front-side]] ]
 (replace: ?place)[Driveway]</tw-passagedata><tw-passagedata pid="134" name="North" tags="" position="1375,50" size="100,100"></tw-passagedata><tw-passagedata pid="135" name="west" tags="" position="125,1225" size="100,100"></tw-passagedata><tw-passagedata pid="136" name="East" tags="" position="4100,1225" size="100,100"></tw-passagedata><tw-passagedata pid="137" name="South" tags="" position="2100,4175" size="100,100"></tw-passagedata><tw-passagedata pid="138" name="shabbatNoShow" tags="" position="1350,1025" size="100,100">&lt;img src=&quot;img/02-dining-room.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 &lt;=
 ---

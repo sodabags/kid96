@@ -120,11 +120,12 @@ tw-sidebar{
  * Released under the Unlicense, and dedicated to the public domain.
 **/
 #audio-overlay{position:fixed;top:0;right:0;left:0;bottom:0;z-index:100000;background:#111}.lds-ring{display:block;position:relative;top:20%;margin:auto;width:20em;height:20em}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:18em;height:18em;margin:6px;border:6px solid #fff;border-radius:50%;-webkit-animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border-color:#fff transparent transparent transparent}.lds-ring div:nth-child(1){-webkit-animation-delay:-.45s;animation-delay:-.45s}.lds-ring div:nth-child(2){-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-ring div:nth-child(3){-webkit-animation-delay:-.15s;animation-delay:-.15s}@-webkit-keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}input#audio-volume{width:100%;margin:2em 0}span#vol-title{position:relative;bottom:-1em;font-size:1rem;float:left}tw-link#audio-mute{display:inline-block;padding:.3em;width:90%;text-decoration:none;color:#111;background:#eee;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #000}tw-link#audio-mute:hover{opacity:.8}tw-link#audio-mute:active{opacity:.6}tw-link#audio-mute span{display:inline-block;width:1em;position:relative;height:1em;top:.2em;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAABF0lEQVR4Ae2VJVREYRSEB3ftuFUaLhF6I22iF7TgLr1XvAc849CwiBac9Xtm3e97cefp/Pec7+mdH0mZrGtMoBomyAEHfjGHXKg07gNxeUS3BuMAqGZswE7YcOIYgqgG7BFlSQgTAgKysC2jNjQmghFQCOpMxq+QmQgmFATU4kcq/YlgfKB1lALUqFSukRIbEwpy4BTZPM/Bu9TaQ362KAsl56sAtSR+Sgv6RCFdr/gjBYiuj65c3J0eNEmXz95TgybocvmoJj3avf5l59L1iD/WglZCP7/uh8zgeQ6epdahaZENFIPCCFvEYNPW4JdNazBGzhkj6caCbSc02DRRu0+8RR/+rb7wx6D505HxCVKvG0zpp+yknHe8MBDkT/s8AAAAAElFTkSuQmCC);background-size:contain}tw-link#audio-mute.muted span{right:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASElEQVR4Ae3WsQ0AMAjAsJ7ez9MTGEmlRGL3BJzPq6prw2DDYMNgw2DDYMOwh1kAMUygQIEC2RejANVxnVE9aDOqJ39GVZWqB5Z3r1ndBX5oAAAAAElFTkSuQmCC)}div#audio-volume{float:left}div#audio-controls{font:100% Georgia,serif;font-size:1.5em;position:fixed;width:8em;height:100%;padding:1em 2em;z-index:10000;top:0;left:0;bottom:0;background:#333;color:#eee;transition:left .3s;text-align:center}div#audio-controls.closed{left:-10.5em}div#audio-controls tw-link#audio-panel-toggle{display:inline-block;width:1.5em;position:absolute;height:1.5em;top:0;right:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-decoration:none;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAYklEQVR4Ae3MsQFAMAAEQMDEagCgN4EuVTrbPcACeUBugDNeSdMQomI0PmYdTEYD9DA5jcVoBKuxGY1kNQ6jGRSaGaIj8gw1aI/KYVUSNqsSzMpiVT2zMjlVN0fqVW5o2luMGHqkQmD9cPYAAAAASUVORK5CYII=);background-size:contain}div#audio-controls.closed tw-link#audio-panel-toggle{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAZElEQVR4Ae3TpwGAMBQAUfrEeHB0cDhcXBSO7ehlgBw9N8BL/YZO95r6uA/UEbOv+ylfHRJ9z1BWLynKJqmWohyS6ijKOygKCpmjZYqXTTA2xUiCsShGAMw8/Q3ArFgFMHek0w3WCaR74eO2YQAAAABJRU5ErkJggg==)}@media screen and (max-width:800px){div#audio-controls.closed{left:-12em}div#audio-controls.closed tw-link#audio-panel-toggle{right:-1.5em}}div#story-menu{margin:1em 0}tw-link.story-menu{width:100%;display:block;font-weight:400;background:#ccc;font-size:.9em;padding:.1em 0;color:#111;border:1px solid #333}tw-link.story-menu.hide{display:none}tw-link.story-menu:hover{opacity:.8}tw-link.story-menu:active{opacity:.6}input[type=range].hal{-webkit-appearance:none;width:100%;margin:2.25px 0}input[type=range].hal:focus{outline:0}input[type=range].hal::-webkit-slider-runnable-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-webkit-slider-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;-webkit-appearance:none;margin-top:-2.25px}input[type=range].hal:focus::-webkit-slider-runnable-track{background:#444}input[type=range].hal::-moz-range-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-moz-range-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer}input[type=range].hal::-ms-track{width:100%;height:15.5px;cursor:pointer;background:0 0;border-color:transparent;color:transparent}input[type=range].hal::-ms-fill-lower{background:#000;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-fill-upper{background:#111;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;height:15.5px}input[type=range].hal:focus::-ms-fill-lower{background:#111}input[type=range].hal:focus::-ms-fill-upper{background:#444}
-/** End of HAL code */</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
+/** End of HAL code */</style><script role="script" id="twine-user-script" type="text/twine-javascript">/** 
+var audio = document.createElement('audio');
 audio.src = 'audio/start-screen.mp3';
 audio.loop = true;
 audio.play();
-
+**/
 
 
 /**
@@ -294,7 +295,7 @@ At least I don&#39;t wet the bed anymore]
 
 A bathtub. Mom used to sing &quot;Under the Sea&quot; when it was bath time. One time I woke up in the middle of the night so tired I accidentally started peeing here. Whoops.
 
-* (text-style:&quot;buoy&quot;)[[[Return to the Bathroom|the bathroom]] ]</tw-passagedata><tw-passagedata pid="10" name="outside" tags="" position="1525,575" size="100,100">&lt;img src=&quot;img/house3.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+* (text-style:&quot;buoy&quot;)[[[Return to the Bathroom|the bathroom]] ]</tw-passagedata><tw-passagedata pid="10" name="outside" tags="" position="1450,525" size="100,100">&lt;img src=&quot;img/house3.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 &lt;=
 ---
 
@@ -473,7 +474,7 @@ Oh yeah, Furqel is what I used to call Squirrels, because I couldn&#39;t pronoun
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.
 ]
 ---
-[[Back|guava tree]] </tw-passagedata><tw-passagedata pid="21" name="Front yard" tags="" position="1525,475" size="100,100">(transition:&quot;slide-down&quot;)[(if:$dreaming is not true)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot;width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;View of House in Daytime&quot; /&gt;]
+[[Back|guava tree]] </tw-passagedata><tw-passagedata pid="21" name="Front yard" tags="" position="1450,425" size="100,100">(transition:&quot;slide-down&quot;)[(if:$dreaming is not true)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot;width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;View of House in Daytime&quot; /&gt;]
 (else-if:$dreaming is true)[&lt;img src = &quot;img/house2.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;View of House at Night&quot; /&gt;] 
 ---
 I am standing in the center of the front yard.
@@ -499,7 +500,7 @@ Some corn was planted in the front yard but it hasn&#39;t really grown much. (af
 * To the east is the [[front driveway-&gt;driveway-front-side]]. 
 * Back to the [[front of the house|outside]]. 
 ]
-(replace: ?place)[Front Yard]</tw-passagedata><tw-passagedata pid="22" name="Palm tree" tags="" position="1600,375" size="100,100">&lt;img src = &quot;img/palm-tree.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+(replace: ?place)[Front Yard]</tw-passagedata><tw-passagedata pid="22" name="Palm tree" tags="" position="1525,325" size="100,100">&lt;img src = &quot;img/palm-tree.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A huge bearded (text-colour:yellow)[palm] tree. 
 (text-size:.8)[//If I could fly, I could get to the top of it.//]
@@ -539,7 +540,7 @@ I once saw a possum in this front yard. I was standing far away from it, I was s
 (if:$dreaming is true and $bloody is true)[ [[Fly over the fence]]]
 (if:$dreaming is true and $bloody is false)[There&#39;s no way past here. I. ouldn&#39;t even imagine it. Some sort of (text-rotate-x:6)+(text-rotate-y:323)[psychic boundary]]
 ]
-(replace: ?place)[Driveway]</tw-passagedata><tw-passagedata pid="24" name="curb" tags="" position="1425,250" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;View of the Front Yard&quot; /&gt;
+(replace: ?place)[Driveway]</tw-passagedata><tw-passagedata pid="24" name="curb" tags="" position="1350,200" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;View of the Front Yard&quot; /&gt;
 ]
 ---
 (text-style:&quot;rumble&quot;)[
@@ -555,7 +556,7 @@ I once saw a possum in this front yard. I was standing far away from it, I was s
 ###&#39;&#39;Travel&#39;&#39;
 * Go back to [[the driveway-&gt;driveway-front-side]] 
 * Go back to [[the yard|Front yard]]
-(replace: ?place)[Street]</tw-passagedata><tw-passagedata pid="25" name="street" tags="" position="1425,350" size="100,100">(transition:&quot;slide-down&quot;)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;]
+(replace: ?place)[Street]</tw-passagedata><tw-passagedata pid="25" name="street" tags="" position="1350,300" size="100,100">(transition:&quot;slide-down&quot;)[&lt;img src = &quot;img/house-view-from-front-yard.png&quot; width = &quot;300&quot; vspace = &quot;50&quot; /&gt;]
 (transition:&quot;zoom&quot;)+(text-style:&quot;blink&quot;)[
 ###Its not safe for a kid to be out here!
 ]
@@ -648,6 +649,10 @@ $p+(text-size:.6)[Interactive Nightmare Simulator]
 &lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 
 (transition:&quot;slide-right&quot;)+(text-style:&quot;blink&quot;)[&lt;div class=&quot;rubik-family&quot; &gt;[[Start! |content-warning]]&lt;/div&gt;]
+{(if: (saved-games: ) contains &quot;Slot A&quot;)[
+  (link: &quot;Load game&quot;)[(load-game:&quot;Slot A&quot;)]
+]}
+
 =&gt;&lt;=
 &lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;&lt;span class = &quot;smallImg bottom&quot;&gt;&lt;img src = &quot;img/eyeball.png&quot;  height=&quot;50&quot; width=&quot;50&quot; /&gt;&lt;/span&gt;
 &lt;==
@@ -835,7 +840,7 @@ I must have face planted the pavement. My whole forehead is swollen and dripping
 
 ###&#39;&#39;Travel&#39;&#39;
 * In front is the [[garage]]
-* To my left is the [[backyard]] patio. </tw-passagedata><tw-passagedata pid="44" name="small east tree" tags="" position="1625,475" size="100,100">&lt;img src=&quot;img/ front-yard-west-side-free.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;A tree and a hedge&quot;&gt;
+* To my left is the [[backyard]] patio. </tw-passagedata><tw-passagedata pid="44" name="small east tree" tags="" position="1550,425" size="100,100">&lt;img src=&quot;img/ front-yard-west-side-free.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;A tree and a hedge&quot;&gt;
 
 ---
 
@@ -847,7 +852,7 @@ I am standing by my neighbors to the east.
 (text-style:&quot;fidget&quot;)+(text-size:.7)[I would (text-style:&quot;blur&quot;)[throw myself] off the roof.]
 I climbed up this tree and got onto [[the roof]]]
 &lt;=
----</tw-passagedata><tw-passagedata pid="45" name="the roof" tags="" position="1725,475" size="100,100">(replace: ?place)[The Roof]
+---</tw-passagedata><tw-passagedata pid="45" name="the roof" tags="" position="1650,425" size="100,100">(replace: ?place)[The Roof]
 &lt;img src=&quot;img/roof.png&quot; width = &quot;auto&quot; height = &quot;400&quot; &gt;
 ---
 
@@ -1050,7 +1055,7 @@ Back to the [[living room|western living room]]
 A bookcase full of books. Alphebatized. I spent a lot of time doing that. 
 
 
-(if:$SPbookshelfEQ is false)[
+(if:$SPbookshelfEQ is not true)[
 ###(text-colour:yellow)[Examine]
 [[Remember|earthquake-bedroom-bookshelf]] ](else:)[This bookcase almost killed me.]
 
@@ -1299,7 +1304,7 @@ She is the Queen of Bones. A bloodless, fleshless husk. Devoured by the Vampire 
 (if:$fly is true)[
 [[Fly beyond her reach]]
 ]
-(set:$SPqueenOfBones to true)</tw-passagedata><tw-passagedata pid="96" name="front door outside" tags="" position="1625,575" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;Front Door&quot; /&gt;
+(set:$SPqueenOfBones to true)</tw-passagedata><tw-passagedata pid="96" name="front door outside" tags="" position="1550,525" size="100,100">&lt;img src=&quot;img/front-door.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;Front Door&quot; /&gt;
 ---
 I am standing outside the front door, just outside the threshhold. A path leads towards the [[front yard-&gt;outside]] 
 ---
@@ -1663,6 +1668,13 @@ Kid &#39;96. (if: $dreaming is true)[  I am dreaming.  ](if: $bloody is true)[. 
 (if: $showFooter is true)[
 (display: &quot;Stats&quot;)
 (display: &quot;Inventory&quot;)
+{(link:&quot;Save game&quot;)[
+  (if:(save-game:&quot;Slot A&quot;))[
+    Game saved!
+  ](else: )[
+    Sorry, I couldn&#39;t save your game.
+  ]
+]}
 ]
 </tw-passagedata><tw-passagedata pid="131" name="Inventory" tags="" position="325,400" size="100,100">(text-size:.6)+(text-style:&quot;expand&quot;,&quot;tall&quot;,&quot;fidget&quot;)[Story Points: $storyPoints .]  	(text-size:.6)[//(display:&quot;happy place&quot;)//]
 ---
@@ -1732,7 +1744,7 @@ Skip to [[Front yard]]
 #You win
 ] 
 ]
-]</tw-passagedata><tw-passagedata pid="132" name="DogWalk" tags="" position="1525,375" size="100,100">#(text-colour:yellow)+(text-style:&quot;fidget&quot;)+(transition:&quot;zoom&quot;)[Examine]
+]</tw-passagedata><tw-passagedata pid="132" name="DogWalk" tags="" position="1450,325" size="100,100">#(text-colour:yellow)+(text-style:&quot;fidget&quot;)+(transition:&quot;zoom&quot;)[Examine]
 ---
 
 As the dog got older she became more stubborn. I can&#39;t remember a time when she wasn&#39;t a part of this family. In fact, every time its my birthday, it&#39;s also the dogs birthday. Every birthday card is made out to me and the dog. That&#39;s normal, right?
@@ -1754,7 +1766,7 @@ I have plenty of protection on. Knee pads. Wrist pads. Helmet. Safety first, eve
 (text-colour:yellow)[+1 Story Card] You have $storyPoints Story Cards.
 
 [[Back-&gt;driveway-front-side]] ]
-(replace: ?place)[Driveway]</tw-passagedata><tw-passagedata pid="134" name="North" tags="" position="1375,50" size="100,100"></tw-passagedata><tw-passagedata pid="135" name="west" tags="" position="125,1225" size="100,100"></tw-passagedata><tw-passagedata pid="136" name="East" tags="" position="4100,1225" size="100,100"></tw-passagedata><tw-passagedata pid="137" name="South" tags="" position="2100,4175" size="100,100"></tw-passagedata><tw-passagedata pid="138" name="shabbatNoShow" tags="" position="1350,1025" size="100,100">&lt;img src=&quot;img/02-dining-room.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+(replace: ?place)[Driveway]</tw-passagedata><tw-passagedata pid="134" name="North" tags="" position="1375,50" size="100,100"></tw-passagedata><tw-passagedata pid="135" name="west" tags="" position="125,1225" size="100,100"></tw-passagedata><tw-passagedata pid="136" name="East" tags="" position="3975,1225" size="100,100"></tw-passagedata><tw-passagedata pid="137" name="South" tags="" position="2100,4175" size="100,100"></tw-passagedata><tw-passagedata pid="138" name="shabbatNoShow" tags="" position="1350,1025" size="100,100">&lt;img src=&quot;img/02-dining-room.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 &lt;=
 ---
 
@@ -1782,7 +1794,9 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 ####Sodabags Studios&lt;/span&gt;
 &lt;==
 ---
-(after:1s )[(go-to:&quot;Title&quot;)]]</tw-passagedata><tw-passagedata pid="141" name="Bedroom" tags="" position="3275,1025" size="100,100">{
+(after:1s )[(go-to:&quot;Title&quot;)]]
+(track: &#39;introMusic&#39;, &#39;playwhenpossible&#39;, &#39;loop&#39;, true)</tw-passagedata><tw-passagedata pid="141" name="Bedroom" tags="" position="3275,1025" size="100,100">{
+(track: &#39;beep1&#39;, &#39;play&#39;)
 (set: $showHeader to true)
 (replace:?place)[Bedroom]
 (set:$small to (text-size:.6))
@@ -1805,7 +1819,7 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 
 ###&#39;&#39;(text-style:&quot;underline&quot;)+(text-style:&quot;fidget&quot;)[Travel]&#39;&#39; $small[
 (if:$storyPoints &gt; 0)[
-* I can go to the door to the hallway [[hallway |Hallway]] 
+* I can go to the door to the [[hallway |Hallway]] 
 ](else:)[
 * I need more (text-colour:(hsl:60,0.8039,0.5,0.9))[Story Points] to leave this room]
 ]
@@ -1826,10 +1840,11 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 
 (input:bind $happyPlace, &quot;my happy place&quot;)
 
-[[Continue-&gt;intro-child]]</tw-passagedata><tw-passagedata pid="146" name="hal.tracks" tags="" position="100,125" size="100,100">beep1: /audio/beep1.wav, /audio/beep1.ogg
-beep2: /audio/beep2.wav, /audio/beep2.ogg
-introMusic: /audio/start-screen.mp3, /audio/start-screen.ogg
-ExploreMusic: /audio/exploring-the-house.mp3,  /audio/exploring-the-house.ogg</tw-passagedata></tw-storydata>
+[[Continue-&gt;intro-child]]
+</tw-passagedata><tw-passagedata pid="146" name="hal.tracks" tags="" position="100,125" size="100,100">beep1: ./audio/beep1.wav, /audio/beep1.ogg
+beep2: ./audio/beep2.wav, /audio/beep2.ogg
+introMusic: ./audio/start-screen.mp3, /audio/start-screen.ogg
+ExploreMusic: ./audio/exploring-the-house.mp3,  /audio/exploring-the-house.ogg</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

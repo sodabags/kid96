@@ -712,6 +712,8 @@ $p+(text-size:.4)[c 2025 sodabags studios]
 (set: $where to (text-rotate-z:345))
 (set: $mapUnlocked to false)
 (set: $isSaveFileCreated to false)
+
+(track: &#39;introMusic&#39;, &#39;playwhenpossible&#39;, &#39;loop&#39;, true)
 }</tw-passagedata><tw-passagedata pid="33" name="eastern living room" tags="" position="1775,975" size="100,100">(transition:&quot;slide-left&quot;)[&lt;img src = &quot;img/06-living-room-2.png&quot; width = &quot;auto&quot; height = &quot;200&quot; /&gt;&lt;img src = &quot;img/07-piano.png&quot; width = &quot;auto&quot; height = &quot;200&quot; class = &quot;border&quot;/&gt;
 (text-size:.7) [ //Beige carpet and beige walls// ]
 ---
@@ -729,7 +731,10 @@ $p[ I am a child.]
 $p+(text-style:&quot;fidget&quot;)[I&#39;m about 10 years old.] 
 &lt;==
 (transition:&quot;slide-down&quot;)[What is my name?: (force-input: &quot;The Child&quot;)]
-$p[[[Continue-&gt;intro-child-2]]  ]</tw-passagedata><tw-passagedata pid="35" name="intro-child-2" tags="" position="725,250" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
+$p[[[Continue-&gt;intro-child-2]]  ]
+
+(track: &#39;beep1&#39;, &#39;play&#39;)
+</tw-passagedata><tw-passagedata pid="35" name="intro-child-2" tags="" position="725,250" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 
 $p[The year is (text-style:&quot;underline&quot;,&quot;emboss&quot;)[1996]. ]
 $p[The place?]&lt;place|
@@ -739,7 +744,8 @@ Somewhere in the Valley.]
 $p+(text-style:&quot;smear&quot;)[Childhood] is supposed to be (text-style:&quot;outline&quot;)[innocent]
 
 $p+(click:?reveal)[There&#39;s a lot of families around here. 
-Everyone is living the [[American Dream. |intro-child-3]] ]</tw-passagedata><tw-passagedata pid="36" name="intro-house" tags="" position="875,250" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/house-crane-view-lines.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;]
+Everyone is living the [[American Dream. |intro-child-3]] ]
+(track: &#39;beep2&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="36" name="intro-house" tags="" position="875,250" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/house-crane-view-lines.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;]
 
 (transition:&quot;slide-down&quot;)[They said a Hollywood director used to live here. ]
 =&gt;&lt;==
@@ -747,7 +753,8 @@ Everyone is living the [[American Dream. |intro-child-3]] ]</tw-passagedata><tw-
 ===&gt;&lt;==
 (transition:&quot;slide-left&quot;)[[[ But that&#39;s not what&#39;s wrong with this house. |end-introduction]] 
 &lt;=
-]</tw-passagedata><tw-passagedata pid="37" name="end-introduction" tags="" position="850,375" size="100,100">&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
+]
+(track: &#39;beep4&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="37" name="end-introduction" tags="" position="850,375" size="100,100">&lt;img src = &quot;img/house-crane-view-color.png&quot; width = &quot;400&quot; height = &quot;auto&quot; /&gt;
 &lt;=
 ---
 (transition:&quot;slide-down&quot;)+(text-rotate-z:338)[Something](transition:&quot;slide-down&quot;)+(transition-delay:1s) [ is wrong.
@@ -766,6 +773,7 @@ if I can follow the (bg:magenta)[nightmare] to the end, ]
 Or is it time to [[wake up.|StoryPointExplanation]] and explore the house.]
 
 (set: $showFooter to true)
+(track: &#39;beeps&#39;, &#39;play&#39;)
 &lt;!--DevTools--&gt;
 &lt;!--Skip to [[Bedroom]] 
 Skip to [[Hallway]] 
@@ -776,7 +784,7 @@ Skip to [[den]]
 SKip to [[backyard]] 
 Skip to [[Front yard]] --&gt;
 
-</tw-passagedata><tw-passagedata pid="38" name="intro-child-3" tags="" position="800,150" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;]
+</tw-passagedata><tw-passagedata pid="38" name="intro-child-3" tags="" position="800,125" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;]
 
      (transition:&quot;zoom&quot;)+(text-size:1.2)[But]
 =&gt;&lt;===
@@ -784,7 +792,7 @@ Skip to [[Front yard]] --&gt;
 &lt;div class = &quot;rubik-family&quot; &gt;(text-style:&quot;rumble&quot;)+(transition:&quot;zoom&quot;)[[[It&#39;s a nightmare. |intro-house]] ]&lt;/ div&gt;
 ====&gt;&lt;==
 &lt;div class = &quot;shadows-into-light-regular&quot; &gt;(transition:&quot;slide-down&quot;)[Its been a few years now.] &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="39" name="the-dream-explained" tags="" position="900,475" size="100,100">(transition:&quot;slide-down&quot;)[
+(track: &#39;beep3&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="39" name="the-dream-explained" tags="" position="900,475" size="100,100">(transition:&quot;slide-down&quot;)[
 I am [running]&lt;1| for my life, chased by the vampire, fangs out and inches from my neck. I can&#39;t outrun him, just before they pierce my flesh and suck my blood I am shook awake in a violent spasm. 
 ==&gt;
 (transition:&quot;slide-right&quot;)[&lt;img src = &quot;img/vampire-gonna-get-you.png&quot; width = &quot;200&quot; /&gt;]
@@ -1002,7 +1010,9 @@ I open the door with my mind and inside is a large conveyer belt. It&#39;s Chuck
 ---
 Now I&#39;m in a cathedrawl. I have a magic wand. And I can [[fly]]
 
-(replace: ?place)[Cathedral]</tw-passagedata><tw-passagedata pid="67" name="fly" tags="" position="2300,1700" size="100,100">How did I get back in a labyrinthe?
+(replace: ?place)[Cathedral]</tw-passagedata><tw-passagedata pid="67" name="fly" tags="" position="2300,1700" size="100,100">&lt;img src=&quot;img/labyrinthe.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
+---
+How did I get back in a labyrinthe?
 ---
 It&#39;s cold and dark and the ceilings are too low to [[fly ]]
 
@@ -1473,7 +1483,9 @@ https://www.sodabags.itch.io
 
 //Coming soon!//
 
-[[Back to the driveway-&gt;driveway-front-side]] </tw-passagedata><tw-passagedata pid="116" name="Fly beyond her reach" tags="" position="2300,1600" size="100,100">When fighting the Queen of Bones I move too quickly for her to be able to keep up. I can avoid fighting with her and try to find forgiveness. Wrestle with it deeply and be unsure of where to land. She’s buying me a super soaker at Toyz-R-Us. She’s taking me to Chuck-E-Cheese and laser tag. She’s a soccer mom. She’s doing the best she can. 
+[[Back to the driveway-&gt;driveway-front-side]] </tw-passagedata><tw-passagedata pid="116" name="Fly beyond her reach" tags="" position="2300,1600" size="100,100">&lt;img src=&quot;img/queen-of-bones.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;A skeleton woman&quot; /&gt;
+------
+When fighting the Queen of Bones I move too quickly for her to be able to keep up. I can avoid fighting with her and try to find forgiveness. Wrestle with it deeply and be unsure of where to land. She’s buying me a super soaker at Toyz-R-Us. She’s taking me to Chuck-E-Cheese and laser tag. She’s a soccer mom. She’s doing the best she can. 
 sds
 
 The last memory is in the main bedroom. She has given me a floppy disk for the DOS Computer, (it&#39;s 486!) the game is &#39;&#39;Where in the World is Carmen San Diego?&#39;&#39;
@@ -1795,11 +1807,11 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 &lt;==
 ---
 (after:1s )[(go-to:&quot;Title&quot;)]]
-(track: &#39;introMusic&#39;, &#39;playwhenpossible&#39;, &#39;loop&#39;, true)</tw-passagedata><tw-passagedata pid="141" name="Bedroom" tags="" position="3275,1025" size="100,100">{
+</tw-passagedata><tw-passagedata pid="141" name="Bedroom" tags="" position="3275,1025" size="100,100">{
 (track: &#39;beep1&#39;, &#39;play&#39;)
 (set: $showHeader to true)
 (replace:?place)[Bedroom]
-(set:$small to (text-size:.6))
+(set:$small to (text-size:.8))
 }
 &lt;img src=&quot;img/Bed1.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 
@@ -1840,11 +1852,17 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 
 (input:bind $happyPlace, &quot;my happy place&quot;)
 
+P.S. Headphones are recommended. If you can&#39;t hear music now check to see if you&#39;re browser is muted.
+
 [[Continue-&gt;intro-child]]
-</tw-passagedata><tw-passagedata pid="146" name="hal.tracks" tags="" position="100,125" size="100,100">beep1: ./audio/beep1.wav, /audio/beep1.ogg
+</tw-passagedata><tw-passagedata pid="146" name="hal.tracks" tags="" position="100,125" size="100,100">beep1: ./audio/beep1.mp3, /audio/beep1.ogg
 beep2: ./audio/beep2.wav, /audio/beep2.ogg
+beep3: ./audio/beep3.wav, /audio/beep3.ogg
+beep4: ./audio/beep4.wav, /audio/beep4.ogg
+beeps: ./audio/beeps.wav, /audio/beeps.ogg
 introMusic: ./audio/start-screen.mp3, /audio/start-screen.ogg
-ExploreMusic: ./audio/exploring-the-house.mp3,  /audio/exploring-the-house.ogg</tw-passagedata></tw-storydata>
+ExploreMusic: ./audio/exploring-the-house.mp3,  /audio/exploring-the-house.ogg
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

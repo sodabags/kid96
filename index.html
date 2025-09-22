@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Kid96.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Kid96" startnode="146" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
+<tw-storydata name="Kid96" startnode="146" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8B12D02B-700B-4715-9BBE-AD8BB5E673B0" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
@@ -201,6 +201,7 @@ Try to [[teleport through the door]]
 (replace: ?place)[Edge of Darkness]
 }
 * [[Back to the hallway |Hallway]]
+(track: &#39;beeps&#39;, &#39;play&#39;)
 &lt;!--(if: $MasterBedroomUnlocked is true)[Unlocked Memory: I am playing a game with my father. It is the last time I can remember us playing. There was an accident and I got hurt. I stated crying and I don&#39;t understand the look in his eyes. It is cold confusion. ]--&gt;</tw-passagedata><tw-passagedata pid="3" name="door to the bathroom" tags="" position="3325,1400" size="100,100">{(set: $SPeqBrace to false)
 &lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  alt = &quot;A doorframe into the bathroom&quot;/&gt;}
 ---
@@ -242,8 +243,8 @@ I am standing by the front door, just inside the threshhold, next to a large flu
 &lt;=
 ---
 * A golden retriever sleeps next to the door.
-* (link-repeat:&quot;Pet the dog &quot;)[ 
-Good Dog!]
+(button:)[(link-repeat:&quot;Pet the dog &quot;)[ 
+Good Dog!] ]
 (replace: ?place)[Front Door]</tw-passagedata><tw-passagedata pid="5" name="the bathroom" tags="" position="3425,1500" size="100,100">(transition:&quot;slide-up&quot;)[&lt;img src = &quot;img/bathroom-door-open.png&quot; width = &quot;auto&quot; height = &quot;400&quot; alt = &quot;A doorframe into the bathroom&quot; /&gt;]
 ---
 |==
@@ -273,12 +274,12 @@ Good Dog!]
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards. ]
 
 ###(text-style:&quot;underline&quot;)[Travel]
-* (text-style:&quot;shudder&quot;)[[[Return to the bathroom|the bathroom]] ]
-(replace:?place)[Bathroom]</tw-passagedata><tw-passagedata pid="7" name="shower" tags="" position="3425,1600" size="100,100">&lt;img src = &quot;img/bathroom-shower.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+(button:)+(text-style:&quot;shudder&quot;)[[[Return to the bathroom|the bathroom]] ]
+(replace:?place)[Bathroom]</tw-passagedata><tw-passagedata pid="7" name="shower" tags="" position="3425,1600" size="100,100">(transition:&quot;slide-down&quot;)[&lt;img src = &quot;img/bathroom-shower.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt; ]
 ---
 ###A shower. Nothing remarkable.
 
-* (transition:&quot;pulse&quot;)[[[Back to the bathroom|the bathroom]] ]</tw-passagedata><tw-passagedata pid="8" name="toilet" tags="" position="3525,1500" size="100,100">&lt;img src = &quot;img/bathroom-toilet.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  alt = &quot;toilet&quot; /&gt;
+(button:)+(transition:&quot;pulse&quot;)[[[Back to the bathroom|the bathroom]] ]</tw-passagedata><tw-passagedata pid="8" name="toilet" tags="" position="3525,1500" size="100,100">&lt;img src = &quot;img/bathroom-toilet.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  alt = &quot;toilet&quot; /&gt;
 
 ---
 
@@ -289,14 +290,14 @@ This is a place of shame.
 Every time my body corporealizes the stress of walking on eggshells around this house it ends up leaving something behind in here. Sometimes at odd hours of the night. 
 At least I don&#39;t wet the bed anymore]
 }
-* (transition:&quot;pulse&quot;)[[[Back to the bathroom|the bathroom]]  ]
+(button:)+(transition:&quot;pulse&quot;)[[[Back to the bathroom|the bathroom]]  ]
 (replace:?place)[Bathroom]</tw-passagedata><tw-passagedata pid="9" name="bathtub" tags="" position="3425,1400" size="100,100">&lt;img src = &quot;img/bathroom-bathtub.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  alt = &quot;bathtub&quot; /&gt;
  
 ---
 
 A bathtub. Mom used to sing &quot;Under the Sea&quot; when it was bath time. One time I woke up in the middle of the night so tired I accidentally started peeing here. Whoops.
 
-* (text-style:&quot;buoy&quot;)[[[Return to the Bathroom|the bathroom]] ]</tw-passagedata><tw-passagedata pid="10" name="outside" tags="" position="1450,525" size="100,100">&lt;img src=&quot;img/house3.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
+(button:)+(text-style:&quot;buoy&quot;)[[[Return to the Bathroom|the bathroom]] ]</tw-passagedata><tw-passagedata pid="10" name="outside" tags="" position="1450,525" size="100,100">&lt;img src=&quot;img/house3.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 &lt;=
 ---
 
@@ -394,6 +395,7 @@ The dining room holds a big &#39;&#39;table&#39;&#39; with several wooden &#39;&
 * I don&#39;t have enough (text-colour:yellow)[Story Points] to leave the house yet.]
 * Go back up the stairs to the [[living room|eastern living room]]
 (replace: ?place)[Den]
+(track: &#39;beeps&#39;, &#39;play&#39;)
 }
 </tw-passagedata><tw-passagedata pid="15" name="kitchen" tags="" position="1475,1300" size="100,100">&lt;img src = &quot;img/05-kitchen.png&quot; width = &quot;auto&quot; height = &quot;400&quot; /&gt;
 &lt;=
@@ -505,7 +507,8 @@ Some corn was planted in the front yard but it hasn&#39;t really grown much. (af
 * To the east is the [[front driveway-&gt;driveway-front-side]]. 
 * Back to the [[front of the house|outside]]. 
 ]
-(replace: ?place)[Front Yard]</tw-passagedata><tw-passagedata pid="22" name="Palm tree" tags="" position="1525,325" size="100,100">&lt;img src = &quot;img/palm-tree.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
+(replace: ?place)[Front Yard]
+(track: &#39;beeps&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="22" name="Palm tree" tags="" position="1525,325" size="100,100">&lt;img src = &quot;img/palm-tree.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
 
 A huge bearded (text-colour:yellow)[palm] tree. 
 (text-size:.8)[//If I could fly, I could get to the top of it.//]
@@ -631,8 +634,8 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 * Take the stairs to the [[den]] 
 (replace: ?place)[Den]</tw-passagedata><tw-passagedata pid="30" name="bed" tags="" position="3375,1025" size="100,100">&lt;img src=&quot;img/Bed2.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&gt;
 
-[[Go to Sleep]]
-
+(button:)[ [[Go to Sleep]] ]
+(button:)[ [[Back to Bedroom-&gt;Bedroom]]  ]
 
 (text-style:&quot;outline&quot;,&quot;expand&quot;,&quot;buoy&quot;)[ZZZzzzzzzzz]
 (replace:?place)[Bed]</tw-passagedata><tw-passagedata pid="31" name="Wake up." tags="" position="2750,1125" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src=&quot;img/Bed2.png&quot; height = &quot;400&quot; width = &quot;auto&quot; alt = &quot;A drawing of a bed.&quot;&gt;]
@@ -640,7 +643,7 @@ This alcove is build into the house, an adult might be able to pull up a chair a
 (transition:&quot;slide-up&quot;)+(text-style:&quot;buoy&quot;)[[[(either:&quot;I Wake up&quot;,&quot;Wake Up&quot;, &quot;I think I woke up&quot;, &quot;I woke, up right?&quot;,&quot;Get up&quot;, &quot;Time to get out of bed&quot;, &quot;Arise&quot;, &quot;I think it&#39;s morning&quot;, &quot;I wake up to the sound of distant shouting&quot;) |Bedroom]] ]
 
 (set: $dreaming to false, $bloody to false)
-(track: &#39;beeps&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="32" name="Title" tags="" position="400,275" size="100,100">{
+(track: &#39;beeps&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="32" name="Title" tags="" position="200,225" size="100,100">{
 (set:$p to (transition:&quot;pulse&quot;))
 }
 =&gt;&lt;=
@@ -733,7 +736,7 @@ $p+(text-size:.4)[c 2025 sodabags studios]
 * North of me is the [[front door|front-door-inside]]  and a small area for people to take their shoes off.
 ]
 (replace: ?place)[Living Room]
-(track: &#39;beeps&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="34" name="intro-child" tags="" position="650,150" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;]
+(track: &#39;beeps&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="34" name="intro-child" tags="" position="525,150" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/child-sunset.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;]
 $p[ I am a child.]
 ==&gt;&lt;=
 $p+(text-style:&quot;fidget&quot;)[I&#39;m about 10 years old.] 
@@ -742,7 +745,7 @@ $p+(text-style:&quot;fidget&quot;)[I&#39;m about 10 years old.]
 $p[[[Continue-&gt;intro-child-2]]  ]
 
 (track: &#39;beep1&#39;, &#39;play&#39;)
-</tw-passagedata><tw-passagedata pid="35" name="intro-child-2" tags="" position="725,250" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
+</tw-passagedata><tw-passagedata pid="35" name="intro-child-2" tags="" position="650,300" size="100,100">&lt;img src = &quot;img/the-child.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;
 
 $p[The year is (text-style:&quot;underline&quot;,&quot;emboss&quot;)[1996]. ]
 $p[The place?]&lt;place|
@@ -792,7 +795,7 @@ Skip to [[den]]
 SKip to [[backyard]] 
 Skip to [[Front yard]] --&gt;
 
-</tw-passagedata><tw-passagedata pid="38" name="intro-child-3" tags="" position="800,125" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;]
+</tw-passagedata><tw-passagedata pid="38" name="intro-child-3" tags="" position="725,150" size="100,100">(transition:&quot;zoom&quot;)[&lt;img src = &quot;img/the-child-vanishing.png&quot; height=&quot;400&quot; width = &quot;auto&quot; /&gt;]
 
      (transition:&quot;zoom&quot;)+(text-size:1.2)[But]
 =&gt;&lt;===
@@ -931,9 +934,10 @@ I can still see it in my (text-style:&quot;blur&quot;)[memory] like it was yeste
 * Back to the [[den]]&lt;!-- or fast travel to the [[Bedroom]] --&gt; ?
 &lt;!--]--&gt;
 }
-(replace: ?place)[Den]</tw-passagedata><tw-passagedata pid="51" name="Go to Sleep" tags="" position="3375,925" size="100,100">&lt;img src=&quot;img/Bed3.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
+(replace: ?place)[Den]
+(track: &#39;beeps&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="51" name="Go to Sleep" tags="" position="3375,925" size="100,100">&lt;img src=&quot;img/Bed3.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 ---
-[[Sleep|sleep2]]
+(button:)[ [[Sleep|sleep2]] ]
 
 (replace:?place)[Bed]</tw-passagedata><tw-passagedata pid="52" name="sleep2" tags="" position="3700,550" size="100,100">&lt;img src=&quot;img/Bed4.png&quot; width = &quot;400&quot; height = &quot;auto&quot;&quot;&gt;
 
@@ -1075,11 +1079,11 @@ A bookcase full of books. Alphebatized. I spent a lot of time doing that.
 
 
 (if:$SPbookshelfEQ is not true)[
-###(text-colour:yellow)[Examine]
+###(button:)+(text-colour:yellow)[Examine]
 [[Remember|earthquake-bedroom-bookshelf]] ](else:)[This bookcase almost killed me.]
 
 ###&#39;&#39;Travel&#39;&#39;
-[[Back to the bedroom|Bedroom]]
+(button:)[ [[Back to the bedroom|Bedroom]] ]
 (replace:?place)[Bedroom]</tw-passagedata><tw-passagedata pid="74" name="window" tags="" position="3475,1125" size="100,100">&lt;img src=&quot;img/bedroom-window.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 //I am standing in my bedroom, looking at the closed window.//
 ---
@@ -1100,7 +1104,7 @@ I can see the// palm tree// and the //street// from here. Also the //grass// and
 ---
 
 =&gt;&lt;=
-(text-size:.8)[[[Return to the bedroom|Bedroom]]]
+(button:)+(text-size:.8)[[[Return to the bedroom|Bedroom]]]
 
 &lt;=
 ---
@@ -1112,13 +1116,13 @@ I am looking at my bedroom closet.
 =&gt;&lt;=
 (text-colour:yellow)[Examine]
 &lt;=
-* [[Open the closet]]
+(button:)[ [[Open the closet]] ]
 
 =|
 =&gt;&lt;=
 (text-style:&quot;underline&quot;)[Travel]
 &lt;=
-* [[Back to the bedroom|Bedroom]]
+(button:)[ [[Back to the bedroom|Bedroom]] ]
 (replace:?place)[Bedroom]</tw-passagedata><tw-passagedata pid="77" name="desk" tags="" position="3275,925" size="100,100">&lt;img src=&quot;img/bedroom-desk.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
 &lt;==
 ---
@@ -1141,7 +1145,7 @@ His name is Gex. He smiles at you.
 ]
 
 =&gt;&lt;=
-(after:2s)+(text-size:.8)[[[Back to the bedroom|Bedroom]]]
+(button:)+(after:2s)+(text-size:.8)[[[Back to the bedroom|Bedroom]]]
 &lt;=
 ---
 (replace:?place)[Bedroom]</tw-passagedata><tw-passagedata pid="78" name="aquarium" tags="" position="3175,1125" size="100,100">&lt;img src=&quot;img/aquarium.png&quot; height = &quot;400&quot; width = &quot;auto&quot; /&gt;
@@ -1150,7 +1154,7 @@ A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish
 
 |=
 
-[[Back to the bedroom|Bedroom]]
+(button:)[ [[Back to the bedroom|Bedroom]] ]
 
 =|
 (if:$SPfishKiller is false)[
@@ -1185,7 +1189,7 @@ A fish tank has three fish. One ghost eel. One rainbow shark. And one other fish
 I only got this (text-colour:blue)[Game Gear] because of fate. My parents didn&#39;t want me to have ay video games. But I went to camp with them and played Bingo, and I won enough money to buy it! I It came with one of these games, I can&#39;t remember which, and I never had enough money to buy a fourth game. 
 ] 
 ---
-(text-size:.8)[Back to the [[Bedroom]] ]
+(button:)+(text-size:.8)[ [[Back to the  Bedroom-&gt;Bedroom]] ]
 ---
 (replace:?place)[Bedroom]
 &lt;!--In a future version of this game these toys will be able to provide inspiration for dream powers--&gt;</tw-passagedata><tw-passagedata pid="80" name="anitique buffet" tags="" position="1875,975" size="100,100">&lt;img src = &quot;img/buffet1.png&quot; width = &quot;auto&quot; height = &quot;400&quot;  /&gt;
@@ -1367,10 +1371,10 @@ I remember during the big earthquake, just a few years ago, this is where I stoo
 ###&#39;&#39;Travel&#39;&#39;
 &lt;=
 |=
-* [[Back 
+(button:)[[Back 
 towards the Hallway-&gt;door to the bathroom]] 
 =|
-* [[Forward 
+(button:)[[Forward 
 into the Bathroom-&gt;the bathroom]] 
 ]
 (replace:?place)[Bathroom Door Frame]</tw-passagedata><tw-passagedata pid="102" name="earthquake-bedroom-bookshelf" tags="" position="3375,1225" size="100,100">During the big (text-style:&quot;rumble&quot;)[earthquake], just a few years ago, this [bookcase]&lt;section2| fell over on my bed, crushing everything and sending books flying. There&#39;s still a shelf missing from the damage. 
@@ -1383,11 +1387,10 @@ into the Bathroom-&gt;the bathroom]]
 
 ]
 
----
-=&gt;&lt;=
-(after:2s)+(text-size:.8)[[[Back-&gt;bookcase]] ]
----
-(replace:?place)[Bedroom]</tw-passagedata><tw-passagedata pid="103" name="power" tags="" position="2200,1900" size="100,100">###Choose one of the following:
+{
+(button:)+(after:2s)+(text-size:.8)[[[Back-&gt;bookcase]] ]
+(replace:?place)[Bedroom]
+}</tw-passagedata><tw-passagedata pid="103" name="power" tags="" position="2200,1900" size="100,100">###Choose one of the following:
 
 (link: &quot;Courage&quot;)[ (either:&quot; [[Fly]] &quot;, &quot; [[Teleport]] &quot;) ]
 
@@ -1456,9 +1459,9 @@ I look around and take a deep breath. It seems like for I&#39;ve chased him away
 (transition:&quot;flicker&quot;)[
 ###[[And then he looks into my eyes]] ] 
 |=
-&lt;img src = &quot;/img/eyeball.png&quot; height = &quot;150&quot; width = &quot;150&quot;&gt;
+&lt;img src = &quot;./img/eyeball.png&quot; height = &quot;150&quot; width = &quot;150&quot;&gt;
 =|
-&lt;img src = &quot;/img/eyeball.png&quot; height = &quot;150&quot; width = &quot;150&quot;&gt;
+&lt;img src = &quot;./img/eyeball.png&quot; height = &quot;150&quot; width = &quot;150&quot;&gt;
 ]
 (replace: ?place)[The Sky]</tw-passagedata><tw-passagedata pid="113" name="And then he looks into my eyes" tags="" position="3000,1725" size="100,100">&lt;img src = &quot;./img/playingAndCrying.gif&quot; width = &quot;400&quot; height = &quot;auto&quot; alt = &quot;A bed with a the shape of a child on it, and a gray humanoid shape in the counter, which transforms into a Vampire King and attacks the screen&quot; /&gt;
 ---
@@ -1541,7 +1544,7 @@ There used to be only one fish in this tank. He was my [first pet]&lt;reveal| ev
 Please forgive me. 
 ---
 =&gt;&lt;=
-(text-size:.8)[[[Return to the bedroom|Bedroom]]]
+(button:)+(text-size:.8)[[[Return to the bedroom|Bedroom]]]
 &lt;=
 ---
 (set:$SPfishKiller to true, $storyPoints to it + 1)
@@ -1652,7 +1655,7 @@ Limits courage but improves spirit.
 ](else:)[I concetrate as hard as I can but I can&#39;t remember what that room looks like. The memories feel blocked off by pain. 
 (text-style:&quot;shudder&quot;)[ [[Wake up.]] ]
 ]
-(replace:?place)[Main Bedroom]</tw-passagedata><tw-passagedata pid="126" name="content-warning" tags="" position="550,375" size="100,100">=&gt;&lt;=
+(replace:?place)[Main Bedroom]</tw-passagedata><tw-passagedata pid="126" name="content-warning" tags="" position="350,325" size="100,100">=&gt;&lt;=
 .
 
 .
@@ -1673,16 +1676,16 @@ Limits courage but improves spirit.
 
 (track: &#39;introMusic&#39;, &#39;playwhenpossible&#39;, &#39;loop&#39;, true)</tw-passagedata><tw-passagedata pid="127" name="mirror" tags="" position="3325,1600" size="100,100">&lt;img src = &quot;broken.html&quot; width = &quot;400&quot; height = &quot;300&quot; /&gt;
 ---
-(if:$dreaming is true)[Something is wrong with the mirror. My reflection doesn&#39;t match what I am doing. 
+(if:$dreaming is not false)[Something is wrong with the mirror. My reflection doesn&#39;t match what I am doing. 
 
 I must be dreaming.](else:)[I see a scared child looking back at me.]
 (text-size:.7)[
-* (transition:&quot;pulse&quot;)[[[Back to the bathroom|the bathroom]] ]
+(button:)+(transition:&quot;pulse&quot;)[[[Back to the bathroom|the bathroom]] ]
 ]
-(replace:?place)[Bathroom]</tw-passagedata><tw-passagedata pid="128" name="header" tags="header" position="475,125" size="100,100">==&gt;&lt;==
+(replace:?place)[Bathroom]</tw-passagedata><tw-passagedata pid="128" name="header" tags="header" position="350,125" size="100,100">==&gt;&lt;==
 (if: $showHeader is true)[(text-size:.5)+(bg:(gradient: 114, 0.0152,#e619e5,0.221,#7f19e6,0.5384,#7f19e6,0.9829,#e619e5))[ [
 Kid &#39;96. (if: $dreaming is true)[  I am dreaming.  ](if: $bloody is true)[. I am bloody. .] ] $where[Initializing]&lt;place| ]
-]</tw-passagedata><tw-passagedata pid="129" name="footer" tags="footer" position="450,400" size="100,100">--- 
+]</tw-passagedata><tw-passagedata pid="129" name="footer" tags="footer" position="200,375" size="100,100">--- 
 (if: $showFooter is true)[
 (display: &quot;Stats&quot;)
 (display: &quot;Inventory&quot;)
@@ -1694,7 +1697,7 @@ Kid &#39;96. (if: $dreaming is true)[  I am dreaming.  ](if: $bloody is true)[. 
   ]
 ]}
 ]
-</tw-passagedata><tw-passagedata pid="130" name="Inventory" tags="" position="325,400" size="100,100">(text-size:.6)+(text-style:&quot;expand&quot;,&quot;tall&quot;,&quot;fidget&quot;)[Story Points: $storyPoints .]  	(text-size:.6)[//(display:&quot;happy place&quot;)//]
+</tw-passagedata><tw-passagedata pid="130" name="Inventory" tags="" position="50,475" size="100,100">(text-size:.6)+(text-style:&quot;expand&quot;,&quot;tall&quot;,&quot;fidget&quot;)[Story Points: $storyPoints .]  	(text-size:.6)[//(display:&quot;happy place&quot;)//]
 ---
 (text-size:.6)+(text-colour:green)+(text-style:&quot;underline&quot;)[Dream Powers,] (text-size:.6)[ ] (text-size:.6)+(text-colour:yellow)+(text-style:&quot;underline&quot;)[Story Cards,] (text-size:.6)[and] (text-size:.6)+(bg:(gradient: 0, 0.0227,#ffffff,0.5,#000000,1,#000000))[Items]
 ---
@@ -1804,7 +1807,7 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 [[Back-&gt;dining room]] 
 (set:$SPdiningRoomBD to true, $storyPoints to it + 1)
 (text-colour:yellow)[+1 Story Card.] I have $storyPoints Story Cards.
-(replace: ?place)[Dining Room]</tw-passagedata><tw-passagedata pid="139" name="Splash Page2" tags="" position="300,125" size="100,100">&lt;==
+(replace: ?place)[Dining Room]</tw-passagedata><tw-passagedata pid="139" name="Splash Page2" tags="" position="200,100" size="100,100">&lt;==
 (transition:&quot;zoom&quot;)[
 ---
 ==&gt;&lt;==
@@ -1840,8 +1843,7 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 * I can go to the door to the [[hallway |Hallway]] 
 ](else:)[
 * I need more (text-colour:(hsl:60,0.8039,0.5,0.9))[Story Points] to leave this room]
-]
-(track: &#39;beeps&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="141" name="StoryPointExplanation" tags="" position="975,375" size="100,100">(transition:&quot;slide-up&quot;)[Each time I confront my past and recover a memory I earn a (text-colour:yellow)[Story Card]. Collect (text-colour:yellow)[Story Cards] to earn (text-colour:yellow)[Story Points] and unlock parts of the house. You can usually find them in your inventory at the bottom of the page. ]
+]</tw-passagedata><tw-passagedata pid="141" name="StoryPointExplanation" tags="" position="975,375" size="100,100">(transition:&quot;slide-up&quot;)[Each time I confront my past and recover a memory I earn a (text-colour:yellow)[Story Card]. Collect (text-colour:yellow)[Story Cards] to earn (text-colour:yellow)[Story Points] and unlock parts of the house. You can usually find them in your inventory at the bottom of the page. ]
 
 (transition:&quot;slide-up&quot;)+(after:1s)[Find the trap door and complete the reoccuring nightmare to earn (text-colour:green)[Dream Powers]. You cannot defeat the final boss and end the nightmare without them. ]
 
@@ -1854,7 +1856,7 @@ One friend did agree to play Risk with me. We set up the board on this dining ro
 ####[[ Review the Dream-&gt;the-dream-explained]]
 
 ]
-(set: $showFooter to true)</tw-passagedata><tw-passagedata pid="142" name="Stats" tags="" position="200,400" size="100,100">(text-size:.5)[Courage: $courage Spirit: $spirit Imagination: $imagination ]</tw-passagedata><tw-passagedata pid="143" name="happy place" tags="" position="300,550" size="100,100">Think about $happyPlace</tw-passagedata><tw-passagedata pid="144" name="learn happy place" tags="" position="600,275" size="100,100">What do you think about when things get scary? 
+(set: $showFooter to true)</tw-passagedata><tw-passagedata pid="142" name="Stats" tags="" position="50,350" size="100,100">(text-size:.5)[Courage: $courage Spirit: $spirit Imagination: $imagination ]</tw-passagedata><tw-passagedata pid="143" name="happy place" tags="" position="300,550" size="100,100">Think about $happyPlace</tw-passagedata><tw-passagedata pid="144" name="learn happy place" tags="" position="475,325" size="100,100">What do you think about when things get scary? 
 
 (input:bind $happyPlace, &quot;my happy place&quot;)
 
@@ -1865,13 +1867,14 @@ P.S. Headphones are recommended. If you can&#39;t hear music now check to see if
 beep2: ./audio/beep2.wav, /audio/beep2.ogg
 beep3: ./audio/beep3.wav, /audio/beep3.ogg
 beep4: ./audio/beep4.wav, /audio/beep4.ogg
-beeps: ./audio/beeps.wav, /audio/beeps.ogg
+beeps: ./audio/beeps.mp3, /audio/beeps.ogg
 introMusic: ./audio/start-screen.mp3, /audio/start-screen.ogg
 ExploreMusic: ./audio/exploring-the-house.mp3,  /audio/exploring-the-house.ogg
 </tw-passagedata><tw-passagedata pid="146" name="SplashPage1" tags="" position="50,75" size="100,100">(transition:&quot;slide-right&quot;)[&lt;img src = &quot;img/UVW_logo_red512.png&quot; width = &quot;374&quot; height = &quot;375&quot;&gt;&lt;span class = &quot;shadows-into-light-regular&quot; &gt;]
 
 (after:1s )[(go-to:&quot;Splash Page2&quot;)]
-</tw-passagedata><tw-passagedata pid="147" name="Turn to shadow" tags="" position="3100,1400" size="100,100">(box:&quot;=XX=&quot;, 1)[(text-style:&quot;smear&quot;,&quot;condense&quot;,&quot;tall&quot;,&quot;shudder&quot;)[Shadow Form]]
+</tw-passagedata><tw-passagedata pid="147" name="Turn to shadow" tags="" position="3100,1400" size="100,100">(box:&quot;X==&quot;, 1)[(text-style:&quot;smear&quot;,&quot;condense&quot;,&quot;tall&quot;,&quot;shudder&quot;)[Shadow Form]]
+&lt;img src=&quot;./img/turn-to-shadow.gif&quot; width=&quot;400&quot; height=&quot;auto&quot; /&gt;
 (transition:&quot;zoom&quot;)[
 ###I ooze underneath the door in shadow form.
 #####I melt one limb at a time into a thick black oil devoid of light and dart through the photo sized cracks. 
